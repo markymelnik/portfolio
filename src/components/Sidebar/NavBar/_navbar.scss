@@ -1,0 +1,15 @@
+@import '@styles/colors';
+
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  
+  .navbar-home,
+  .navbar-projects,
+  .navbar-about {
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

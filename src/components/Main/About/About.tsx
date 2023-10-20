@@ -1,9 +1,10 @@
+import { forwardRef } from 'react';
 import './_about.scss';
 
-const About = () => {
+const About = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <div className="about-container"></div>
+    <div ref={ref} className="about-container">About</div>
   )
-}
+});
 
 export default About;

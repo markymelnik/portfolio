@@ -1,9 +1,10 @@
+import { forwardRef } from 'react';
 import './_projects.scss';
 
-const Projects = () => {
+const Projects = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <div className="projects-container">Projects</div>
+    <div ref={ref} className="projects-container">Projects</div>
   )
-}
+});
 
 export default Projects;
