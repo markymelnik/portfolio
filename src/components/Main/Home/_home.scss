@@ -1,0 +1,7 @@
+@import '@styles/colors';
+
+.home-container {
+  border: 1px solid map-get($theme, 'secondary');
+  height: calc(100vh - 4rem);
+  margin: 0 0 4rem;
+}
