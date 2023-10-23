@@ -7,9 +7,15 @@
   .navbar-home,
   .navbar-projects,
   .navbar-about {
+    opacity: 0.3;
+    transition: opacity 0.2s ease;
 
     &:hover {
       cursor: pointer;
+    }
+
+    &.active {
+      opacity: 1;
     }
   }
 }

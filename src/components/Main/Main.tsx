@@ -1,45 +1,67 @@
-import { useEffect, useRef } from 'react';
-import About from './About/About';
+import { useRef, useEffect } from 'react';
 import Home from './Home/Home';
 import Projects from './Projects/Projects';
+import About from './About/About';
 import './_main.scss';
 
 type MainProps = {
-  activeTab: string,
-}
+  setActiveTab: (tab: string) => void;
+  isScrolling: boolean;
+};
 
-const Main = ({ activeTab }: MainProps) => {
+const Main = ({ setActiveTab, isScrolling }: MainProps) => {
   const homeRef = useRef<HTMLDivElement | null>(null);
   const projectsRef = useRef<HTMLDivElement | null>(null);
   const aboutRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    let sectionRef;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!isScrolling && entry.isIntersecting) {
+            switch (entry.target.id) {
+              case "home":
+                setActiveTab("home");
+                break;
+              case "projects":
+                setActiveTab("projects");
+                break;
+              case "about":
+                setActiveTab("about");
+                break;
+              default:
+                break;
+            }
+          }
+        });
+      },
+      {
+        threshold: 0.6,
+      }
+    );
 
-    switch (activeTab) {
-      case 'home':
-        sectionRef = homeRef;
-        break;
-      case 'projects':
-        sectionRef = projectsRef;
-        break;
-      case 'about':
-        sectionRef = aboutRef;
-        break;
-      default:
-        return;
-    }
-    
-    sectionRef.current?.scrollIntoView({ behavior: 'smooth', inline: 'start' });
-  }, [activeTab]);
+    const currentHomeRef = homeRef.current;
+    const currentProjectsRef = projectsRef.current;
+    const currentAboutRef = aboutRef.current;
+
+    if (currentHomeRef) observer.observe(currentHomeRef);
+    if (currentProjectsRef) observer.observe(currentProjectsRef);
+    if (currentAboutRef) observer.observe(currentAboutRef);
+
+    return () => {
+      if (currentHomeRef) observer.unobserve(currentHomeRef);
+      if (currentProjectsRef) observer.unobserve(currentProjectsRef);
+      if (currentAboutRef) observer.unobserve(currentAboutRef);
+    };
+  }, [setActiveTab, isScrolling]);
 
   return (
     <div className="main-container">
-      <Home ref={homeRef}/>
-      <Projects  ref={projectsRef}/>
-      <About ref={aboutRef}/>
+      <Home ref={homeRef} id="home" />
+      <Projects ref={projectsRef} id="projects" />
+      <About ref={aboutRef} id="about" />
     </div>
-  )
-}
+  );
+};
 
 export default Main;

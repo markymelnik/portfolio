@@ -5,11 +5,12 @@ import './styles/_global.scss';
 
 const App = () => {
   const [activeTab, setActiveTab] = useState<string>('home');
+  const [isScrolling, setIsScrolling] = useState<boolean>(false);
 
   return (
     <div className="site-container">
-      <Sidebar activeTab={activeTab} onNavigate={setActiveTab} />
-      <Main activeTab={activeTab} />
+      <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} setIsScrolling={setIsScrolling} />
+      <Main setActiveTab={setActiveTab} isScrolling={isScrolling} />
     </div>
   );
 };

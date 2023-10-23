@@ -4,15 +4,16 @@ import './_sidebar.scss';
 
 type SidebarProps = {
   activeTab: string,
-  onNavigate: (tab: string) => void;
+  setActiveTab: (tab: string) => void;
+  setIsScrolling: (status: boolean) => void;
 }
 
-const Sidebar = ({ activeTab, onNavigate }: SidebarProps) => {
+const Sidebar = ({ activeTab, setActiveTab, setIsScrolling }: SidebarProps) => {
   return (
     <div className="sidebar-container">
       <div className="sidebar-top">
         <Logo />
-        <NavBar activeTab={activeTab} onNavigate={onNavigate} />
+        <NavBar activeTab={activeTab} setActiveTab={setActiveTab} setIsScrolling={setIsScrolling} />
       </div>
     </div>
   )

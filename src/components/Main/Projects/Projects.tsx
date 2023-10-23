@@ -1,9 +1,11 @@
 import { forwardRef } from 'react';
 import './_projects.scss';
 
-const Projects = forwardRef<HTMLDivElement>((_, ref) => {
+interface ProjectsProps extends React.HTMLProps<HTMLDivElement> {}
+
+const Projects = forwardRef<HTMLDivElement, ProjectsProps>((props, ref) => {
   return (
-    <div ref={ref} className="projects-container">Projects</div>
+    <div ref={ref} className="projects-container" {...props}>Projects</div>
   )
 });
 
