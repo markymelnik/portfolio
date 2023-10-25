@@ -4,7 +4,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import './styles/_global.scss';
 
 const App = () => {
-  const [activeTab, setActiveTab] = useState<string>('home');
+  const [activeTab, setActiveTab] = useState<string>('about');
   const [isScrolling, setIsScrolling] = useState<boolean>(false);
 
   return (

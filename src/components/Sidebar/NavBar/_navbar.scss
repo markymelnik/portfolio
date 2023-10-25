@@ -8,10 +8,10 @@
   flex-direction: column;
   gap: 0.15rem;
   
-  .navbar-home,
-  .navbar-projects,
   .navbar-about,
-  .navbar-skills {
+  .navbar-projects,
+  .navbar-skills,
+  .navbar-contact {
     color: map-get($theme,'inactive');
     opacity: 0;
     transform: translateY(1.25rem);
@@ -30,7 +30,7 @@
     }
   }
 
-  .navbar-home {
+  .navbar-about {
     animation-delay: 1.4s;
   }
 
@@ -38,11 +38,11 @@
     animation-delay: 1.6s;
   }
 
-  .navbar-about {
+  .navbar-skills {
     animation-delay: 1.8s;
   };
 
-  .navbar-skills {
+  .navbar-contact {
     animation-delay: 2s;
   }
 }
