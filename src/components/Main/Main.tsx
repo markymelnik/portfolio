@@ -3,6 +3,7 @@ import Home from './Home/Home';
 import Projects from './Projects/Projects';
 import About from './About/About';
 import './_main.scss';
+import Skills from './Skills/Skills';
 
 type MainProps = {
   setActiveTab: (tab: string) => void;
@@ -13,6 +14,7 @@ const Main = ({ setActiveTab, isScrolling }: MainProps) => {
   const homeRef = useRef<HTMLDivElement | null>(null);
   const projectsRef = useRef<HTMLDivElement | null>(null);
   const aboutRef = useRef<HTMLDivElement | null>(null);
+  const skillsRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -29,6 +31,9 @@ const Main = ({ setActiveTab, isScrolling }: MainProps) => {
               case "about":
                 setActiveTab("about");
                 break;
+              case "skills":
+                setActiveTab("skills");
+                break;
               default:
                 break;
             }
@@ -43,15 +48,18 @@ const Main = ({ setActiveTab, isScrolling }: MainProps) => {
     const currentHomeRef = homeRef.current;
     const currentProjectsRef = projectsRef.current;
     const currentAboutRef = aboutRef.current;
+    const currentSkillsRef = skillsRef.current;
 
     if (currentHomeRef) observer.observe(currentHomeRef);
     if (currentProjectsRef) observer.observe(currentProjectsRef);
     if (currentAboutRef) observer.observe(currentAboutRef);
+    if (currentSkillsRef) observer.observe(currentSkillsRef);
 
     return () => {
       if (currentHomeRef) observer.unobserve(currentHomeRef);
       if (currentProjectsRef) observer.unobserve(currentProjectsRef);
       if (currentAboutRef) observer.unobserve(currentAboutRef);
+      if (currentSkillsRef) observer.unobserve(currentSkillsRef);
     };
   }, [setActiveTab, isScrolling]);
 
@@ -60,6 +68,7 @@ const Main = ({ setActiveTab, isScrolling }: MainProps) => {
       <Home ref={homeRef} id="home" />
       <Projects ref={projectsRef} id="projects" />
       <About ref={aboutRef} id="about" />
+      <Skills ref={skillsRef} id ="skills" />
     </div>
   );
 };

@@ -1,0 +1,17 @@
+@import '@styles/colors';
+
+.skills-container {
+  width: 100%;
+  border-bottom: 1px solid map-get($theme, 'secondary');
+  padding: 2rem 0;
+  height: calc(100vh - 2rem);
+
+  .skills-title {
+    font-size: 1.25rem;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

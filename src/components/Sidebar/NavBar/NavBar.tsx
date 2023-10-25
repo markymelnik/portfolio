@@ -8,7 +8,7 @@ type NavbarProps = {
 }
 
 const NavBar = ({ activeTab, setActiveTab, setIsScrolling }: NavbarProps) => {
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
@@ -33,6 +33,7 @@ const NavBar = ({ activeTab, setActiveTab, setIsScrolling }: NavbarProps) => {
       <div onClick={() => scrollToSection('home')} className={`navbar-home ${activeTab === 'home' ? 'active' : ''}`} >Home</div>
       <div onClick={() => scrollToSection('projects')} className={`navbar-projects ${activeTab === "projects" ? "active" : ''}`}>Projects</div>
       <div onClick={() => scrollToSection('about')} className={`navbar-about ${activeTab === "about" ? "active" : ''}`}>About</div>
+      <div onClick={() => scrollToSection('skills')} className={`navbar-skills ${activeTab === "skills" ? "active" : ''}`}>Skills</div>
     </div>
   );
 }
