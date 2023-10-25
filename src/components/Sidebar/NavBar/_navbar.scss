@@ -1,22 +1,48 @@
 @import '@styles/colors';
+@import '@styles/animations';
 
 .navbar-container {
+  position: absolute;
+  top: 16vh;
   display: flex;
   flex-direction: column;
+  gap: 0.15rem;
   
   .navbar-home,
   .navbar-projects,
   .navbar-about,
   .navbar-skills {
-    opacity: 0.3;
-    transition: opacity 0.2s ease;
+    color: map-get($theme,'inactive');
+    opacity: 0;
+    transform: translateY(1.25rem);
+    transition: color 0.2s ease;
+    animation: fadeInSlideUp 0.4s forwards;
 
     &:hover {
       cursor: pointer;
+      color: map-get($theme, 'hover');
     }
 
     &.active {
-      opacity: 1;
+      color: map-get($theme, 'secondary');
+      font-weight: 500;
+      pointer-events: none;
     }
+  }
+
+  .navbar-home {
+    animation-delay: 1.4s;
+  }
+
+  .navbar-projects {
+    animation-delay: 1.6s;
+  }
+
+  .navbar-about {
+    animation-delay: 1.8s;
+  };
+
+  .navbar-skills {
+    animation-delay: 2s;
   }
 }

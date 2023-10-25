@@ -1,5 +1,7 @@
 import { useRef } from 'react';
 import './_navbar.scss';
+import LineTop from '../LineTop/LineTop';
+import LineBottom from '../LineBottom/LineBottom';
 
 type NavbarProps = {
   activeTab: string,
@@ -30,10 +32,12 @@ const NavBar = ({ activeTab, setActiveTab, setIsScrolling }: NavbarProps) => {
 
   return (
     <div className="navbar-container">
+      <LineTop />
       <div onClick={() => scrollToSection('home')} className={`navbar-home ${activeTab === 'home' ? 'active' : ''}`} >Home</div>
       <div onClick={() => scrollToSection('projects')} className={`navbar-projects ${activeTab === "projects" ? "active" : ''}`}>Projects</div>
       <div onClick={() => scrollToSection('about')} className={`navbar-about ${activeTab === "about" ? "active" : ''}`}>About</div>
       <div onClick={() => scrollToSection('skills')} className={`navbar-skills ${activeTab === "skills" ? "active" : ''}`}>Skills</div>
+      <LineBottom />
     </div>
   );
 }

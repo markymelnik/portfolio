@@ -1,0 +1,21 @@
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes extendDownward {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 100%;
+  }
+}

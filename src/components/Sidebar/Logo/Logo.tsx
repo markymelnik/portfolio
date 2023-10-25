@@ -1,9 +1,11 @@
-import './_logo.scss';
+import "./_logo.scss";
 
 const Logo = () => {
   return (
-    <div className="logo">markmelnik</div>
+  <div className="logo">
+    <div className="logo-text">markmelnik</div>
+  </div>
   )
-}
+};
 
 export default Logo;
