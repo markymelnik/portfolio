@@ -15,6 +15,7 @@ const Sidebar = ({ activeTab, setActiveTab, setIsScrolling }: SidebarProps) => {
         <Logo />
         <NavBar activeTab={activeTab} setActiveTab={setActiveTab} setIsScrolling={setIsScrolling} />
       </div>
+      <div className="sidebar-bottom"></div>
     </div>
   )
 }

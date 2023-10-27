@@ -3,6 +3,11 @@
 .main-container {
   display: flex;
   flex-direction: column;
-  padding: 0 2rem 2rem;
-  margin: 0 15%;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    padding: 0 2rem 2rem;
+    margin: 0 15%;
+  }
 }

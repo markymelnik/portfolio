@@ -30,6 +30,13 @@ img {
   height: auto;
 }
 
-.site-container {
+.app-container {
   display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .app-container {
+    flex-direction: row;
+  }
 }

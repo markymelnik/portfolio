@@ -12,10 +12,24 @@
 
 @keyframes extendDownward {
   from {
+    opacity: 0;
     height: 0;
   }
 
   to {
+    opacity: 1;
     height: 100%;
+  }
+}
+
+@keyframes extendRightward {
+  from {
+    opacity: 0;
+    width: 0;
+  }
+
+  to {
+    opacity: 1;
+    width: 100%;
   }
 }

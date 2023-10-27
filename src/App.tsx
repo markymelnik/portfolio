@@ -8,7 +8,7 @@ const App = () => {
   const [isScrolling, setIsScrolling] = useState<boolean>(false);
 
   return (
-    <div className="site-container">
+    <div className="app-container">
       <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} setIsScrolling={setIsScrolling} />
       <Main setActiveTab={setActiveTab} isScrolling={isScrolling} />
     </div>

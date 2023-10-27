@@ -3,9 +3,9 @@
 .skills-container {
   width: 100%;
   border-bottom: 1px solid map-get($theme, 'secondary');
-  padding: 2rem 0;
-  height: calc(100vh - 2rem);
-
+  padding: 10rem 0 0;
+  height: 100vh;
+  
   .skills-title {
     font-size: 1.25rem;
   }
@@ -13,5 +13,12 @@
   .skills-list {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .skills-container {
+    padding: 2rem 0;
+    height: calc(100vh - 2rem);
   }
 }
