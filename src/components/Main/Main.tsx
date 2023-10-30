@@ -4,7 +4,7 @@ import Projects from './Projects/Projects';
 import About from './About/About';
 import './_main.scss';
 import Skills from './Skills/Skills';
-import Divider from './Divider/Divider';
+/* import Divider from './Divider/Divider'; */
 
 type MainProps = {
   setActiveTab: (tab: string) => void;
@@ -67,11 +67,11 @@ const Main = ({ setActiveTab, isScrolling }: MainProps) => {
   return (
     <div className="main-container">
       <About ref={aboutRef} id="about" />
-      <Divider />
+      {/* <Divider /> */}
       <Projects ref={projectsRef} id="projects" />
-      <Divider />
+      {/* <Divider /> */}
       <Skills ref={skillsRef} id ="skills" />
-      <Divider />
+      {/* <Divider /> */}
       <Contact ref={contactRef} id="contact" />
     </div>
   );

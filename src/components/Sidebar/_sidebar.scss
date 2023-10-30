@@ -7,19 +7,17 @@
   left: 0;
   display: flex;
   flex-direction: column;
-  width: 80%;
-  margin: 0 10%;
   font-size: 1.25rem;
-  padding: 1.5rem 0 0;
+  padding: 0 2rem;
   background-color: map-get($theme, 'primary');
   z-index: 1;
+  width: 100%;
 
   .sidebar-top {
     position: relative;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 0 0 1.5rem;
+    padding: 1rem 0;
   }
 
   .sidebar-bottom {
@@ -27,7 +25,7 @@
     opacity: 0;
     border-bottom: 1px solid map-get($theme, 'secondary');
     animation: extendRightward 0.6s forwards;
-    animation-delay: 2.4s;
+    animation-delay: 2.9s;
   }
 }
 
@@ -35,13 +33,9 @@
   .sidebar-container {
     align-items: center;
     height: 100vh;
-    padding: 3rem 0 0;
-    width: 15%;
+    width: 10rem;
     margin: 0;
-
-    .sidebar-top {
-      padding: 0 3rem;
-    }
+    padding: 3rem 0 0;
 
     .sidebar-bottom {
       display: none;

@@ -10,7 +10,7 @@
     opacity: 0;
     border-bottom: 1.5px solid map-get($theme, 'inactive');
     animation: extendRightward 0.4s forwards;
-    animation-delay: 2.2s;
+    animation-delay: 2.6s;
   }
 }
 
@@ -24,7 +24,7 @@
       opacity: 0;
       border-left: 1.5px solid map-get($theme, 'inactive');
       animation: extendDownward 0.5s forwards;
-      animation-delay: 2.2s;
+      animation-delay: 2.6s;
     }
   }
 }

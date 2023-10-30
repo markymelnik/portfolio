@@ -10,7 +10,7 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
 
   return (
     <div ref={ref} className="contact-container" {...props}>
-      <div className="contact-title">Contact</div>
+      <div className="contact-title"><span>.03</span>Contact</div>
       <div className="contact-selection">
         <div className="contact-top">
           <div className="contact-email-address">markymelnik@gmail.com</div>

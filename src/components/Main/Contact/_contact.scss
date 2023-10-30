@@ -2,12 +2,22 @@
 @import '@styles/animations';
 
 .contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
   min-height: 30vh;
+  padding: 6rem 0;
 
   .contact-title {
-    text-align: center;
-    font-size: 1.75rem;
-    margin: 0 0 2rem;
+    align-self: flex-start;
+    font-size: 1.5rem;
+    margin: 0 0 3rem;
+    
+    span {
+      color: map-get($theme, 'inactive');
+      margin: 0 0.5rem 0 0;
+    }
   }
 
   .contact-selection {
@@ -26,7 +36,7 @@
 
     .contact-bottom {
       display: inherit;
-      justify-content: center;
+      justify-content: left;
       gap: 0.5rem;
 
       .contact-option {
@@ -64,5 +74,11 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-container {
+    padding: 0 10%;
   }
 }

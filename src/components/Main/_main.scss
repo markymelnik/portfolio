@@ -3,14 +3,6 @@
 .main-container {
   display: flex;
   flex-direction: column;
-  width: 80%;
-  margin: 0 10%;
-}
-
-@media (min-width: 768px) {
-  .main-container {
-    padding: 0 2rem 2rem;
-    width: 70%;
-    margin: 0 15%;
-  }
+  align-items: center;
+  width: 100%;
 }

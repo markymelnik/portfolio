@@ -16,6 +16,7 @@ import JEST_SVG from './skills_icons/jest_svg';
 import Technology from './Tech/Tech';
 import NODE_SVG from './skills_icons/node_svg';
 import FIGMA_SVG from './skills_icons/figma_svg';
+import EXPRESS_SVG from './skills_icons/express.svg';
 
 const TECHNOLOGIES = [
   { svg: <GIT_SVG />, customClass:'git'},
@@ -32,6 +33,7 @@ const TECHNOLOGIES = [
   { svg: <DOCKER_SVG/>, customClass:'docker' },
   { svg: <JEST_SVG />, customClass:'jest' },
   { svg: <NODE_SVG />, customClass:'node' },
+  { svg: <EXPRESS_SVG />, customClass:'express' },
   { svg: <FIGMA_SVG />, customClass:'figma'}
 ]
 
@@ -39,8 +41,8 @@ interface SkillsProps extends React.HTMLProps<HTMLDivElement> {}
 
 const Skills = forwardRef<HTMLDivElement, SkillsProps>((props, ref) => {
   return (
-    <div ref={ref} className="skills-container" {...props}>
-      <div className="skills-title">Skills</div>
+    <section ref={ref} className="skills-container" {...props}>
+      <div className="skills-title"><span>.02</span>Skills</div>
       <div className="skills-list">
       {TECHNOLOGIES.map((tech, index) => (
           <Technology
@@ -51,7 +53,7 @@ const Skills = forwardRef<HTMLDivElement, SkillsProps>((props, ref) => {
         ))}
       </div>
       
-    </div>
+    </section>
   )
 });
 

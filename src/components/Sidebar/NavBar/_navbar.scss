@@ -30,26 +30,24 @@
   }
 
   .navbar-about {
-    animation-delay: 1.4s;
+    animation-delay: 1.9s;
   }
 
   .navbar-projects {
-    animation-delay: 1.6s;
+    animation-delay: 2.1s;
   }
 
   .navbar-skills {
-    animation-delay: 1.8s;
+    animation-delay: 2.3s;
   };
 
   .navbar-contact {
-    animation-delay: 2s;
+    animation-delay: 2.5s;
   }
 }
 
 @media (min-width: 768px) {
   .navbar-container {
-    position: absolute;
-    top: 16vh;
     flex-direction: column;
     gap: 0.15rem;
 
