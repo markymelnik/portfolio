@@ -2,16 +2,15 @@
 
 .about-container {
   position: relative;
-  border-bottom: 1px solid map-get($theme, 'secondary');
-  height: 100vh;
+  min-height: 80vh;
 
   .about-intro {
     position: absolute;
-    top: 26vh;
+    top: 32vh;
     left: 50%;
     transform: translateX(-50%);
     text-align: left;
-    width: 80%;
+    white-space: nowrap;
 
     .about-name, .about-description {
       opacity: 0;
@@ -33,11 +32,9 @@
 
 @media (min-width: 768px) {
   .about-container {
-    height: calc(100vh - 2rem);
-    padding: 2rem 0;
 
     .about-intro {
-
+      top: 26vh;
 
       .about-name {
         font-size: 2.5rem;

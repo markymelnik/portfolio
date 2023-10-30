@@ -1,0 +1,19 @@
+@import '@styles/colors';
+
+.divider {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 6rem 0 4rem;
+
+  .divider-line {
+    width: 25%;
+    border-bottom: 1px solid map-get($theme, 'secondary');
+  }
+}
+
+@media (min-width: 768px) {
+  .divider {
+    padding: 10rem 0 6rem;
+  }
+}
