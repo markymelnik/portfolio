@@ -7,7 +7,7 @@ interface ProjectsProps extends React.HTMLProps<HTMLDivElement> {}
 const Projects = forwardRef<HTMLDivElement, ProjectsProps>((props, ref) => {
   return (
     <section ref={ref} className="projects-container" {...props}>
-      <h2 className="projects-title"><span>.01</span>Projects</h2>
+      <h2 className="projects-title"><span>.02</span>My Projects</h2>
       <ul className="projects-list">
         <ProjectBox
           projectId={`project-1`}

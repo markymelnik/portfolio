@@ -7,7 +7,7 @@
   flex-direction: column-reverse;
   justify-content: space-between;
   gap: 1.5rem;
-  /* border: 1px solid map-get($theme, 'white'); */
+  border: 1px solid map-get($theme, 'white');
   border-radius: 6px;
   padding: 1rem;
   transition: background-color 0.1s ease;

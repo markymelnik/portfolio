@@ -5,6 +5,7 @@ import About from './About/About';
 import './_main.scss';
 import Skills from './Skills/Skills';
 import Divider from './Divider/Divider';
+import Home from './Home/Home';
 
 type MainProps = {
   setActiveTab: (tab: string) => void;
@@ -66,6 +67,7 @@ const Main = ({ setActiveTab, isScrolling }: MainProps) => {
 
   return (
     <main className="main-container">
+      <Home />
       <About ref={aboutRef} id="about" />
       <Projects ref={projectsRef} id="projects" />
       <Divider />
