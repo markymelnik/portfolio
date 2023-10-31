@@ -8,7 +8,7 @@ import Sidebar from "./components/Header/Header";
 import "./styles/_global.scss";
 
 const App = () => {
-  const [activeTab, setActiveTab] = useState<string>("about");
+  const [activeTab, setActiveTab] = useState<string>("home");
   const [isScrolling, setIsScrolling] = useState<boolean>(false);
 
   if ('scrollRestoration' in history) {

@@ -6,9 +6,9 @@
   justify-content: space-between;
   gap: 0.75rem;
   
+  .navbar-home,
   .navbar-about,
   .navbar-projects,
-  .navbar-skills,
   .navbar-contact {
     color: map-get($theme,'inactive');
     font-size: 1rem;
@@ -26,15 +26,15 @@
     }
   }
 
-  .navbar-about {
+  .navbar-home {
     @include animateFadeIn(1.9s);
   }
 
-  .navbar-projects {
+  .navbar-about {
     @include animateFadeIn(2.1s);
   }
 
-  .navbar-skills {
+  .navbar-projects {
     @include animateFadeIn(2.3s);
   };
 
@@ -42,17 +42,3 @@
     @include animateFadeIn(2.5s);
   }
 }
-
-/* @media (min-width: 992px) {
-  .navbar-container {
-    flex-direction: column;
-    gap: 0.15rem;
-
-    .navbar-about,
-    .navbar-projects,
-    .navbar-skills,
-    .navbar-contact {
-      font-size: 1.25rem;
-    }
-  }
-} */

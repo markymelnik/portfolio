@@ -1,0 +1,16 @@
+ul.about-skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+
+  li.about-skill {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 0 1rem 0;
+
+    span {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+}

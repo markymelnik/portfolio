@@ -1,16 +1,18 @@
-import { forwardRef } from 'react';
-import './_about.scss';
-import Skill from './Skill/Skill';
+import { forwardRef } from "react";
+import SkillList from "./Skill/SkillList";
+import "./_about.scss";
 
 interface AboutProps extends React.HTMLProps<HTMLDivElement> {}
 
 const About = forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
+
   return (
     <section ref={ref} className="about-container" {...props}>
       <h2 className="about-title">
         <span>.01</span>About Me
       </h2>
       <div className="about-information">
+        <div className="about-left">
         <p>
           Hey there! I'm Mark, an aspiring software developer based in New York
           City fascinated by the inner workings of technology. I have developed
@@ -30,28 +32,19 @@ const About = forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
           I am looking to enter the software world and gain professional
           experience!
         </p>
-        <div className="about-photo"></div>
-      </div>
-      <div className="about-skills">
-        <div className="about-skills-title">What I've worked with:</div>
-        <ul className="about-skills-list">
-          <Skill skillName="JavaScript" />
-          <Skill skillName="Git" />
-          <Skill skillName="TypeScript" />
-          <Skill skillName="Java" />
-          <Skill skillName="HTML" />
-          <Skill skillName="Spring Boot" />
-          <Skill skillName="CSS" />
-          <Skill skillName="Node" />
-          <Skill skillName="React" />
-          <Skill skillName="Express" />
-          <Skill skillName="Redux" />
-          <Skill skillName="Jest" />
-          <Skill skillName="Sass" />
-          <Skill skillName="PostgreSQL" />
-          <Skill skillName="Figma" />
-          <Skill skillName="Docker" />
-        </ul>
+          <hr />
+          <div className="about-skills">
+            <div className="about-skills-title">
+              List of technologies I've been working with:
+            </div>
+            <SkillList />
+          </div>
+        </div>
+        <div className="about-right">
+          <div className="about-photo">
+            <img />
+          </div>
+        </div>
       </div>
     </section>
   );

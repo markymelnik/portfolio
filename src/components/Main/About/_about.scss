@@ -2,12 +2,12 @@
 @import '@styles/animations';
 
 .about-container {
-  position: relative;
   min-height: 80vh;
   width: 100%;
 
   .about-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    margin: 0 0 2rem;
 
     span {
       color: map-get($theme, 'inactive');
@@ -16,32 +16,76 @@
   }
 
   .about-information {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 
-    p {
-      font-size: 1rem;
+    .about-left {
+
+      p {
+        line-height: 1.6;
+        font-size: 1rem;
+      }
+
+      hr {
+        border: none;
+        height: 1px;
+        background-color: map-get($theme, 'inactive');
+        margin: 1rem 0;
+      }
+
+      .about-skills {
+
+        .about-skills-title {
+          font-size: 1rem;
+          margin: 0 0 1rem;
+        }
+      }
     }
 
-    .about-photo {
-      height: 200px;
-      width: 300px;
-      border: 1px solid white;
-    }
-  }
+    .about-right {
+      display: flex;
+      justify-content: center;
 
-  .about-skills {
+      .about-photo {
+        height: 14rem;
+        width: 20rem;
+        border: 1px solid white;
 
-    .about-skills-list {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(140px, 200px));;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
     }
   }
 }
 
 @media (min-width: 768px) {
   .about-container {
-
+    
     .about-title {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
+    }
+
+    .about-information {
+      flex-direction: row;
+      gap: 4rem;
+
+      .about-left {
+
+        p {
+          font-size: 1.15rem;
+        }
+
+        .about-skills {
+
+          .about-skills-title {
+            font-size: 1.5rem;
+          }
+        }
+      }
     }
   }
 }
