@@ -42,8 +42,8 @@ interface SkillsProps extends React.HTMLProps<HTMLDivElement> {}
 const Skills = forwardRef<HTMLDivElement, SkillsProps>((props, ref) => {
   return (
     <section ref={ref} className="skills-container" {...props}>
-      <div className="skills-title"><span>.02</span>Skills</div>
-      <div className="skills-list">
+      <h2 className="skills-title"><span>.02</span>Skills</h2>
+      <ul className="skills-list">
       {TECHNOLOGIES.map((tech, index) => (
           <Technology
             key={index}
@@ -51,8 +51,7 @@ const Skills = forwardRef<HTMLDivElement, SkillsProps>((props, ref) => {
             svg={tech.svg}
           />
         ))}
-      </div>
-      
+      </ul>
     </section>
   )
 });

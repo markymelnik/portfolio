@@ -2,13 +2,13 @@
 @import '@styles/animations';
 
 .project-box {
-  min-height: 16rem;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  justify-content: space-between;
   gap: 1.5rem;
-  /* border: 1px solid map-get($theme, 'white'); */
   border-radius: 6px;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   transition: background-color 0.1s ease;
   
   &:hover {
@@ -68,54 +68,40 @@
     }
   }
 
-  .project-box-right {
-    
-    .project-image {
-      height: 16rem;
-      background-color: map-get($theme, 'primary');
-      border: 1px solid map-get($theme, 'secondary');
-      border-radius: 4px;
-    }
+  .project-image {
+    height: 12rem;
+    width: 100%;
+    background-color: map-get($theme, 'primary');
+    border: 1px solid map-get($theme, 'secondary');
+    border-radius: 4px;
   }
 }
 
-.project-1,
-.project-2,
-.project-3,
-.project-4 {
-  opacity: 0;
-  transform: translateY(1.25rem);
-  animation: fadeInSlideUp 0.5s forwards;
-  transition: background-color 0.2s ease;
-}
-
 .project-1 {
-  animation-delay: 1.1s;
+  @include animateFadeIn(1.1s);
 }
 
 .project-2 {
-  animation-delay: 1.3s;
+  @include animateFadeIn(1.3s);
 }
 
 .project-3 {
-  animation-delay: 1.5s;
+  @include animateFadeIn(1.5s);
 }
 
 .project-4 {
-  animation-delay: 1.7s;
+  @include animateFadeIn(1.7s);
 }
 
 @media (min-width: 768px) { 
   .project-box {
+    border: 1px solid map-get($theme, 'white');
     flex-direction: row;
+    width: 100%;
+    padding: 1.5rem;
 
-    .project-box-right {
-      width: clamp(12rem, 100%, 16rem);
-
-      .project-image {
-        width: 100%;
-        height: 100%;
-      }
+    .project-image {
+      max-width: 18rem;
     }
   }
 }

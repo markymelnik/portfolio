@@ -5,12 +5,12 @@ interface AboutProps extends React.HTMLProps<HTMLDivElement> {}
 
 const About = forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
   return (
-    <div ref={ref} className="about-container" {...props}>
+    <section ref={ref} className="about-container" {...props}>
       <div className="about-intro">
-        <div className="about-name">Mark Melnik</div>
-        <div className="about-description">programming for the web</div>
+        <h1 className="about-name">Mark Melnik</h1>
+        <h2 className="about-description">programming for the web</h2>
       </div>
-    </div>
+    </section>
   )
 });
 

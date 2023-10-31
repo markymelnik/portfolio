@@ -19,7 +19,7 @@ const ProjectBox = ({
   projectSourceUrl,
 }: ProjectBoxProps) => {
   return (
-    <div className={`project-box ${projectId}`}>
+    <li className={`project-box ${projectId}`}>
       <div className="project-box-left">
       <div className="project-info">
         <div className="project-year">{projectYear}</div>
@@ -40,13 +40,9 @@ const ProjectBox = ({
           </a>
         )}
       </div>
-
       </div>
-      <div className="project-box-right">
-        <div className="project-image"></div>
-      </div>
-      
-    </div>
+      <div className="project-image"></div>
+    </li>
   );
 };
 

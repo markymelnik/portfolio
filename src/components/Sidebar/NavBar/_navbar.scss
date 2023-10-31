@@ -11,10 +11,6 @@
   .navbar-skills,
   .navbar-contact {
     color: map-get($theme,'inactive');
-    opacity: 0;
-    transform: translateY(1.25rem);
-    transition: color 0.2s ease;
-    animation: fadeInSlideUp 0.4s forwards;
     font-size: 1rem;
 
     &:hover {
@@ -30,23 +26,23 @@
   }
 
   .navbar-about {
-    animation-delay: 1.9s;
+    @include animateFadeIn(1.9s);
   }
 
   .navbar-projects {
-    animation-delay: 2.1s;
+    @include animateFadeIn(2.1s);
   }
 
   .navbar-skills {
-    animation-delay: 2.3s;
+    @include animateFadeIn(2.3s);
   };
 
   .navbar-contact {
-    animation-delay: 2.5s;
+    @include animateFadeIn(2.5s);
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbar-container {
     flex-direction: column;
     gap: 0.15rem;

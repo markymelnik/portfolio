@@ -10,13 +10,13 @@ type SidebarProps = {
 
 const Sidebar = ({ activeTab, setActiveTab, setIsScrolling }: SidebarProps) => {
   return (
-    <div className="sidebar-container">
+    <header className="sidebar-container">
       <div className="sidebar-top">
         <Logo />
         <NavBar activeTab={activeTab} setActiveTab={setActiveTab} setIsScrolling={setIsScrolling} />
       </div>
       <div className="sidebar-bottom"></div>
-    </div>
+    </header>
   )
 }
 

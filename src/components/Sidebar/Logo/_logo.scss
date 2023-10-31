@@ -7,10 +7,7 @@
   align-items: center;
   margin: 0 0 1rem;
   border-radius: 0.25rem;
-  opacity: 0;
-  transform: translateY(1.25rem);
-  animation: fadeInSlideUp 0.5s forwards;
-  animation-delay: 1.5s;
+  @include animateFadeIn(1.5s);
   transition: background-color 0.2s ease;
 
   .logo-text {

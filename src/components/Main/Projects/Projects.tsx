@@ -6,9 +6,9 @@ interface ProjectsProps extends React.HTMLProps<HTMLDivElement> {}
 
 const Projects = forwardRef<HTMLDivElement, ProjectsProps>((props, ref) => {
   return (
-    <div ref={ref} className="projects-container" {...props}>
-      <div className="projects-title"><span>.01</span>Projects</div>
-      <div className="projects-list">
+    <section ref={ref} className="projects-container" {...props}>
+      <h2 className="projects-title"><span>.01</span>Projects</h2>
+      <ul className="projects-list">
         <ProjectBox
           projectId={`project-1`}
           projectYear={2023}
@@ -40,8 +40,8 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>((props, ref) => {
           projectDemoUrl={`https://google.com`}
           projectSourceUrl={`https://google.com`}
         />
-      </div>
-    </div>
+      </ul>
+    </section>
   );
 });
 

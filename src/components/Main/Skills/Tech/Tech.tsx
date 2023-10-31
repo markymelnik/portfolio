@@ -7,14 +7,13 @@ type TechProps = {
 }
 
 const Tech = ({ customClass, svg }: TechProps) => {
-
   return (
-    <div
+    <li
       className={`tech-box ${customClass}`}
     >
       {svg}
       <TechTip text={customClass} />
-    </div>
+    </li>
   );
 }
 
