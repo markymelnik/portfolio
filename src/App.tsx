@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import Main from "./components/Main/Main";
 import ScrollToTop from "./hooks/useScrollToTop";
-import Sidebar from "./components/Sidebar/Sidebar";
+import Sidebar from "./components/Header/Header";
 import "./styles/_global.scss";
 
 const App = () => {

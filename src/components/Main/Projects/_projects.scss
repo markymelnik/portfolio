@@ -9,7 +9,7 @@
   width: 100%;
 
   .projects-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 0 0 3rem;
     @include animateFadeIn(0.9s);
     transition: background-color 0.2s ease;
@@ -25,7 +25,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .projects-container {
+    .projects-title {
+      font-size: 1.5rem;
+    }
   }
 }

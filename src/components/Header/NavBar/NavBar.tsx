@@ -1,8 +1,7 @@
 import { useRef } from 'react';
-
-import LineTop from '../LineTop/LineTop';
-import LineBottom from '../LineBottom/LineBottom';
 import './_navbar.scss';
+import LineLeft from '../LineLeft/LineLeft';
+import LineRight from '../LineRight/LineRight';
 
 type NavbarProps = {
   activeTab: string,
@@ -15,7 +14,16 @@ const NavBar = ({ activeTab, setActiveTab, setIsScrolling }: NavbarProps) => {
 
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
-    section?.scrollIntoView({ behavior: 'smooth' });
+    if (section) {
+      const sectionRect = section.getBoundingClientRect();
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const sectionTop = sectionRect.top + scrollTop;
+  
+      window.scrollTo({
+        top: sectionTop - 120,
+        behavior: 'smooth',
+      });
+    }
 
     setIsScrolling(true);
 
@@ -33,12 +41,12 @@ const NavBar = ({ activeTab, setActiveTab, setIsScrolling }: NavbarProps) => {
 
   return (
     <div className="navbar-container">
-      <LineTop />
+      <LineLeft />
       <div onClick={() => scrollToSection('about')} className={`navbar-about ${activeTab === "about" ? "active" : ''}`}>About</div>
       <div onClick={() => scrollToSection('projects')} className={`navbar-projects ${activeTab === "projects" ? "active" : ''}`}>Projects</div>
       <div onClick={() => scrollToSection('skills')} className={`navbar-skills ${activeTab === "skills" ? "active" : ''}`}>Skills</div>
       <div onClick={() => scrollToSection('contact')} className={`navbar-contact ${activeTab === 'contact' ? 'active' : ''}`} >Contact</div>
-      <LineBottom />
+      <LineRight />
     </div>
   );
 }

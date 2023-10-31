@@ -69,9 +69,10 @@ const Main = ({ setActiveTab, isScrolling }: MainProps) => {
       <About ref={aboutRef} id="about" />
       <Projects ref={projectsRef} id="projects" />
       <Divider />
-      <Skills ref={skillsRef} id ="skills" />
+      <Skills ref={skillsRef} id="skills" />
       <Divider />
       <Contact ref={contactRef} id="contact" />
+      <Divider />
     </main>
   );
 };

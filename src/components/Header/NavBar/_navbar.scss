@@ -12,6 +12,7 @@
   .navbar-contact {
     color: map-get($theme,'inactive');
     font-size: 1rem;
+    transition: color 0.15s ease;
 
     &:hover {
       cursor: pointer;
@@ -42,7 +43,7 @@
   }
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .navbar-container {
     flex-direction: column;
     gap: 0.15rem;
@@ -54,4 +55,4 @@
       font-size: 1.25rem;
     }
   }
-}
+} */

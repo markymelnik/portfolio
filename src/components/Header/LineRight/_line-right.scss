@@ -1,0 +1,15 @@
+@import '@styles/colors';
+@import '@styles/animations';
+
+.line-right {
+  width: 3rem;
+  padding: 0 0.5rem;
+  margin: 0.75rem 0 0;
+  
+  .line {
+    opacity: 0;
+    border-bottom: 1.5px solid map-get($theme, 'inactive');
+    animation: extendRightward 0.4s forwards;
+    animation-delay: 2.6s;
+  }
+}

@@ -7,8 +7,9 @@
   flex-direction: column-reverse;
   justify-content: space-between;
   gap: 1.5rem;
+  /* border: 1px solid map-get($theme, 'white'); */
   border-radius: 6px;
-  padding: 1.5rem 0;
+  padding: 1rem;
   transition: background-color 0.1s ease;
   
   &:hover {
@@ -95,7 +96,6 @@
 
 @media (min-width: 768px) { 
   .project-box {
-    border: 1px solid map-get($theme, 'white');
     flex-direction: row;
     width: 100%;
     padding: 1.5rem;

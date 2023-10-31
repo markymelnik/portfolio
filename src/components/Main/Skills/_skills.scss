@@ -11,7 +11,7 @@
   @include animateFadeIn(1.9s);
   
   .skills-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 0 0 3rem;
     
     span {
@@ -24,5 +24,13 @@
     display: inherit;
     justify-content: center;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .skills-container {
+    .skills-title {
+      font-size: 1.5rem;
+    }
   }
 }

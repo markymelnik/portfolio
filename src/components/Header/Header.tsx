@@ -1,23 +1,23 @@
 import Logo from './Logo/Logo';
 import NavBar from './NavBar/NavBar';
-import './_sidebar.scss';
+import './_header.scss';
 
-type SidebarProps = {
+type HeaderProps = {
   activeTab: string,
   setActiveTab: (tab: string) => void;
   setIsScrolling: (status: boolean) => void;
 }
 
-const Sidebar = ({ activeTab, setActiveTab, setIsScrolling }: SidebarProps) => {
+const Header = ({ activeTab, setActiveTab, setIsScrolling }: HeaderProps) => {
   return (
-    <header className="sidebar-container">
-      <div className="sidebar-top">
+    <header className="header-container">
+      <div className="header-top">
         <Logo />
         <NavBar activeTab={activeTab} setActiveTab={setActiveTab} setIsScrolling={setIsScrolling} />
       </div>
-      <div className="sidebar-bottom"></div>
+      <div className="header-bottom"></div>
     </header>
   )
 }
 
-export default Sidebar;
+export default Header;

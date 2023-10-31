@@ -1,7 +1,7 @@
 @import '@styles/colors';
 @import '@styles/animations';
 
-.sidebar-container {
+.header-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,14 +13,15 @@
   z-index: 1;
   width: 100%;
 
-  .sidebar-top {
+  .header-top {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 1rem 0;
+    justify-content: space-between;
+    padding: 1.5rem 0 1rem;
   }
 
-  .sidebar-bottom {
+  .header-bottom {
     width: 0;
     opacity: 0;
     border-bottom: 1px solid map-get($theme, 'secondary');
@@ -30,15 +31,10 @@
 }
 
 @media (min-width: 768px) {
-  .sidebar-container {
-    align-items: center;
-    height: 100vh;
-    width: 15%;
-    margin: 0;
-    padding: 3rem 0 0;
+  .header-container {
 
-    .sidebar-bottom {
-      display: none;
+    .header-top {
+      flex-direction: row;
     }
   }
 }
