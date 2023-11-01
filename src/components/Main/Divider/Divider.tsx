@@ -1,11 +1,7 @@
-import './_divider.scss';
+import "./_divider.scss";
 
 const Divider = () => {
-  return (
-    <div className="divider">
-      <span className='divider-line'></span>
-    </div>
-  )
-}
+  return <hr className="divider" />;
+};
 
 export default Divider;

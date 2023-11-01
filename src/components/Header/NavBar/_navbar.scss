@@ -42,3 +42,9 @@
     @include animateFadeIn(2.5s);
   }
 }
+
+@media (min-width: 768px) {
+  .navbar-container {
+    gap: 2rem;
+  }
+}

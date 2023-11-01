@@ -8,10 +8,15 @@
   display: flex;
   flex-direction: column;
   font-size: 1.25rem;
-  padding: 0 6%;
+  padding: 0 1.4rem;
   background-color: map-get($theme, 'primary');
   z-index: 1;
   width: 100%;
+  transition: top 0.8s;
+
+  &.hidden {
+    top: -7rem;
+  }
 
   .header-top {
     position: relative;
@@ -30,11 +35,31 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 468px) {
   .header-container {
+    padding: 0 4rem;
 
     .header-top {
       flex-direction: row;
+      padding: 2rem 0;
     }
-  }
+  } 
+}
+
+/* @media (min-width: 768px) {
+  .header-container {
+    padding: 0 5rem;
+  } 
+}
+ */
+@media (min-width: 992px) {
+  .header-container {
+    padding: 0 9rem;
+  } 
+}
+
+@media (min-width: 1200px) {
+  .header-container {
+    padding: 0 14rem;
+  } 
 }

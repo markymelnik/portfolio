@@ -15,6 +15,7 @@ import SASS_SVG from "./skills_icons/sass_svg";
 import SPRING_SVG from "./skills_icons/spring_svg";
 import TS_SVG from "./skills_icons/ts_svg";
 import Skill from "./Skill";
+import './_skill.scss';
 
 const SkillList = () => {
 
@@ -38,12 +39,15 @@ const SkillList = () => {
   ]
 
   return (
-    <ul className="about-skills-list">
-      {TECHNOLOGIES.map((tech, index) => (
-        <Skill key={index} skillName={tech.skillName} svg={tech.svg} />
-      ))}
-    </ul>
-  )
+    <div className="about-skills">
+      <h3 className="about-skills-title">Technologies I've been working with:</h3>
+      <ul className="about-skills-list">
+        {TECHNOLOGIES.map((tech, index) => (
+          <Skill key={index} skillName={tech.skillName} svg={tech.svg} />
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 export default SkillList;

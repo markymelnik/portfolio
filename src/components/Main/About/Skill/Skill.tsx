@@ -1,5 +1,3 @@
-import './_skill.scss';
-
 type SkillProps = {
   skillName: string;
   svg: React.ReactElement,

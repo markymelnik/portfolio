@@ -10,7 +10,15 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
 
   return (
     <section ref={ref} className="contact-container" {...props}>
-      <h2 className="contact-title"><span>.04</span>Contact</h2>
+      <h2 className="contact-title">
+        <span>.03</span>Contact
+      </h2>
+      <p className="contact-paragraph">
+        Feel free to reach out!
+        I am currently seeking a full-time software
+        role, internship, or any industry experience. I would love to talk about
+        my projects!
+      </p>
       <div className="contact-selection">
         <div className="contact-top">
           <div className="contact-email-address">markymelnik@gmail.com</div>
@@ -37,7 +45,7 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
             </a>
           </div>
           <div className="contact-option">
-          <a
+            <a
               href="https://www.github.com/markymelnik/"
               target="_blank"
               rel="noopener noreferrer"

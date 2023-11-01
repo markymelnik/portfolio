@@ -42,12 +42,29 @@ ul, ol {
 .app-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding: 0 6%;
+  padding: 0 1.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 468px) {
   .app-container {
-    padding: 0 20%;
+    padding: 0 5rem;
+  } 
+}
+
+/* @media (min-width: 768px) {
+  .app-container {
+    padding: 0 5rem;
+  } 
+}
+ */
+@media (min-width: 992px) {
+  .app-container {
+    padding: 0 10rem;
+  } 
+}
+
+@media (min-width: 1200px) {
+  .app-container {
+    padding: 0 15rem;
   } 
 }

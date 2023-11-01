@@ -18,7 +18,7 @@
   .about-information {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    margin: 0 0 1rem;
 
     .about-left {
 
@@ -33,28 +33,19 @@
         background-color: map-get($theme, 'inactive');
         margin: 1rem 0;
       }
-
-      .about-skills {
-
-        .about-skills-title {
-          font-size: 1rem;
-          margin: 0 0 1rem;
-        }
-      }
     }
 
     .about-right {
       display: flex;
       justify-content: center;
+      padding: 3rem 0;
 
       .about-photo {
-        height: 14rem;
-        width: 20rem;
-        border: 1px solid white;
+        border: 1px solid map-get($theme, 'secondary');
+        height: 17.5rem;
+        width: 25rem; 
 
         img {
-          height: 100%;
-          width: 100%;
           object-fit: cover;
         }
       }
@@ -72,20 +63,21 @@
     .about-information {
       flex-direction: row;
       gap: 4rem;
+      margin: 0 0 5rem;
 
       .about-left {
+        width: 55%;
 
         p {
           font-size: 1.15rem;
         }
+      }
 
-        .about-skills {
-
-          .about-skills-title {
-            font-size: 1.5rem;
-          }
-        }
+      .about-right {
+        width: 45%;
+        padding: 0 0 3rem;
       }
     }
   }
 }
+

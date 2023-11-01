@@ -1,3 +1,4 @@
+import useHeaderHideOnScroll from '../../hooks/useHeaderHideOnScroll';
 import Logo from './Logo/Logo';
 import NavBar from './NavBar/NavBar';
 import './_header.scss';
@@ -9,6 +10,9 @@ type HeaderProps = {
 }
 
 const Header = ({ activeTab, setActiveTab, setIsScrolling }: HeaderProps) => {
+
+  useHeaderHideOnScroll();
+  
   return (
     <header className="header-container">
       <div className="header-top">
