@@ -20,7 +20,7 @@ body {
   color: map-get($theme, 'secondary');
 }
 
-a {
+a, button {
   text-decoration: none;
   color: inherit;
 }
@@ -33,6 +33,10 @@ img {
 h1, h2, h3 {
   font-size: 1em;
   font-weight: normal;
+}
+
+h1, h2, h3, p, span, div {
+  line-height: 1;
 }
 
 ul, ol {

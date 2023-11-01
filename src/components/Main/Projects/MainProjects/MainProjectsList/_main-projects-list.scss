@@ -1,0 +1,34 @@
+@import '@styles/colors';
+@import '@styles/animations';
+
+.main-projects-title {
+  font-size: 1.5rem;
+  margin: 0 0 3rem;
+  @include animateFadeIn(0.9s);
+  transition: background-color 0.2s ease;
+
+  span {
+    color: map-get($theme, 'inactive');
+    margin: 0 0.5rem 0 0;
+  }
+}
+
+.main-projects-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  margin: 0 0 4rem;
+}
+
+@media (min-width: 768px) {
+  .main-projects-title {
+    font-size: 1.75rem;
+    margin: 0 0 5rem;
+  }
+
+  .main-projects-list {
+    gap: 5rem;
+  }
+}
