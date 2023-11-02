@@ -1,6 +1,268 @@
-$colors: (
+$dark-theme: (
   pri: #1A1A1A,
   sec: #F7F7FC,
-  acc1: #83afec,
+  acc1: #7EB09B,
   acc2: #5C5C5C,
+  project-border-width: 1.5px,
 );
+
+$light-theme: (
+  pri: #FFFFFF,
+  sec: #1A1A1A,
+  acc1: #366F58,
+  acc2: #1A1A1A,
+  project-border-width: 1px,
+);
+
+@mixin theme($theme) {
+
+  $pri: map-get($theme, pri);
+  $sec: map-get($theme, sec);
+  $acc1: map-get($theme, acc1);
+  $acc2: map-get($theme, acc2);
+  $project-border-width: map-get($theme, project-border-width);
+
+  background: $pri;
+
+  // Header
+
+  .header-container {
+    background: $pri;
+
+    .navbar-home,
+    .navbar-about,
+    .navbar-projects,
+    .navbar-contact {
+      color: $acc2;
+
+      &:hover {
+        color: $acc1;
+      }
+
+      &.active {
+        color: $sec;
+      }
+    }
+
+    .logo-text {
+      color: $sec;
+    }
+  }
+
+  // Main
+
+  .main-container {
+
+    .divider {
+      background: $acc2;
+    }
+
+    // Home
+
+    .home-container {
+
+      .home-title {
+        color: $acc1;
+      }
+
+      .home-subtitle {
+        color: $sec;
+      }
+    }
+
+    // Scroll
+
+    .scroll-container {
+
+      svg {
+        stroke: $sec;
+      }
+    }
+
+    // About
+
+    .about-container {
+
+      .about-title {
+        color: $sec;
+
+        span {
+          color: $acc2;
+        }
+      }
+
+      .about-information {
+
+        p {
+          color: $sec;
+        }
+
+        hr {
+          background: $acc2;
+        }
+
+        .about-photo {
+          border: 1px solid $sec;
+        }
+      }
+
+      .about-skills {
+
+        .about-skills-title {
+          color: $sec;
+        }
+
+        .about-skill {
+          color: $sec;
+        }
+      }
+    }
+
+    // Projects
+
+    .projects-container {
+
+      .main-project-image {
+        border: $project-border-width solid $acc2;
+      }
+
+      .main-projects-title {
+        color: $sec;
+
+        span {
+          color: $acc2
+        }
+      }
+
+      .main-project,
+      .side-project {
+        border: $project-border-width solid $acc2;
+
+        .main-project-stuff {
+
+          .main-project-info {
+
+            .main-project-year {
+              color: $acc1;
+            }
+
+            .main-project-name,
+            .main-project-description {
+              color: $sec;
+            }
+          }
+
+          .main-project-links {
+
+            .main-project-demo-link,
+            .main-project-code-link {
+              border: $project-border-width solid $acc2;
+
+              &:hover {
+                border: $project-border-width solid $acc1;
+              }
+            }
+          }
+        }
+      }
+
+      .side-project {
+        border: $project-border-width solid $acc2;
+
+        .side-project-info {
+
+          .side-project-year {
+            color: $acc1;
+          }
+
+          .side-project-name,
+          .side-project-description {
+            color: $sec;
+          }
+        }
+
+        .side-project-links {
+
+          .side-project-demo-link,
+          .side-project-code-link {
+            border: $project-border-width solid $acc2;
+
+            &:hover {
+              border: $project-border-width solid $acc1;
+            }
+          }
+        }
+      }
+
+      .main-project-link-text,
+      .side-project-link-text {
+        color: $sec;
+      }
+
+      .project-link-icon {
+        fill: $sec;
+      }
+
+      .side-projects-toggle-btn {
+        color: $sec;
+      }
+    }
+
+    // Contact
+
+    .contact-container {
+
+      .contact-title {
+        color: $sec;
+
+        span {
+          color: $acc2;
+        }
+      }
+
+      .contact-paragraph {
+        color: $sec;
+      }
+
+      hr {
+        background: $sec;
+      }
+
+      .contact-email-address {
+        color: $sec;
+      }
+
+      .contact-linkedin,
+      .contact-email,
+      .contact-github {
+
+        svg {
+          fill: $sec;
+
+          &:hover {
+            fill: $acc1;
+          }
+        }
+      }
+    }
+  }
+
+  // Footer
+
+  .footer-container {
+
+    .footer-text {
+      color: $sec;
+    }
+  }
+}
+
+body {
+  &.dark-theme {
+    @include theme($dark-theme);
+  }
+
+  &.light-theme {
+    @include theme($light-theme);
+  }
+}

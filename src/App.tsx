@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -7,8 +7,16 @@ import ScrollToTop from "./hooks/useScrollToTop";
 import Sidebar from "./components/Header/Header";
 import "./styles/_global.scss";
 import Footer from "./components/Footer/Footer";
+import { useLightDark } from "./components/Header/LightDark/useLightDark";
 
 const App = () => {
+
+  const { theme } = useLightDark();
+
+  useEffect(() => {
+    document.body.className = `${theme}-theme`;
+  }, [theme]);
+
   const [activeTab, setActiveTab] = useState<string>("home");
   const [isScrolling, setIsScrolling] = useState<boolean>(false);
 

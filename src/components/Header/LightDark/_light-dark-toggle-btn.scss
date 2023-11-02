@@ -1,0 +1,28 @@
+@import '@styles/colors';
+@import '@styles/animations';
+
+.light-dark-toggle-btn {
+  background: transparent;
+  border: none;
+  height: 1.25rem;
+  width: 1.25rem;
+  @include animateFadeIn(2.2s);
+
+  .light-icon {
+    stroke: map-get($dark-theme, acc2);
+    transition: stroke 0.2s ease;
+
+    &:hover {
+      stroke: map-get($dark-theme, sec);
+    }
+  }
+
+  .dark-icon {
+    stroke: map-get($light-theme, sec);
+    fill: map-get($light-theme, sec);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

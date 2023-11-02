@@ -1,15 +1,12 @@
-@import '@styles/colors';
-
-hr.divider {
+.divider {
   border: none;
   height: 1px;
-  background: map-get($colors, acc2);
   width: 25%;
   margin: 4rem 0 6rem;
 }
 
 @media (min-width: 768px) {
-  hr.divider {
+  .divider {
     width: 50%; 
     margin: 6rem 0 10rem;
   }

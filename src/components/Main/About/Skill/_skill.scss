@@ -1,14 +1,11 @@
-@import '@styles/colors';
-
 .about-skills {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
 
-  h3.about-skills-title {
+  .about-skills-title {
     font-size: 1.1rem;
     margin: 0 0 2rem;
-    color: map-get($colors, sec);
   }
 
   ul.about-skills-list {
@@ -21,7 +18,6 @@
       align-items: center;
       gap: 1rem;
       margin: 0 0 1rem 0;
-      color: map-get($colors, sec);
   
       span {
         height: 1.5rem;

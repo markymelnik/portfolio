@@ -1,4 +1,3 @@
-@import '@styles/colors';
 @import '@styles/animations';
 
 .contact-container {
@@ -13,25 +12,21 @@
   .contact-title {
     font-size: 1.5rem;
     margin: 0 0 2rem;
-    color: map-get($colors, sec);
 
     span {
       margin: 0 0.5rem 0 0;
-      color: map-get($colors, acc2);
     }
   }
 
-  p.contact-paragraph {
+  .contact-paragraph {
     font-size: 1.25rem;
     margin: 0 0 2rem;
     line-height: 1.2;
-    color: map-get($colors, sec);
   }
 
   hr {
     border: none;
     height: 1px;
-    background: map-get($colors, sec);
     margin: 2rem 0;
   }
 
@@ -48,7 +43,6 @@
         font-size: 1.15rem;
         padding: 0.5rem 0.75rem;
         border-radius: 5px;
-        color: map-get($colors, sec);
         transition: background-color 0.2s ease;
 
         &:hover {
@@ -87,12 +81,7 @@
           svg {
             height: 2.25rem;
             width: 2.25rem;
-            fill: map-get($colors, sec);
             transition: fill 0.2s ease;
-
-            &:hover {
-              fill: map-get($colors, acc1);
-            }
           }
         }
 

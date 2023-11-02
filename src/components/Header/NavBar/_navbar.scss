@@ -1,26 +1,23 @@
-@import '@styles/colors';
 @import '@styles/animations';
 
 .navbar-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
   
   .navbar-home,
   .navbar-about,
   .navbar-projects,
   .navbar-contact {
-    color: map-get($colors, acc2);
     font-size: 1rem;
     transition: color 0.15s ease;
 
     &:hover {
-      color: map-get($colors, acc1);
       cursor: pointer;
     }
 
     &.active {
-      color: map-get($colors, sec);
       font-weight: 500;
       pointer-events: none;
     }

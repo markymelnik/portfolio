@@ -1,7 +1,6 @@
 import { useRef } from 'react';
 import './_navbar.scss';
-/* import LineLeft from '../LineLeft/LineLeft'; */
-/* import LineRight from '../LineRight/LineRight'; */
+import LightDarkToggleButton from '../LightDark/LightDarkToggleButton';
 
 type NavbarProps = {
   activeTab: string,
@@ -41,12 +40,11 @@ const NavBar = ({ activeTab, setActiveTab, setIsScrolling }: NavbarProps) => {
 
   return (
     <div className="navbar-container">
-      {/* <LineLeft /> */}
       <div onClick={() => scrollToSection('home')} className={`navbar-home ${activeTab === "home" ? "active" : ''}`}>Home</div>
       <div onClick={() => scrollToSection('about')} className={`navbar-about ${activeTab === "about" ? "active" : ''}`}>About</div>
       <div onClick={() => scrollToSection('projects')} className={`navbar-projects ${activeTab === "projects" ? "active" : ''}`}>Projects</div>
       <div onClick={() => scrollToSection('contact')} className={`navbar-contact ${activeTab === 'contact' ? 'active' : ''}`} >Contact</div>
-      {/* <LineRight /> */}
+      <LightDarkToggleButton />
     </div>
   );
 }

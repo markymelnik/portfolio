@@ -1,4 +1,4 @@
-@import '@styles/colors';
+@import './colors';
 
 @font-face {
   font-family: 'Jost';
@@ -17,7 +17,6 @@ html {
 
 body {
   font-family: 'Jost';
-  background: map-get($colors, pri);
 }
 
 a, button {
