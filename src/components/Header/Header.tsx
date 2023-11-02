@@ -19,7 +19,6 @@ const Header = ({ activeTab, setActiveTab, setIsScrolling }: HeaderProps) => {
         <Logo />
         <NavBar activeTab={activeTab} setActiveTab={setActiveTab} setIsScrolling={setIsScrolling} />
       </div>
-      <div className="header-bottom"></div>
     </header>
   )
 }

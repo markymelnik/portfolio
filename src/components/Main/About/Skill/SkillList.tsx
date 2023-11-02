@@ -20,12 +20,12 @@ import './_skill.scss';
 const SkillList = () => {
 
   const TECHNOLOGIES = [
-    { svg: <JS_SVG />, skillName:'Javascript' },
+    { svg: <JS_SVG />, skillName:'JavaScript' },
     { svg: <GIT_SVG />, skillName:'Git'},
-    { svg: <TS_SVG/>, skillName:'Typescript' },
+    { svg: <TS_SVG/>, skillName:'TypeScript' },
     { svg: <JAVA_SVG/>, skillName:'Java' },
     { svg: <HTML_SVG/>, skillName:'HTML' },
-    { svg: <SPRING_SVG/>, skillName:'Spring Boot' },
+    { svg: <SPRING_SVG/>, skillName:'Spring' },
     { svg: <CSS_SVG />, skillName:'CSS' },
     { svg: <NODE_SVG/>, skillName:'Node' },
     { svg: <REACT_SVG/>, skillName:'React' },

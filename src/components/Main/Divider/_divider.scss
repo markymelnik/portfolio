@@ -3,14 +3,14 @@
 hr.divider {
   border: none;
   height: 1px;
-  background-color: map-get($theme, 'secondary');
+  background-color: map-get($theme, 'inactive');
   width: 25%;
-  margin: 8rem 0 6rem;
+  margin: 4rem 0 6rem;
 }
 
 @media (min-width: 768px) {
   hr.divider {
     width: 50%; 
-    margin: 10rem 0 8rem;
+    margin: 6rem 0 10rem;
   }
 }

@@ -12,8 +12,8 @@
 
   ul.about-skills-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(8rem, 12rem));
-    padding: 0 0 0 2rem;
+    grid-template-columns: repeat(2, minmax(6rem, 12rem));
+    padding: 0 0 0 2.5rem;
   
     li.about-skill {
       display: flex;
@@ -35,6 +35,10 @@
 
     h3.about-skills-title {
       font-size: 1.5rem;
+    }
+
+    ul.about-skills-list {
+      padding: 0 0 0 2rem;
     }
   }
 }

@@ -12,10 +12,10 @@
   background-color: map-get($theme, 'primary');
   z-index: 1;
   width: 100%;
-  transition: top 0.8s;
+  transition: top 0.6s;
 
   &.hidden {
-    top: -7rem;
+    top: -6.5rem;
   }
 
   .header-top {
@@ -25,14 +25,6 @@
     justify-content: space-between;
     padding: 1.5rem 0 1rem;
   }
-
-  .header-bottom {
-    width: 0;
-    opacity: 0;
-    border-bottom: 1px solid map-get($theme, 'secondary');
-    animation: extendRightward 0.6s forwards;
-    animation-delay: 2.9s;
-  }
 }
 
 @media (min-width: 468px) {
@@ -41,7 +33,7 @@
 
     .header-top {
       flex-direction: row;
-      padding: 2rem 0;
+      padding: 2.5rem 0;
     }
   } 
 }

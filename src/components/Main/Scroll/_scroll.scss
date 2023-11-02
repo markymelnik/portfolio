@@ -1,0 +1,24 @@
+@import '@styles/colors';
+@import '@styles/animations';
+
+.scroll-container {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .scroll-down {
+    @include animateFadeIn(1s);
+    animation: fadeInSlideUp 0.5s forwards 1s, nudgeDown 3s infinite 3s;
+
+    &.slide-down {
+      animation: slideDownAndDisappear 2s forwards;
+    }
+
+    svg {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+  }
+}
