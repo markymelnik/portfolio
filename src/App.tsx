@@ -6,6 +6,7 @@ import Main from "./components/Main/Main";
 import ScrollToTop from "./hooks/useScrollToTop";
 import Sidebar from "./components/Header/Header";
 import "./styles/_global.scss";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   const [activeTab, setActiveTab] = useState<string>("home");
@@ -25,6 +26,7 @@ const App = () => {
           setIsScrolling={setIsScrolling}
         />
         <Main setActiveTab={setActiveTab} isScrolling={isScrolling} />
+        <Footer />
       </div>
     </Router>
   );

@@ -10,36 +10,36 @@
   .navbar-about,
   .navbar-projects,
   .navbar-contact {
-    color: map-get($theme,'inactive');
+    color: map-get($colors, acc2);
     font-size: 1rem;
     transition: color 0.15s ease;
 
     &:hover {
+      color: map-get($colors, acc1);
       cursor: pointer;
-      color: map-get($theme, 'hover');
     }
 
     &.active {
-      color: map-get($theme, 'secondary');
+      color: map-get($colors, sec);
       font-weight: 500;
       pointer-events: none;
     }
   }
 
   .navbar-home {
-    @include animateFadeIn(1.3s);
+    @include animateFadeIn(1.4s);
   }
 
   .navbar-about {
-    @include animateFadeIn(1.5s);
+    @include animateFadeIn(1.6s);
   }
 
   .navbar-projects {
-    @include animateFadeIn(1.7s);
+    @include animateFadeIn(1.8s);
   };
 
   .navbar-contact {
-    @include animateFadeIn(1.9s);
+    @include animateFadeIn(2s);
   }
 }
 

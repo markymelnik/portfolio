@@ -18,7 +18,7 @@ const MainProjectsList = () => {
           projectId={`project-2`}
           projectYear={2023}
           projectName={`markmelnik.com`}
-          projectDescription={`Hey, that's my website! I designed it to be simple yet elegant.`}
+          projectDescription={`Hey, that's my personal website! I designed it to be simple yet elegant. Let me know what you think 👀.`}
           projectDemoUrl={`https://google.com`}
           projectSourceUrl={`https://google.com`}
         />

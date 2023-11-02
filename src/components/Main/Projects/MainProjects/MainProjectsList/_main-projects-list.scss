@@ -4,12 +4,13 @@
 .main-projects-title {
   font-size: 1.5rem;
   margin: 0 0 3rem;
+  color: map-get($colors, sec);
   @include animateFadeIn(0.9s);
   transition: background-color 0.2s ease;
 
   span {
-    color: map-get($theme, 'inactive');
     margin: 0 0.5rem 0 0;
+    color: map-get($colors, acc2)
   }
 }
 

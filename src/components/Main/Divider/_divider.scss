@@ -3,7 +3,7 @@
 hr.divider {
   border: none;
   height: 1px;
-  background-color: map-get($theme, 'inactive');
+  background: map-get($colors, acc2);
   width: 25%;
   margin: 4rem 0 6rem;
 }

@@ -8,10 +8,11 @@
   .about-title {
     font-size: 1.5rem;
     margin: 0 0 3rem;
+    color: map-get($colors, sec);
 
     span {
-      color: map-get($theme, 'inactive');
       margin: 0 0.5rem 0 0;
+      color: map-get($colors, acc2);
     }
   }
 
@@ -23,15 +24,16 @@
     .about-left {
 
       p {
-        line-height: 1.6;
+        line-height: 1.5;
         font-size: 1rem;
+        color: map-get($colors, sec);
       }
 
       hr {
         border: none;
         height: 1px;
-        background-color: map-get($theme, 'inactive');
         margin: 1rem 0;
+        background: map-get($colors, acc2);
       }
     }
 
@@ -42,7 +44,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid map-get($theme, 'secondary');
         border-radius: 5px;
         overflow: hidden;
         max-width: 28rem;

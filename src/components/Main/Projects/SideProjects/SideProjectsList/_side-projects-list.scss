@@ -15,6 +15,7 @@
     border: none;
     border-radius: 5px;
     padding: 1rem 1.25rem;
+    color: map-get($colors, sec);
     transition: background-color 0.2s ease;
 
     svg {
@@ -25,7 +26,6 @@
     
     &:hover {
       cursor: pointer;
-      background-color: lighten(map-get($theme, 'primary'), 2.5%);
     }
   }
 }

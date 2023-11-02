@@ -2,7 +2,6 @@ const LinkedinSVG = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      fill="#DAE0F2"
       preserveAspectRatio="xMinYMin"
       viewBox="-2 -2 24 24"
     >

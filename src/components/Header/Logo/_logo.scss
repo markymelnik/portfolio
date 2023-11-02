@@ -11,6 +11,7 @@
   transition: background-color 0.2s ease;
 
   .logo-text {
+    color: map-get($colors, sec);
     font-size: 1rem;
   }
 }

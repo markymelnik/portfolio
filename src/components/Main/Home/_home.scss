@@ -9,17 +9,17 @@
   width: 100%;
 
   .home-intro {
-    padding: 0 0 4rem;
     
     h1.home-title {
       font-size: 3rem;
       margin: 0 0 0.5rem;
+      color: map-get($colors, acc1);
       @include animateFadeIn(0.5s);
     }
 
     h2.home-subtitle {
       font-size: 1.75rem;
-      margin: 0 0 3rem;
+      color: map-get($colors, sec);
       @include animateFadeIn(0.6s);
     }
 
