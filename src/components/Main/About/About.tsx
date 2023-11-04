@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 import SkillList from "./Skill/SkillList";
-/* import MarkMelnikPhoto from '../../../assets/images/markmelnik.jpeg'; */
+/* import HeadshotPhoto from '../../../assets/images/headshot.jpg'; */
 import "./_about.scss";
 
 interface AboutProps extends React.HTMLProps<HTMLDivElement> {}
@@ -14,6 +14,12 @@ const About = forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
       </h2>
       <div className="about-information">
         <div className="about-left">
+          <div className="about-photo">
+            {/* <img src={HeadshotPhoto} alt="photo of site creator, Mark Melnik"/> */}
+          </div>
+          <div className="about-photo-name">Mark Melnik</div>
+        </div>
+        <div className="about-right">
           <p>
             Hey there! I'm Mark, an aspiring software developer based in New
             York City. I enjoy building things for the web and exploring new
@@ -35,14 +41,9 @@ const About = forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
             perspective and contributing my skills and unique insights through
             collaboration and professional growth. Check out what I've created!
           </p>
-        </div>
-        <div className="about-right">
-          <div className="about-photo">
-            {/* <img src={MarkMelnikPhoto} alt="photo of site creator, Mark Melnik"/> */}
-          </div>
+          <SkillList />
         </div>
       </div>
-      <SkillList />
     </section>
   );
 });

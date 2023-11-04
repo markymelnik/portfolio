@@ -7,9 +7,9 @@ $dark-theme: (
 );
 
 $light-theme: (
-  pri: #FFFFFF,
+  pri: #FBFBFD,
   sec: #1A1A1A,
-  acc1: #366F58,
+  acc1: #0066CC,
   acc2: #1A1A1A,
   project-border-width: 1px,
 );
@@ -120,26 +120,36 @@ $light-theme: (
         color: $sec;
 
         span {
-          color: $acc2;
+          color: $acc1;
         }
       }
 
+      hr {
+        background: $acc2;
+      }
+
       .about-information {
+        border-top: 1px solid $acc2;
 
         p {
           color: $sec;
         }
 
         hr {
-          background: $acc2;
+          background: none;
         }
 
-        .about-photo {
+        /* .about-photo {
           border: 1px solid $sec;
+        } */
+
+        .about-photo-name {
+          color: $sec;
         }
       }
 
       .about-skills {
+        border-top: 1px solid $acc2;
 
         .about-skills-title {
           color: $sec;
@@ -163,8 +173,12 @@ $light-theme: (
         color: $sec;
 
         span {
-          color: $acc2
+          color: $acc1;
         }
+      }
+
+      .main-projects-list {
+        border-top: 1px solid $acc2;
       }
 
       .main-project,
@@ -249,34 +263,41 @@ $light-theme: (
         color: $sec;
 
         span {
-          color: $acc2;
+          color: $acc1;
         }
       }
 
-      .contact-paragraph {
-        color: $sec;
-      }
-
-      hr {
-        background: $sec;
-      }
-
-      .contact-email-address {
-        color: $sec;
-      }
-
-      .contact-linkedin,
-      .contact-email,
-      .contact-github {
-
-        svg {
-          fill: $sec;
-
-          &:hover {
-            fill: $acc1;
+      .contact-info {
+        border-top: 1px solid $acc2;
+        
+        .contact-paragraph {
+          color: $sec;
+        }
+  
+        hr {
+          background: $sec;
+        }
+  
+        .contact-email-address {
+          color: $sec;
+        }
+  
+        .contact-linkedin,
+        .contact-email,
+        .contact-github {
+  
+          svg {
+            fill: $sec;
+  
+            &:hover {
+              fill: $acc1;
+            }
           }
         }
+
       }
+
+      
     }
   }
 
