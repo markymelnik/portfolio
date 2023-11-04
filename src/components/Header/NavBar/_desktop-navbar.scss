@@ -1,0 +1,47 @@
+@import '@styles/animations';
+
+.desktop-navbar-container {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop-navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .desktop-navbar-home,
+    .desktop-navbar-about,
+    .desktop-navbar-projects,
+    .desktop-navbar-contact {
+      font-size: 1rem;
+      transition: color 0.15s ease;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.active {
+        font-weight: 500;
+        pointer-events: none;
+      }
+    }
+
+    .desktop-navbar-home {
+      @include animateFadeIn(1.4s);
+    }
+
+    .desktop-navbar-about {
+      @include animateFadeIn(1.5s);
+    }
+
+    .desktop-navbar-projects {
+      @include animateFadeIn(1.6s);
+    }
+
+    .desktop-navbar-contact {
+      @include animateFadeIn(1.7s);
+    }
+  }
+}

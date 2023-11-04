@@ -3,9 +3,11 @@
 .mobile-menu-toggle-btn {
   background: none;
   border: none;
+  z-index: 2;
   @include animateFadeIn(1.4s);
 
-  svg {
+  .mobile-menu-icon {
+    display: block;
     height: 2rem;
     width: 2rem;
   }

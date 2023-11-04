@@ -29,10 +29,10 @@ $light-theme: (
   .header-container {
     background: $pri;
 
-    .navbar-home,
-    .navbar-about,
-    .navbar-projects,
-    .navbar-contact {
+    .desktop-navbar-home,
+    .desktop-navbar-about,
+    .desktop-navbar-projects,
+    .desktop-navbar-contact {
       color: $acc2;
 
       &:hover {

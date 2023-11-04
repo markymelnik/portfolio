@@ -1,5 +1,6 @@
 import { useRef } from 'react';
-import './_navbar.scss';
+import './_mobile-navar.scss';
+import './_desktop-navbar.scss';
 import LightDarkToggleButton from '../LightDark/LightDarkToggleButton';
 
 type NavbarProps = {
@@ -50,7 +51,7 @@ const NavBar = ({ activeTab, setActiveTab, setIsScrolling, onNavClick, customCla
       <div onClick={() => scrollToSection('about')} className={`${customClass}-about ${activeTab === "about" ? "active" : ''}`}>About</div>
       <div onClick={() => scrollToSection('projects')} className={`${customClass}-projects ${activeTab === "projects" ? "active" : ''}`}>Projects</div>
       <div onClick={() => scrollToSection('contact')} className={`${customClass}-contact ${activeTab === 'contact' ? 'active' : ''}`} >Contact</div>
-      {customClass == 'navbar' ? <LightDarkToggleButton />: null}
+      {customClass == 'desktop-navbar' ? <LightDarkToggleButton />: null}
     </div>
   );
 }

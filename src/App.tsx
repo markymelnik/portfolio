@@ -4,12 +4,18 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import Main from "./components/Main/Main";
 import ScrollToTop from "./hooks/useScrollToTop";
-import Sidebar from "./components/Header/Header";
+import Header from "./components/Header/Header";
 import "./styles/_global.scss";
 import Footer from "./components/Footer/Footer";
 import { useLightDark } from "./components/Header/LightDark/useLightDark";
 
 const App = () => {
+
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
+  
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(prev => !prev);
+  }
 
   const { theme } = useLightDark();
 
@@ -28,10 +34,12 @@ const App = () => {
     <Router>
       <ScrollToTop />
       <div className="app-container">
-        <Sidebar
+        <Header
           activeTab={activeTab}
           setActiveTab={setActiveTab}
           setIsScrolling={setIsScrolling}
+          toggleMobileMenu={toggleMobileMenu}
+          isMobileMenuOpen={isMobileMenuOpen}
         />
         <Main setActiveTab={setActiveTab} isScrolling={isScrolling} />
         <Footer />

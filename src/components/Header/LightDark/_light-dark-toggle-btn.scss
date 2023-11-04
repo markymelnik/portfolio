@@ -6,7 +6,7 @@
   border: none;
   height: 1.5rem;
   width: 1.5rem;
-  @include animateFadeIn(2.2s);
+  @include animateFadeIn(1.8s);
 
   .light-icon {
     stroke: map-get($dark-theme, acc2);

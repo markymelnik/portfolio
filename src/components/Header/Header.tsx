@@ -33,7 +33,7 @@ const Header = ({ activeTab, setActiveTab, setIsScrolling, toggleMobileMenu, isM
     <header className="header-container">
       <div className="header-top">
         <Logo />
-        <NavBar activeTab={activeTab} setActiveTab={setActiveTab} setIsScrolling={setIsScrolling} customClass={'navbar'} />
+        <NavBar activeTab={activeTab} setActiveTab={setActiveTab} setIsScrolling={setIsScrolling} customClass={'desktop-navbar'} />
         <MobileMenu mobileMenuRef={mobileMenuRef} isOpen={isMobileMenuOpen} activeTab={activeTab} setActiveTab={setActiveTab} setIsScrolling={setIsScrolling} customClass={`mobile-navbar`} onMobileMenuButtonClick={toggleMobileMenu} closeMobileMenu={closeMobileMenu} />
         <MobileMenuToggleButton onClick={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen} />
       </div>
