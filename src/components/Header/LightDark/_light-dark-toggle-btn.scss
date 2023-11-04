@@ -4,8 +4,8 @@
 .light-dark-toggle-btn {
   background: transparent;
   border: none;
-  height: 1.25rem;
-  width: 1.25rem;
+  height: 1.5rem;
+  width: 1.5rem;
   @include animateFadeIn(2.2s);
 
   .light-icon {
@@ -24,5 +24,12 @@
 
   &:hover {
     cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  .light-dark-toggle-btn {
+    height: 1.25rem;
+    width: 1.25rem;
   }
 }

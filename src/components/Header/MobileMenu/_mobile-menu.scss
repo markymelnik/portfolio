@@ -1,0 +1,30 @@
+.mobile-menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100dvh;
+  width: 55%;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 2;
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  .mobile-menu-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-container {
+    display: none;
+  }
+}

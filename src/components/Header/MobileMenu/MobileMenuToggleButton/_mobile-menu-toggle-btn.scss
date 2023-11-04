@@ -1,0 +1,18 @@
+@import '@styles/animations';
+
+.mobile-menu-toggle-btn {
+  background: none;
+  border: none;
+  @include animateFadeIn(1.4s);
+
+  svg {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-toggle-btn {
+    display: none;
+  }
+}

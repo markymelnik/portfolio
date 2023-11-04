@@ -47,6 +47,39 @@ $light-theme: (
     .logo-text {
       color: $sec;
     }
+
+    .mobile-navbar-home,
+    .mobile-navbar-about,
+    .mobile-navbar-projects,
+    .mobile-navbar-contact {
+      color: $acc2;
+
+      &:hover {
+        color: $acc1;
+      }
+
+      &.active {
+        color: $sec;
+      }
+    }
+
+    .logo-text {
+      color: $sec;
+    }
+
+    // Mobile Menu
+
+    .mobile-menu-toggle-btn {
+
+      svg {
+        stroke: $sec;
+      }
+    }
+
+    .mobile-menu-container {
+      background: $pri;
+      border-left: 1px solid $sec;
+    }
   }
 
   // Main

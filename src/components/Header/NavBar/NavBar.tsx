@@ -6,9 +6,11 @@ type NavbarProps = {
   activeTab: string,
   setActiveTab: (tab: string) => void;
   setIsScrolling: (status: boolean) => void;
+  onNavClick?: () => void;
+  customClass: string;
 }
 
-const NavBar = ({ activeTab, setActiveTab, setIsScrolling }: NavbarProps) => {
+const NavBar = ({ activeTab, setActiveTab, setIsScrolling, onNavClick, customClass }: NavbarProps) => {
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const scrollToSection = (sectionId: string) => {
@@ -36,15 +38,19 @@ const NavBar = ({ activeTab, setActiveTab, setIsScrolling }: NavbarProps) => {
     }, 1000);
 
     setActiveTab(sectionId);
+
+    if (customClass === 'mobile-navbar' && onNavClick) {
+      onNavClick();
+    }
   }
 
   return (
-    <div className="navbar-container">
-      <div onClick={() => scrollToSection('home')} className={`navbar-home ${activeTab === "home" ? "active" : ''}`}>Home</div>
-      <div onClick={() => scrollToSection('about')} className={`navbar-about ${activeTab === "about" ? "active" : ''}`}>About</div>
-      <div onClick={() => scrollToSection('projects')} className={`navbar-projects ${activeTab === "projects" ? "active" : ''}`}>Projects</div>
-      <div onClick={() => scrollToSection('contact')} className={`navbar-contact ${activeTab === 'contact' ? 'active' : ''}`} >Contact</div>
-      <LightDarkToggleButton />
+    <div className={`${customClass}-container`}>
+      <div onClick={() => scrollToSection('home')} className={`${customClass}-home ${activeTab === "home" ? "active" : ''}`}>Home</div>
+      <div onClick={() => scrollToSection('about')} className={`${customClass}-about ${activeTab === "about" ? "active" : ''}`}>About</div>
+      <div onClick={() => scrollToSection('projects')} className={`${customClass}-projects ${activeTab === "projects" ? "active" : ''}`}>Projects</div>
+      <div onClick={() => scrollToSection('contact')} className={`${customClass}-contact ${activeTab === 'contact' ? 'active' : ''}`} >Contact</div>
+      {customClass == 'navbar' ? <LightDarkToggleButton />: null}
     </div>
   );
 }
