@@ -13,6 +13,7 @@ const MainProjectsList = () => {
           projectDescription={`Looking for a new workout spot? Find it with FitFinder! This project was a tremendous learning experience from start to finish. The resulting solution is the product of many design choices and technical implementations on both the front and back end.`}
           projectDemoUrl={`https://fitfinder.app`}
           projectSourceUrl={`https://google.com`}
+          overrideSource={true}
         />
         <MainProject
           projectId={`project-2`}

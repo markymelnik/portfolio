@@ -10,7 +10,7 @@ $light-theme: (
   pri: #FBFBFD,
   sec: #1A1A1A,
   acc1: #0066CC,
-  acc2: #1A1A1A,
+  acc2: #5C5C5C,
   project-border-width: 1px,
 );
 
@@ -202,11 +202,33 @@ $light-theme: (
           .main-project-links {
 
             .main-project-demo-link,
-            .main-project-code-link {
+            .main-project-code-link,
+            .override-btn {
               border: $project-border-width solid $acc2;
 
               &:hover {
                 border: $project-border-width solid $acc1;
+              }
+            }
+
+            .override-btn {
+              
+              .override-btn-text,
+              .override-msg {
+                color: $sec;
+              }
+
+              .override-msg {
+                border: 1px solid $acc1;
+                background: $pri;
+
+                &::before {
+                  border-top: 1rem solid $acc1;
+                }
+
+                &::after {
+                  border-top: 1rem solid $pri;
+                }
               }
             }
           }
@@ -280,6 +302,18 @@ $light-theme: (
   
         .contact-email-address {
           color: $sec;
+
+          &:hover {
+            color: $acc1;
+          }
+
+          &:active {
+            color: $sec;
+          }
+
+          .email-tip {
+            color: $sec;
+          }
         }
   
         .contact-linkedin,

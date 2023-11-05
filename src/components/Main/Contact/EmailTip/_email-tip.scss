@@ -1,0 +1,11 @@
+.email-tip {
+  position: absolute;
+  padding: 0.75rem;
+  top: -2.5rem;
+  transform: translateX(-50%);
+  left: 50%;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}

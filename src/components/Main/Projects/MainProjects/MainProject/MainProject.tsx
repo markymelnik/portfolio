@@ -1,4 +1,5 @@
 import LinkIcon from "../../LinkIcon";
+import OverrideButton from "./OverrideButton/OverrideButton";
 import "./_main-project.scss";
 
 type MainProjectProps = {
@@ -8,6 +9,7 @@ type MainProjectProps = {
   projectDescription: string;
   projectDemoUrl?: string;
   projectSourceUrl?: string;
+  overrideSource?: boolean;
 };
 
 const MainProject = ({
@@ -17,6 +19,7 @@ const MainProject = ({
   projectDescription,
   projectDemoUrl,
   projectSourceUrl,
+  overrideSource
 }: MainProjectProps) => {
   return (
     <li className={`main-project ${projectId}`}>
@@ -31,14 +34,26 @@ const MainProject = ({
         </div>
         <div className="main-project-links">
           {projectDemoUrl && (
-            <a href={projectDemoUrl} className="main-project-demo-link" target="_blank" rel="noopener noreferrer">
-              <span className='main-project-link-text'>Demo</span>
+            <a
+              href={projectDemoUrl}
+              className="main-project-demo-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="main-project-link-text">Demo</span>
               <LinkIcon />
             </a>
           )}
-          {projectSourceUrl && (
-            <a href={projectSourceUrl} className="main-project-code-link" target="_blank" rel="noopener noreferrer">
-              <span className='main-project-link-text'>Source</span>
+          {overrideSource ? (
+            <OverrideButton />
+          ) : (
+            <a
+              href={projectSourceUrl}
+              className="main-project-code-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="main-project-link-text">Source</span>
               <LinkIcon />
             </a>
           )}
