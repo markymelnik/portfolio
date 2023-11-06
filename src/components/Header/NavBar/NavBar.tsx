@@ -22,7 +22,7 @@ const NavBar = ({ activeTab, setActiveTab, setIsScrolling, onNavClick, customCla
       const sectionTop = sectionRect.top + scrollTop;
   
       window.scrollTo({
-        top: sectionTop - 120,
+        top: sectionTop - 100,
         behavior: 'smooth',
       });
     }

@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import LinkIcon from '../../../LinkIcon';
+import LinkIcon from '../../LinkIcon';
 import './_override-btn.scss';
 
 const OverrideButton = () => {
@@ -18,9 +18,7 @@ const OverrideButton = () => {
 
   return (
     <div className="override-btn" onClick={handleButtonClick}>
-      {isMessageVisible && (
-        <div className="override-msg">Contact me to talk about this project!</div>
-      )}
+      <div className={`override-msg ${isMessageVisible ? `show` : ``}`}>Contact me to talk about this project!</div>
       <div className="override-btn-text">Source</div>
       <LinkIcon />
     </div>

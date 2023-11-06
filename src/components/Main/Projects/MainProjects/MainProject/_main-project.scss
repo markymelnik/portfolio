@@ -30,7 +30,7 @@
         margin: 0 0 1rem;
       }
     
-      p.main-project-description {
+      .main-project-description {
         font-size: 1.1rem;
         line-height: 1.3;
         margin: 0 0 2rem;
@@ -47,7 +47,6 @@
         align-items: center;
         gap: 0.25rem;
         padding: 0.75rem 1rem;
-        
         border-radius: 4px;
         transition: border 0.2s ease;
         
@@ -68,20 +67,17 @@
   }
 }
 
-.main-project-1 {
-  @include animateFadeIn(1.1s);
-}
+.project-1 {
+  position: relative;
 
-.main-project-2 {
-  @include animateFadeIn(1.3s);
-}
-
-.main-project-3 {
-  @include animateFadeIn(1.5s);
-}
-
-.main-project-4 {
-  @include animateFadeIn(1.7s);
+  .new-project-label {
+    font-size: 1.25rem;
+    font-weight: 550;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.25rem;
+    transform: rotate(8deg);
+  }
 }
 
 @media (min-width: 768px) { 
@@ -97,6 +93,20 @@
           font-size: 2rem;
           margin: 0 0 1.5rem;
         }
+      }
+    }
+  }
+
+  .project-1 {
+
+    .new-project-label {
+      font-size: 1.5rem;
+    }
+
+    &:hover {
+
+      .new-project-label {
+        animation: fluctuateSize 0.8s infinite alternate ease-in-out;
       }
     }
   }

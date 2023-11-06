@@ -1,5 +1,5 @@
 import LinkIcon from "../../LinkIcon";
-import OverrideButton from "./OverrideButton/OverrideButton";
+import OverrideButton from "../OverrideButton/OverrideButton";
 import "./_main-project.scss";
 
 type MainProjectProps = {
@@ -10,6 +10,8 @@ type MainProjectProps = {
   projectDemoUrl?: string;
   projectSourceUrl?: string;
   overrideSource?: boolean;
+  projectImage?: string;
+  newProject?: boolean;
 };
 
 const MainProject = ({
@@ -19,12 +21,14 @@ const MainProject = ({
   projectDescription,
   projectDemoUrl,
   projectSourceUrl,
-  overrideSource
+  overrideSource,
+  projectImage,
+  newProject
 }: MainProjectProps) => {
   return (
     <li className={`main-project ${projectId}`}>
       <div className="main-project-image">
-        <img />
+        <img src={projectImage}/>
       </div>
       <div className="main-project-stuff">
         <div className="main-project-info">
@@ -59,6 +63,7 @@ const MainProject = ({
           )}
         </div>
       </div>
+      {newProject && <div className="new-project-label">New!</div>}
     </li>
   );
 };

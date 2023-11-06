@@ -8,20 +8,6 @@
   width: 1.5rem;
   @include animateFadeIn(1.8s);
 
-  .light-icon {
-    stroke: map-get($dark-theme, acc2);
-    transition: stroke 0.2s ease;
-
-    &:hover {
-      stroke: map-get($dark-theme, sec);
-    }
-  }
-
-  .dark-icon {
-    stroke: map-get($light-theme, sec);
-    fill: map-get($light-theme, sec);
-  }
-
   &:hover {
     cursor: pointer;
   }

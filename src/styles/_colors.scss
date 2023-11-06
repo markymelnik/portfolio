@@ -1,17 +1,21 @@
 $dark-theme: (
   pri: #1A1A1A,
   sec: #F7F7FC,
-  acc1: #7EB09B,
+  acc1: #67B896,
   acc2: #5C5C5C,
-  project-border-width: 1.5px,
+  body-background-color: #1A1A1A,
+  box-background-color: #1A1A1A,
+  project-border-color: #5C5C5C,
 );
 
 $light-theme: (
   pri: #FBFBFD,
   sec: #1A1A1A,
   acc1: #0066CC,
-  acc2: #5C5C5C,
-  project-border-width: 1px,
+  acc2: #A8A8A8,
+  body-background-color: #FBFBFD,
+  box-background-color: #FBFBFD,
+  project-border-color: #FBFBFD,
 );
 
 @mixin theme($theme) {
@@ -20,38 +24,27 @@ $light-theme: (
   $sec: map-get($theme, sec);
   $acc1: map-get($theme, acc1);
   $acc2: map-get($theme, acc2);
-  $project-border-width: map-get($theme, project-border-width);
+  $body-background-color: map-get($theme, body-background-color);
+  $box-background-color: map-get($theme, box-background-color);
+  $project-border-color: map-get($theme, project-border-color);
 
-  background: $pri;
+  background: $body-background-color;
 
   // Header
 
   .header-container {
     background: $pri;
 
-    .desktop-navbar-home,
-    .desktop-navbar-about,
-    .desktop-navbar-projects,
-    .desktop-navbar-contact {
-      color: $acc2;
-
-      &:hover {
-        color: $acc1;
-      }
-
-      &.active {
-        color: $sec;
-      }
-    }
-
-    .logo-text {
-      color: $sec;
-    }
+    // Navbar
 
     .mobile-navbar-home,
     .mobile-navbar-about,
     .mobile-navbar-projects,
-    .mobile-navbar-contact {
+    .mobile-navbar-contact,
+    .desktop-navbar-home,
+    .desktop-navbar-about,
+    .desktop-navbar-projects,
+    .desktop-navbar-contact {
       color: $acc2;
 
       &:hover {
@@ -79,6 +72,28 @@ $light-theme: (
     .mobile-menu-container {
       background: $pri;
       border-left: 1px solid $sec;
+    }
+  }
+
+  // LightDark
+
+  .light-icon {
+    stroke: $acc2;
+    transition: stroke 0.2s ease;
+
+    &:hover {
+      stroke: $sec;
+    }
+  }
+
+  .dark-icon {
+    stroke: $acc2;
+    fill: $pri;
+    transition: stroke, 0.2s ease, fill 0.2s ease;
+
+    &:hover {
+      stroke: $sec;
+      fill: $sec;
     }
   }
 
@@ -166,7 +181,7 @@ $light-theme: (
     .projects-container {
 
       .main-project-image {
-        border: $project-border-width solid $acc2;
+        border: 1.5px solid $acc2;
       }
 
       .main-projects-title {
@@ -183,84 +198,54 @@ $light-theme: (
 
       .main-project,
       .side-project {
-        border: $project-border-width solid $acc2;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background: $box-background-color;
+        border: 1.5px solid $project-border-color;
+        transition: box-shadow 0.3s ease;
 
-        .main-project-stuff {
-
-          .main-project-info {
-
-            .main-project-year {
-              color: $acc1;
-            }
-
-            .main-project-name,
-            .main-project-description {
-              color: $sec;
-            }
-          }
-
-          .main-project-links {
-
-            .main-project-demo-link,
-            .main-project-code-link,
-            .override-btn {
-              border: $project-border-width solid $acc2;
-
-              &:hover {
-                border: $project-border-width solid $acc1;
-              }
-            }
-
-            .override-btn {
-              
-              .override-btn-text,
-              .override-msg {
-                color: $sec;
-              }
-
-              .override-msg {
-                border: 1px solid $acc1;
-                background: $pri;
-
-                &::before {
-                  border-top: 1rem solid $acc1;
-                }
-
-                &::after {
-                  border-top: 1rem solid $pri;
-                }
-              }
-            }
-          }
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 12px;
         }
       }
 
+      .new-project-label {
+        color: $acc1;
+      }
+
       .side-project {
-        border: $project-border-width solid $acc2;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
 
-        .side-project-info {
+      .project-1 {
+        border: 1.5px solid $acc1;
+      }
 
-          .side-project-year {
-            color: $acc1;
-          }
+      .main-project-year,
+      .side-project-year {
+        color: $acc1;
+      }
 
-          .side-project-name,
-          .side-project-description {
-            color: $sec;
-          }
+      .main-project-name,
+      .main-project-description,
+      .side-project-name,
+      .side-project-description {
+        color: $sec;
+      }
+
+      .main-project-demo-link,
+      .main-project-code-link,
+      .side-project-demo-link,
+      .side-project-code-link,
+      .override-btn {
+        border: 1.5px solid $acc2;
+
+        &:hover {
+          border: 1.5px solid $acc1;
         }
+      }
 
-        .side-project-links {
-
-          .side-project-demo-link,
-          .side-project-code-link {
-            border: $project-border-width solid $acc2;
-
-            &:hover {
-              border: $project-border-width solid $acc1;
-            }
-          }
-        }
+      .side-projects-toggle-btn {
+        color: $sec;
       }
 
       .main-project-link-text,
@@ -272,8 +257,25 @@ $light-theme: (
         fill: $sec;
       }
 
-      .side-projects-toggle-btn {
-        color: $sec;
+      .override-btn {
+
+        .override-btn-text,
+        .override-msg {
+          color: $sec;
+        }
+
+        .override-msg {
+          border: 1px solid $acc1;
+          background: $pri;
+
+          &::before {
+            border-top: 1rem solid $acc1;
+          }
+
+          &::after {
+            border-top: 1rem solid $pri;
+          }
+        }
       }
     }
 
@@ -291,47 +293,44 @@ $light-theme: (
 
       .contact-info {
         border-top: 1px solid $acc2;
-        
-        .contact-paragraph {
-          color: $sec;
-        }
-  
-        hr {
-          background: $sec;
-        }
-  
-        .contact-email-address {
-          color: $sec;
-
-          &:hover {
-            color: $acc1;
-          }
-
-          &:active {
-            color: $sec;
-          }
-
-          .email-tip {
-            color: $sec;
-          }
-        }
-  
-        .contact-linkedin,
-        .contact-email,
-        .contact-github {
-  
-          svg {
-            fill: $sec;
-  
-            &:hover {
-              fill: $acc1;
-            }
-          }
-        }
-
       }
 
-      
+      .contact-paragraph {
+        color: $sec;
+      }
+
+      hr {
+        background: $sec;
+      }
+
+      .contact-email-address {
+        color: $sec;
+
+        &:hover {
+          color: $acc1;
+        }
+
+        &:active {
+          color: $sec;
+        }
+
+        .email-tip {
+          color: $sec;
+        }
+      }
+
+      .contact-linkedin,
+      .contact-email,
+      .contact-github {
+
+        svg {
+          fill: $sec;
+
+          &:hover {
+            fill: $acc1;
+          }
+        }
+      }
     }
   }
 

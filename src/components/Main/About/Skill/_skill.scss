@@ -37,6 +37,15 @@
     }
 
     .about-skills-list {
+      grid-template-columns: repeat(auto-fill, minmax(6rem, 10rem));
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-skills {
+
+    .about-skills-list {
       grid-template-columns: repeat(auto-fill, minmax(6rem, 12rem));
     }
   }

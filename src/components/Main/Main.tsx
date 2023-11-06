@@ -4,8 +4,8 @@ import Projects from './Projects/Projects';
 import About from './About/About';
 import Divider from './Divider/Divider';
 import Home from './Home/Home';
-import './_main.scss';
 import Scroll from './Scroll/Scroll';
+import './_main.scss';
 
 type MainProps = {
   setActiveTab: (tab: string) => void;
@@ -43,7 +43,7 @@ const Main = ({ setActiveTab, isScrolling }: MainProps) => {
         });
       },
       {
-        threshold: 0.6,
+        threshold: 0.4,
       }
     );
 

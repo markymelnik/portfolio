@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
 
     .desktop-navbar-home,
     .desktop-navbar-about,
@@ -23,25 +23,25 @@
       }
 
       &.active {
-        font-weight: 500;
+        font-weight: 550;
         pointer-events: none;
       }
     }
 
     .desktop-navbar-home {
-      @include animateFadeIn(1.4s);
+      @include animateFadeIn(1.3s);
     }
 
     .desktop-navbar-about {
-      @include animateFadeIn(1.5s);
+      @include animateFadeIn(1.4s);
     }
 
     .desktop-navbar-projects {
-      @include animateFadeIn(1.6s);
+      @include animateFadeIn(1.5s);
     }
 
     .desktop-navbar-contact {
-      @include animateFadeIn(1.7s);
+      @include animateFadeIn(1.6s);
     }
   }
 }
