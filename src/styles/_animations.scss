@@ -46,3 +46,22 @@
     font-size: 1.75rem;
   }
 }
+
+@keyframes slideInText {
+  0%, 5% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  6%, 29% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  30%, 94% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  95%, 100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
