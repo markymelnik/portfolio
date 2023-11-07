@@ -77,23 +77,32 @@ $light-theme: (
 
   // LightDark
 
-  .light-icon {
-    stroke: $acc2;
-    transition: stroke 0.2s ease;
+  .light-dark-toggle-btn {
 
-    &:hover {
-      stroke: $sec;
+    .light-icon {
+      stroke: $acc2;
+      transition: stroke 0.2s ease;
     }
-  }
-
-  .dark-icon {
-    stroke: $acc2;
-    fill: $pri;
-    transition: stroke, 0.2s ease, fill 0.2s ease;
 
     &:hover {
-      stroke: $sec;
-      fill: $sec;
+
+      .light-icon {
+        stroke: $sec;
+      }
+    }
+  
+    .dark-icon {
+      stroke: $acc2;
+      fill: $pri;
+      transition: stroke, 0.2s ease, fill 0.2s ease;
+    }
+
+    &:hover {
+
+      .dark-icon {
+        stroke: $sec;
+        fill: $sec;
+      }
     }
   }
 
@@ -246,6 +255,11 @@ $light-theme: (
 
       .side-projects-toggle-btn {
         color: $sec;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: $acc1;
+        }
       }
 
       .main-project-link-text,

@@ -1,3 +1,4 @@
+import useMobileMenuHideOnScroll from '../../../hooks/useMobileMenuHideOnScroll';
 import LightDarkToggleButton from '../LightDark/LightDarkToggleButton';
 import NavBar from '../NavBar/NavBar';
 import './_mobile-menu.scss';
@@ -14,6 +15,8 @@ type MobileMenuProps = {
 }
 
 const MobileMenu = ({ isOpen, activeTab, setActiveTab, setIsScrolling, closeMobileMenu, customClass, mobileMenuRef }: MobileMenuProps) => {
+
+  useMobileMenuHideOnScroll({ closeMobileMenu });
 
   return (
     <div ref={mobileMenuRef} className={`mobile-menu-container ${isOpen ? `open` : ``}`}>

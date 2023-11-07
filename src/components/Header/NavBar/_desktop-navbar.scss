@@ -9,12 +9,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
 
     .desktop-navbar-home,
     .desktop-navbar-about,
     .desktop-navbar-projects,
     .desktop-navbar-contact {
+      padding: 0 1.5rem;
       font-size: 1rem;
       transition: color 0.15s ease;
 

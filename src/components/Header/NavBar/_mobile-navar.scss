@@ -3,7 +3,6 @@
 .mobile-navbar-container {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   z-index: 2;
 
   .mobile-navbar-home,
@@ -11,7 +10,7 @@
   .mobile-navbar-projects,
   .mobile-navbar-contact {
     font-size: 1.25rem;
-    padding: 0.5rem 0;
+    padding: 1.25rem 0;
   }
 }
 

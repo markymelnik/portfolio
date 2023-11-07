@@ -1,13 +1,15 @@
 @import '@styles/animations';
 
 .mobile-menu-toggle-btn {
+  display: flex;
+  align-items: center;
   background: none;
   border: none;
+  padding: 0 0 0 2rem;
   z-index: 2;
   @include animateFadeIn(1.4s);
 
   .mobile-menu-icon {
-    display: block;
     height: 2rem;
     width: 2rem;
   }
