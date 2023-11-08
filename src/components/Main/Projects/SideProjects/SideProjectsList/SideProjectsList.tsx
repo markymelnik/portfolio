@@ -21,6 +21,7 @@ const SideProjectsList = ({ seeMoreRef }: SideProjectsListProps) => {
         </button>
       </div>
       
+      <div className={`side-projects-description ${showSideProjectsList ? `show` : ``}`}>Some smaller projects I built along the way</div>
       <ul className={`side-projects-list ${showSideProjectsList ? `show` : ``}`}>
           <SideProject
             projectId={`project-5`}
@@ -34,7 +35,7 @@ const SideProjectsList = ({ seeMoreRef }: SideProjectsListProps) => {
             projectId={`project-6`}
             projectYear={2023}
             projectName={`Tic-Tac-Toe`}
-            projectDescription={`A game of tic-tac-toe - have a friend with you or you'll be playing against yourself.`}
+            projectDescription={`A classic game of tic-tac-toe. Have a friend with you or you'll be playing against yourself!`}
             projectDemoUrl={`https://tic-tac-toe.markmelnik.com`}
             projectSourceUrl={`https://github.com/markymelnik/tic-tac-toe`}
           />
@@ -42,7 +43,7 @@ const SideProjectsList = ({ seeMoreRef }: SideProjectsListProps) => {
             projectId={`project-7`}
             projectYear={2022}
             projectName={`Etch-A-Sketch`}
-            projectDescription={`A pixelated drawing tool with grid size and color picker sliders.`}
+            projectDescription={`A drawing tool with grid size and color sliders. Great practice with event handlers.`}
             projectDemoUrl={`https://etch-a-sketch.markmelnik.com`}
             projectSourceUrl={`https://github.com/markymelnik/etch-a-sketch`}
           />
@@ -50,7 +51,7 @@ const SideProjectsList = ({ seeMoreRef }: SideProjectsListProps) => {
             projectId={`project-8`}
             projectYear={2022}
             projectName={`Calculator`}
-            projectDescription={`Your standard 4 function calculator. This was one of my first projects while learning basics.`}
+            projectDescription={`Your standard 4 function calculator. This was one of my initial projects while learning basics.`}
             projectDemoUrl={`https://calculator.markmelnik.com`}
             projectSourceUrl={`https://github.com/markymelnik/calculator`}
           />
@@ -58,17 +59,17 @@ const SideProjectsList = ({ seeMoreRef }: SideProjectsListProps) => {
             projectId={`project-9`}
             projectYear={2022}
             projectName={`Weather App`}
-            projectDescription={`Find the weather in your city in seconds! This was the first time I used a 3rd party API.`}
+            projectDescription={`Find the weather in your city in seconds! This was my first use of a 3rd Party API.`}
             projectDemoUrl={`https://weather-app.markmelnik.com`}
             projectSourceUrl={`https://github.com/markymelnik/weather-app`}
           />
           <SideProject
             projectId={`project-10`}
             projectYear={2022}
-            projectName={`Restaurant Page`}
-            projectDescription={`A simple restaurant cafe site. This was my initial exposure to built-in page navigation.`}
-            projectDemoUrl={`https://restaurant-page.markmelnik.com`}
-            projectSourceUrl={`https://github.com/markymelnik/restaurant-page`}
+            projectName={`Café Page`}
+            projectDescription={`A simple café site. Good practice with built-in page navigation and UI.`}
+            projectDemoUrl={`https://cafe-page.markmelnik.com`}
+            projectSourceUrl={`https://github.com/markymelnik/cafe-page`}
           />
         </ul>
     </>

@@ -21,7 +21,7 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           projectId={`project-1`}
           projectYear={2023}
           projectName={`FitFinder`}
-          projectDescription={`Looking for a new workout spot? Find it with FitFinder! This project was a tremendous learning experience from start to finish. The resulting solution is the product of many design choices and technical implementations on both the front and back end.`}
+          projectDescription={`Looking for a new workout spot? Find it with FitFinder! This project was a tremendous learning experience from start to finish. The resulting solution is the product of many design choices and technical implementations on both the frontend and backend.`}
           projectDemoUrl={`https://fitfinder.app`}
           overrideSource={true}
           projectImage={FitFinderScreenshot}
@@ -32,7 +32,7 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           projectId={`project-2`}
           projectYear={2023}
           projectName={`markmelnik.com`}
-          projectDescription={`Hey, you're on this site right now! I designed it to be simple yet elegant. Let me know what you think 👀.`}
+          projectDescription={`Hey, you're on this site right now! I designed it to be simple yet elegant. I utilized the Intersection Observer API to create the dynamic navbar and scroll into view transitions. Let me know what you think 👀.`}
           projectDemoUrl={`https://markmelnik.com`}
           projectSourceUrl={`https://github.com/markymelnik/personal-site`}
           projectImage={PersonalSiteScreenshot}

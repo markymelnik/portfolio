@@ -13,7 +13,7 @@ const useProjectObserver = ({ refs }: UseProjectObserverProps) => {
             entry.target.classList.add('slide-in');
           }
         })
-      }, { threshold: 0.5 }
+      }, { threshold: 0.6 }
     )
 
     refs.forEach((ref) => {

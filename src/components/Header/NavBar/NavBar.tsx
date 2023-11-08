@@ -14,6 +14,8 @@ type NavbarProps = {
 const NavBar = ({ activeTab, setActiveTab, setIsScrolling, onNavClick, customClass }: NavbarProps) => {
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+  const scrollValue = window.innerWidth > 768 ? 140 : 100;
+
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -22,7 +24,7 @@ const NavBar = ({ activeTab, setActiveTab, setIsScrolling, onNavClick, customCla
       const sectionTop = sectionRect.top + scrollTop;
   
       window.scrollTo({
-        top: sectionTop - 120,
+        top: sectionTop - scrollValue,
         behavior: 'smooth',
       });
     }

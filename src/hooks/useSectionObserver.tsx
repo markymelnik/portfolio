@@ -8,18 +8,22 @@ type UseSectionObserverProps = {
 
 const useSectionObserver = ({ setActiveTab, isScrolling, refs }: UseSectionObserverProps) => {
   useEffect(() => {
+
+    const activeTabThreshold = innerWidth < 768 ? 0.3 : 0.5;
+    const slideInThreshold = innerWidth < 768 ? 0.2 : 0.3;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
+          if (!isScrolling && entry.intersectionRatio >= activeTabThreshold) {
+            setActiveTab(entry.target.id);
+          }
+          if (!isScrolling && entry.intersectionRatio >= slideInThreshold) {
             entry.target.classList.add('slide-in');
-            if (!isScrolling) {
-              setActiveTab(entry.target.id);
-            }
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: [activeTabThreshold, slideInThreshold] }
     );
 
     refs.forEach((ref) => {

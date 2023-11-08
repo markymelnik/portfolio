@@ -261,12 +261,20 @@ $light-theme: (
         }
       }
 
+      .side-projects-top {
+        border-top: 1.5px solid $acc2;
+      }
+
       .side-projects-toggle-btn {
         color: $sec;
 
         &:hover {
           color: $acc1;
         }
+      }
+
+      .side-projects-description {
+        color: $sec;
       }
 
       .main-project-link-text,

@@ -3,7 +3,7 @@
 .side-projects-top {
   display: flex;
   justify-content: center;
-  margin: 0 0 2rem;
+  padding: 2rem 0;
 
   button.side-projects-toggle-btn {
     display: flex;
@@ -35,20 +35,51 @@
   }
 }
 
+.side-projects-description {
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 1rem 0 2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease, max-height 0.6s ease;
+
+  &.show {
+    display: block;
+    opacity: 1;
+  }
+}
+
 .side-projects-list {
-  display: none;
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  padding: 0.5rem;
   gap: 2rem;
+  overflow: hidden;
+  max-height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: max-height 0.6s ease, visibility 0.3s ease, opacity 0.3s ease;
   
   &.show {
-    display: grid;
+    max-height: 160rem;
+    visibility: visible;
+    opacity: 1;
   }
 }
 
 @media (min-width: 768px) {
+
+  .side-projects-top {
+    padding: 3rem 0 2rem;
+  }
+
   .side-projects-title {
     font-size: 1.75rem;
     margin: 0 0 5rem;
+  }
+
+  .side-projects-description {
+    font-size: 1.25rem;
+    padding: 0 0 2rem;
   }
 }
 
