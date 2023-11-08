@@ -14,12 +14,19 @@
     background: transparent;
     border-radius: 5px;
     padding: 1rem 1.25rem;
-    transition: background-color 0.2s ease;
+    transform: translateY(-1rem);
+    opacity: 0;
+    transition: transform 2s ease, opacity 2s ease;
 
     svg {
       display: flex;
       height: 1.5rem;
       width: 1.5rem;
+    }
+
+    &.slide-in {
+      transform: translateY(0);
+      opacity: 1;
     }
     
     &:hover {

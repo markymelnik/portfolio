@@ -1,3 +1,4 @@
+import React from "react";
 import LinkIcon from "../../LinkIcon";
 import OverrideButton from "../OverrideButton/OverrideButton";
 import "./_main-project.scss";
@@ -14,7 +15,7 @@ type MainProjectProps = {
   newProject?: boolean;
 };
 
-const MainProject = ({
+const MainProject = React.forwardRef<HTMLLIElement, MainProjectProps>(({
   projectId,
   projectYear,
   projectName,
@@ -24,9 +25,9 @@ const MainProject = ({
   overrideSource,
   projectImage,
   newProject
-}: MainProjectProps) => {
+}, ref) => {
   return (
-    <li className={`main-project ${projectId}`}>
+    <li ref={ref} className={`main-project ${projectId}`}>
       {newProject && <div className="new-project-label">New!</div>}
       <div className="main-project-stuff">
         <div className="main-project-info">
@@ -72,6 +73,6 @@ const MainProject = ({
       
     </li>
   );
-};
+});
 
 export default MainProject;

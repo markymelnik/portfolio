@@ -6,7 +6,7 @@ import Divider from './Divider/Divider';
 import Home from './Home/Home';
 import Scroll from './Scroll/Scroll';
 import './_main.scss';
-import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+import useSectionObserver from '../../hooks/useSectionObserver';
 
 type MainProps = {
   setActiveTab: (tab: string) => void;
@@ -19,7 +19,7 @@ const Main = ({ setActiveTab, isScrolling }: MainProps) => {
   const projectsRef = useRef<HTMLDivElement | null>(null);
   const contactRef = useRef<HTMLDivElement | null>(null);
 
-  useIntersectionObserver({ setActiveTab, isScrolling, refs: [homeRef, aboutRef, projectsRef, contactRef] });
+  useSectionObserver({ setActiveTab, isScrolling, refs: [homeRef, aboutRef, projectsRef, contactRef] });
 
   return (
     <main className="main-container">

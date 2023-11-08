@@ -1,17 +1,21 @@
-import { useState } from "react";
+import { MutableRefObject, useState } from "react";
 import SideProject from "../SideProject/SideProject";
 import "./_side-projects-list.scss";
 import UpIcon from "../UpIcon";
 import DownIcon from "../DownIcon";
 
-const SideProjectsList = () => {
+type SideProjectsListProps = {
+  seeMoreRef: MutableRefObject<HTMLButtonElement | null>;
+}
+
+const SideProjectsList = ({ seeMoreRef }: SideProjectsListProps) => {
 
   const [showSideProjectsList, setShowSideProductsList] = useState<boolean>(false);
 
   return (
     <>
       <div className="side-projects-top">
-        <button className="side-projects-toggle-btn" onClick={() => setShowSideProductsList(prev => !prev)}>
+        <button ref={seeMoreRef} className="side-projects-toggle-btn" onClick={() => setShowSideProductsList(prev => !prev)}>
           <span>See More</span>
           <span>{showSideProjectsList ? <UpIcon /> : <DownIcon />}</span>
         </button>

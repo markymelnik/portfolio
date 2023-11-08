@@ -218,7 +218,7 @@ $light-theme: (
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         background: $box-background-color;
         border: 1.5px solid $project-border-color;
-        transition: box-shadow 0.3s ease;
+        /* transition: box-shadow 0.3s ease; */
 
         &:hover {
           box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 12px;
@@ -263,7 +263,6 @@ $light-theme: (
 
       .side-projects-toggle-btn {
         color: $sec;
-        transition: color 0.2s ease;
 
         &:hover {
           color: $acc1;

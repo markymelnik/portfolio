@@ -4,13 +4,20 @@ import PersonalSiteScreenshot from '../../../../../assets/images/project/persona
 import BattleshipScreenshot from '../../../../../assets/images/project/battleship-screenshot.jpg';
 import ShoppingCartScreenshot from '../../../../../assets/images/project/shopping-cart-screenshot.jpg';
 import './_main-projects-list.scss';
+import { MutableRefObject } from "react";
 
-const MainProjectsList = () => {
+type MainProjectsList = {
+  projectRefs: MutableRefObject<HTMLLIElement | null>[];
+}
+
+const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
+
   return (
     <>
       <h2 className="main-projects-title"><span>.02</span>My Projects</h2>
       <ul className="main-projects-list">
         <MainProject
+          ref={projectRefs[0]}
           projectId={`project-1`}
           projectYear={2023}
           projectName={`FitFinder`}
@@ -21,6 +28,7 @@ const MainProjectsList = () => {
           newProject={true}
         />
         <MainProject
+          ref={projectRefs[1]}
           projectId={`project-2`}
           projectYear={2023}
           projectName={`markmelnik.com`}
@@ -30,6 +38,7 @@ const MainProjectsList = () => {
           projectImage={PersonalSiteScreenshot}
         />
         <MainProject
+          ref={projectRefs[2]}
           projectId={`project-3`}
           projectYear={2023}
           projectName={`Battleship`}
@@ -39,6 +48,7 @@ const MainProjectsList = () => {
           projectImage={BattleshipScreenshot}
         />
         <MainProject
+          ref={projectRefs[3]}
           projectId={`project-4`}
           projectYear={2023}
           projectName={`Shopping Cart`}

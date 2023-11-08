@@ -11,12 +11,15 @@ const useSectionObserver = ({ setActiveTab, isScrolling, refs }: UseSectionObser
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (!isScrolling && entry.isIntersecting) {
-            setActiveTab(entry.target.id);
+          if (entry.isIntersecting) {
+            entry.target.classList.add('slide-in');
+            if (!isScrolling) {
+              setActiveTab(entry.target.id);
+            }
           }
         });
       },
-      { threshold: 0.4 }
+      { threshold: 0.3 }
     );
 
     refs.forEach((ref) => {

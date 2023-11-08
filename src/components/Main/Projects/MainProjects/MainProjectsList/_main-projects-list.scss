@@ -3,8 +3,6 @@
 .main-projects-title {
   font-size: 1.5rem;
   margin: 0 0 2.5rem;
-  @include animateFadeIn(0.9s);
-  transition: background-color 0.2s ease;
 
   span {
     margin: 0 0.5rem 0 0;

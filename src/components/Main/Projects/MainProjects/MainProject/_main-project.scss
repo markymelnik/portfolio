@@ -1,5 +1,28 @@
 @import '@styles/animations';
 
+.project-1 {
+  position: relative;
+
+  .new-project-label {
+    font-size: 1.25rem;
+    font-weight: 550;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.25rem;
+    transform: rotate(8deg);
+  }
+}
+
+.project-1,
+.project-3 {
+  transform: translateX(-5%);
+}
+
+.project-2,
+.project-4 {
+  transform: translateX(5%);
+}
+
 .main-project {
   width: 100%;
   display: flex;
@@ -8,7 +31,14 @@
   border-radius: 8px;
   gap: 2rem;
   padding: 1.5rem;
-  transition: background-color 0.1s ease;
+  opacity: 0;
+  transition: transform 0.6s ease, opacity, 1s ease;
+  
+  &.slide-in {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.6s ease, opacity 1s ease;
+  }
 
   .main-project-stuff {
     display: inherit;
@@ -85,20 +115,24 @@
   }
 }
 
-.project-1 {
-  position: relative;
 
-  .new-project-label {
-    font-size: 1.25rem;
-    font-weight: 550;
-    position: absolute;
-    top: 1.5rem;
-    right: 1.25rem;
-    transform: rotate(8deg);
-  }
-}
 
 @media (min-width: 768px) { 
+
+  .project-1 {
+
+    .new-project-label {
+      font-size: 1.5rem;
+    }
+
+    &:hover {
+
+      .new-project-label {
+        animation: fluctuateSize 0.8s infinite alternate ease-in-out;
+      }
+    }
+  }
+
   .main-project {
 
     .main-project-stuff {
@@ -117,25 +151,12 @@
       }
     }
   }
-
-  .project-1 {
-
-    .new-project-label {
-      font-size: 1.5rem;
-    }
-
-    &:hover {
-
-      .new-project-label {
-        animation: fluctuateSize 0.8s infinite alternate ease-in-out;
-      }
-    }
-  }
 }
 
 @media (min-width: 1200px) {
   .main-project {
     flex-direction: row-reverse;
+    gap: 1.5rem;
 
     .main-project-image {
       width: 28rem;
