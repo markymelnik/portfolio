@@ -190,7 +190,15 @@ $light-theme: (
     .projects-container {
 
       .main-project-image {
-        border: 1.5px solid $acc2;
+
+        img {
+          border: 1.5px solid $acc2;
+
+          &:hover {
+            border: 1.5px solid $sec;
+          }
+
+        }
       }
 
       .main-projects-title {
@@ -249,7 +257,7 @@ $light-theme: (
         border: 1.5px solid $acc2;
 
         &:hover {
-          border: 1.5px solid $acc1;
+          border: 1.5px solid $sec;
         }
       }
 
@@ -365,5 +373,34 @@ body {
 
   &.light-theme {
     @include theme($light-theme);
+
+    .projects-container {
+
+      .main-projects-list {
+
+        .main-project-demo-link,
+        .main-project-code-link,
+        .override-btn {
+          border: 1.5px solid map-get($light-theme, sec);
+          
+          &:hover {
+            border: 1.5px solid map-get($light-theme, acc1);
+          }
+        }
+      }
+
+      .side-projects-list {
+
+        .side-project-demo-link,
+        .side-project-code-link,
+        .override-btn {
+          border: 1.5px solid map-get($light-theme, sec);
+  
+          &:hover {
+            border: 1.5px solid map-get($light-theme, acc1);
+          }
+        }
+      }
+    }
   }
 }

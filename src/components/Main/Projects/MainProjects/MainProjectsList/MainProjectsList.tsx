@@ -1,4 +1,8 @@
 import MainProject from "../MainProject/MainProject";
+import FitFinderScreenshot from '../../../../../assets/images/project/fitfinder-screenshot.jpg';
+import PersonalSiteScreenshot from '../../../../../assets/images/project/personal-site-screenshot.jpg';
+import BattleshipScreenshot from '../../../../../assets/images/project/battleship-screenshot.jpg';
+import ShoppingCartScreenshot from '../../../../../assets/images/project/shopping-cart-screenshot.jpg';
 import './_main-projects-list.scss';
 
 const MainProjectsList = () => {
@@ -13,7 +17,7 @@ const MainProjectsList = () => {
           projectDescription={`Looking for a new workout spot? Find it with FitFinder! This project was a tremendous learning experience from start to finish. The resulting solution is the product of many design choices and technical implementations on both the front and back end.`}
           projectDemoUrl={`https://fitfinder.app`}
           overrideSource={true}
-          projectImage='img'
+          projectImage={FitFinderScreenshot}
           newProject={true}
         />
         <MainProject
@@ -23,25 +27,25 @@ const MainProjectsList = () => {
           projectDescription={`Hey, you're on this site right now! I designed it to be simple yet elegant. Let me know what you think 👀.`}
           projectDemoUrl={`https://markmelnik.com`}
           projectSourceUrl={`https://github.com/markymelnik/personal-site`}
-          projectImage='img'
+          projectImage={PersonalSiteScreenshot}
         />
         <MainProject
           projectId={`project-3`}
           projectYear={2023}
           projectName={`Battleship`}
-          projectDescription={`A game of Battleship that can be played in the web browser. This solution is written in vanilla JavaScript, HTML, and CSS. I underwent a test-driven development process using the Jest testing library to see this project to completion.`}
-          projectDemoUrl={`https://battleship-kappa.vercel.app/`}
+          projectDescription={`A game of Battleship played in the web browser. This solution is written in vanilla JavaScript, HTML, and CSS. I underwent a test-driven development process using the Jest testing library to see this project to completion.`}
+          projectDemoUrl={`https://battleship.markmelnik.com`}
           projectSourceUrl={`https://github.com/markymelnik/battleship`}
-          projectImage='img'
+          projectImage={BattleshipScreenshot}
         />
         <MainProject
           projectId={`project-4`}
           projectYear={2023}
           projectName={`Shopping Cart`}
-          projectDescription={`A mock ecommerce app.`}
-          projectDemoUrl={`https://example.com`}
+          projectDescription={`A mock shopping site with dynamic cart functionality.`}
+          projectDemoUrl={`https://shopping-cart.markmelnik.com`}
           projectSourceUrl={`https://github.com/markymelnik/shopping-cart`}
-          projectImage='img'
+          projectImage={ShoppingCartScreenshot}
         />
       </ul>
     </>

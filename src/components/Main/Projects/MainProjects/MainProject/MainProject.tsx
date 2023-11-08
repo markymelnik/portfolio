@@ -27,9 +27,7 @@ const MainProject = ({
 }: MainProjectProps) => {
   return (
     <li className={`main-project ${projectId}`}>
-      <div className="main-project-image">
-        <img src={projectImage}/>
-      </div>
+      {newProject && <div className="new-project-label">New!</div>}
       <div className="main-project-stuff">
         <div className="main-project-info">
           <div className="main-project-year">{projectYear}</div>
@@ -63,7 +61,15 @@ const MainProject = ({
           )}
         </div>
       </div>
-      {newProject && <div className="new-project-label">New!</div>}
+      <a
+        href={projectDemoUrl}
+        className="main-project-image"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={projectImage} />
+      </a>
+      
     </li>
   );
 };

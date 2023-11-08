@@ -12,7 +12,7 @@ const SideProjectsList = () => {
     <>
       <div className="side-projects-top">
         <button className="side-projects-toggle-btn" onClick={() => setShowSideProductsList(prev => !prev)}>
-          <span>More Projects</span>
+          <span>See More</span>
           <span>{showSideProjectsList ? <UpIcon /> : <DownIcon />}</span>
         </button>
       </div>
@@ -21,36 +21,51 @@ const SideProjectsList = () => {
           <SideProject
             projectId={`project-5`}
             projectYear={2023}
-            projectName={`project-5`}
-            projectDescription={`Lorem ipsum dolor sit amet consectetur adipisicing elit.`}
-            projectDemoUrl={`https://google.com`}
-            projectSourceUrl={`https://google.com`}
+            projectName={`Memory Cards`}
+            projectDescription={`Test your memory with this memory game. Don't click the same cat twice 🐱.`}
+            projectDemoUrl={`https://memory-cards.markmelnik.com`}
+            projectSourceUrl={`https://github.com/markymelnik/memory-cards`}
           />
           <SideProject
             projectId={`project-6`}
             projectYear={2023}
-            projectName={`project-6`}
-            projectDescription={`Lorem ipsum dolor sit amet consectetur adipisicing elit.`}
-            projectDemoUrl={`https://google.com`}
-            projectSourceUrl={`https://google.com`}
+            projectName={`Tic-Tac-Toe`}
+            projectDescription={`A game of tic-tac-toe - have a friend with you or you'll be playing against yourself.`}
+            projectDemoUrl={`https://tic-tac-toe.markmelnik.com`}
+            projectSourceUrl={`https://github.com/markymelnik/tic-tac-toe`}
           />
           <SideProject
             projectId={`project-7`}
-            projectYear={2023}
-            projectName={`project-7`}
-            projectDescription={`Lorem ipsum dolor sit amet consectetur adipisicing elit.`}
-            projectDemoUrl={`https://google.com`}
-            projectSourceUrl={`https://google.com`}
+            projectYear={2022}
+            projectName={`Etch-A-Sketch`}
+            projectDescription={`A pixelated drawing tool with grid size and color picker sliders.`}
+            projectDemoUrl={`https://etch-a-sketch.markmelnik.com`}
+            projectSourceUrl={`https://github.com/markymelnik/etch-a-sketch`}
           />
           <SideProject
             projectId={`project-8`}
-            projectYear={2023}
-            projectName={`project-8`}
-            projectDescription={`Lorem ipsum dolor sit amet consectetur adipisicing elit.`}
-            projectDemoUrl={`https://google.com`}
-            projectSourceUrl={`https://google.com`}
+            projectYear={2022}
+            projectName={`Calculator`}
+            projectDescription={`Your standard 4 function calculator. This was one of my first projects while learning basics.`}
+            projectDemoUrl={`https://calculator.markmelnik.com`}
+            projectSourceUrl={`https://github.com/markymelnik/calculator`}
           />
-   
+          <SideProject
+            projectId={`project-9`}
+            projectYear={2022}
+            projectName={`Weather App`}
+            projectDescription={`Find the weather in your city in seconds! This was the first time I used a 3rd party API.`}
+            projectDemoUrl={`https://weather-app.markmelnik.com`}
+            projectSourceUrl={`https://github.com/markymelnik/weather-app`}
+          />
+          <SideProject
+            projectId={`project-10`}
+            projectYear={2022}
+            projectName={`Restaurant Page`}
+            projectDescription={`A simple restaurant cafe site. This was my initial exposure to built-in page navigation.`}
+            projectDemoUrl={`https://restaurant-page.markmelnik.com`}
+            projectSourceUrl={`https://github.com/markymelnik/restaurant-page`}
+          />
         </ul>
     </>
   );
