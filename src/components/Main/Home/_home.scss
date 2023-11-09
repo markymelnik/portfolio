@@ -1,6 +1,7 @@
 @import '@styles/animations';
 
 .home-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,11 +17,6 @@
       margin: 0 0 0.5rem;
       @include animateFadeIn(0.5s);
     }
-
-    /* h3.home-read-more {
-      font-size: 1.25rem;
-      @include animateFadeIn(2.5s);
-    } */
   }
 }
 
@@ -33,10 +29,6 @@
       .home-title {
         font-size: 6rem;
       }
-
-      /* h3.home-read-more {
-        font-size: 1.5rem;
-      } */
     }
   }
 }

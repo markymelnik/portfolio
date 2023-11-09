@@ -1,18 +1,11 @@
 @import '@styles/animations';
 
 .contact-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 30vh;
-  transform: translateX(-5%);
-  opacity: 0;
-  transition: transform 0.6s ease, opacity 0.6s ease;
-
-  &.slide-in {
-    transform: translateX(0);
-    opacity: 1;
-  }
+  min-height: 35vh;
 
   .contact-title {
     font-size: 1.5rem;
@@ -27,6 +20,15 @@
     display: flex;
     flex-direction: column;
     padding: 2rem 0;
+
+    transform: translateX(-5%);
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+
+    &.slide-in {
+      transform: translateX(0);
+      opacity: 1;
+    }
 
     .contact-paragraph {
       font-size: 1.1rem;
@@ -70,7 +72,7 @@
         display: inherit;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 1.5rem;
   
         .contact-option {
           display: inherit;
@@ -94,6 +96,10 @@
               transition: fill 0.2s ease;
             }
           }
+
+          .contact-linkedin {
+            margin: 0 0 0 0.15rem;
+          }
         }
       }
     }
@@ -108,17 +114,18 @@
     }
 
     .contact-info {
-      flex-direction: row-reverse;
+      flex-direction: column;
       justify-content: space-between;
       gap: 3rem;
 
       .contact-paragraph {
         text-align: left;
         margin: 0;
-        width: 65%;
+        width: 80%;
       }
   
       .contact-selection {
+        align-items: flex-start;
 
         .contact-top {
           margin: 0 0 1.25rem;
@@ -129,8 +136,7 @@
         }
   
         .contact-bottom {
-          gap: 1.5rem;
-          justify-content: center;
+          gap: 1rem;
           
           .contact-option {
   
@@ -142,6 +148,18 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-container {
+
+    .contact-info {
+
+      .contact-paragraph {
+        width: 60%;
       }
     }
   }

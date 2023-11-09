@@ -1,0 +1,17 @@
+.project-vector {
+  position: absolute;
+  top: -4rem;
+  left: -6rem;
+  height: 20rem;
+  width: 20rem;
+  opacity: 0.15;
+}
+
+@media (min-width: 768px) {
+  .project-vector {
+    top: -5rem;
+    left: -10rem;
+    height: 28rem;
+    width: 28rem;
+  }
+}

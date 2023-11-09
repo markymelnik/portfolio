@@ -10,8 +10,8 @@ $dark-theme: (
 
 $light-theme: (
   pri: #FBFBFD,
-  sec: #1A1A1A,
-  acc1: #0066CC,
+  sec: #2C4251,
+  acc1: #38369A,
   acc2: #A8A8A8,
   body-background-color: #FBFBFD,
   box-background-color: #FBFBFD,
@@ -81,7 +81,7 @@ $light-theme: (
 
     .light-icon {
       stroke: $acc2;
-      transition: stroke 0.2s ease;
+      transition: stroke 0.25s ease;
     }
 
     &:hover {
@@ -90,11 +90,11 @@ $light-theme: (
         stroke: $sec;
       }
     }
-  
+
     .dark-icon {
       stroke: $acc2;
       fill: $pri;
-      transition: stroke, 0.2s ease, fill 0.2s ease;
+      transition: stroke, 0.25s ease, fill 0.25s ease;
     }
 
     &:hover {
@@ -125,7 +125,12 @@ $light-theme: (
       .home-subtitle {
         color: $sec;
       }
+
+      .road-vector {
+        fill: $acc2;
+      }
     }
+
 
     // Scroll
 
@@ -163,10 +168,6 @@ $light-theme: (
           background: none;
         }
 
-        /* .about-photo {
-          border: 1px solid $sec;
-        } */
-
         .about-photo-name {
           color: $sec;
         }
@@ -188,6 +189,13 @@ $light-theme: (
     // Projects
 
     .projects-container {
+
+      .project-vector {
+
+        path {
+          fill: $acc2;
+        }
+      }
 
       .main-project-image {
 
@@ -215,22 +223,12 @@ $light-theme: (
 
       .main-project,
       .side-project {
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         background: $box-background-color;
         border: 1.5px solid $project-border-color;
-        /* transition: box-shadow 0.3s ease; */
-
-        &:hover {
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 12px;
-        }
       }
 
       .new-project-label {
         color: $acc1;
-      }
-
-      .side-project {
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       }
 
       .project-1 {
@@ -312,6 +310,10 @@ $light-theme: (
 
     .contact-container {
 
+      .node-vector {
+        stroke: $acc2;
+      }
+
       .contact-title {
         color: $sec;
 
@@ -381,31 +383,73 @@ body {
   &.light-theme {
     @include theme($light-theme);
 
-    .projects-container {
+    .header-container {
 
-      .main-projects-list {
+      .mobile-menu-toggle-btn {
 
-        .main-project-demo-link,
-        .main-project-code-link,
-        .override-btn {
-          border: 1.5px solid map-get($light-theme, sec);
-          
-          &:hover {
-            border: 1.5px solid map-get($light-theme, acc1);
+        svg {
+          stroke: map-get($light-theme, acc1);
+        }
+      }
+
+      .mobile-menu-container {
+        border-left: 1.5px solid map-get($light-theme, acc1);
+      }
+    }
+
+    .main-container {
+
+      .home-container {
+
+        .road-vector {
+          fill: map-get($light-theme, acc1);
+        }
+      }
+
+      .projects-container {
+
+        .project-vector {
+
+          path {
+            fill: map-get($light-theme, acc1);
+          }
+        }
+
+        .main-projects-list,
+        .side-projects-list {
+
+          .main-project-demo-link,
+          .main-project-code-link,
+          .side-project-demo-link,
+          .side-project-code-link,
+          .override-btn {
+            border: none;
+            background-color: map-get($light-theme, acc1);
+            color: map-get($light-theme, pri);
+            transition: background-color 0.25s ease;
+
+            &:hover {
+              border: none;
+              background-color: lighten(map-get($light-theme, acc1), 10%);
+            }
+
+            .main-project-link-text,
+            .side-project-link-text,
+            .override-btn-text {
+              color: map-get($light-theme, pri);
+            }
+
+            .project-link-icon {
+              fill: map-get($light-theme, pri);
+            }
           }
         }
       }
 
-      .side-projects-list {
+      .contact-container {
 
-        .side-project-demo-link,
-        .side-project-code-link,
-        .override-btn {
-          border: 1.5px solid map-get($light-theme, sec);
-  
-          &:hover {
-            border: 1.5px solid map-get($light-theme, acc1);
-          }
+        .node-vector {
+          stroke: map-get($light-theme, acc1);
         }
       }
     }

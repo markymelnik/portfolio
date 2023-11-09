@@ -4,6 +4,7 @@ import EmailSVG from './contact_icons/email_svg';
 import LinkedinSVG from './contact_icons/linkedin_svg';
 import GithubSVG from './contact_icons/github_svg';
 import EmailTip from './EmailTip/EmailTip';
+import NodeVectorSVG from './NodeVector/NodeVectorSVG';
 
 interface ContactProps extends React.HTMLProps<HTMLDivElement> {}
 
@@ -27,11 +28,12 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
   };
 
   return (
-    <section ref={ref} className="contact-container" {...props}>
+    <section  className="contact-container" >
+      <NodeVectorSVG />
       <h2 className="contact-title">
-        <span>.03</span>Contact
+        <span>.03</span>Contact Me
       </h2>
-      <div className="contact-info">
+      <div ref={ref} className="contact-info" {...props}>
         <p className="contact-paragraph">
           Feel free to reach out! I am currently seeking a full-time software
           role, internship, or any industry experience. I would love to talk
