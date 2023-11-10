@@ -18,9 +18,13 @@
 }
 
 @keyframes nudgeDown {
-  0%, 20%, 100% {
+
+  0%,
+  20%,
+  100% {
     transform: translateY(0);
   }
+
   10% {
     transform: translateY(1.5rem);
   }
@@ -42,25 +46,34 @@
   0% {
     font-size: 1.5rem;
   }
+
   100% {
     font-size: 1.75rem;
   }
 }
 
 @keyframes slideInText {
-  0%, 5% {
+
+  0%,
+  5% {
     transform: translateY(-100%);
     opacity: 0;
   }
-  6%, 29% {
+
+  6%,
+  29% {
     transform: translateY(0);
     opacity: 1;
   }
-  30%, 94% {
+
+  30%,
+  94% {
     transform: translateY(100%);
     opacity: 0;
   }
-  95%, 100% {
+
+  95%,
+  100% {
     transform: translateY(-100%);
     opacity: 0;
   }
@@ -70,6 +83,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }

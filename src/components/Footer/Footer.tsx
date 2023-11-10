@@ -3,7 +3,7 @@ import "./_footer.scss";
 const Footer = () => {
   return (
     <footer className="footer-container">
-      <div className="footer-tech">
+      <p className="footer-tech">
         Built with{" "}
         <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">
           React
@@ -12,12 +12,12 @@ const Footer = () => {
         <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">
           Sass
         </a>
-        , deployed on{" "}
+        ; deployed on{" "}
         <a href="https://render.com/" target="_blank" rel="noopener noreferrer">
           Render
         </a>
         .
-      </div>
+      </p>
       <div className="footer-copyright">&copy; 2023 Mark Melnik</div>
     </footer>
   );

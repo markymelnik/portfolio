@@ -130,7 +130,7 @@ $light-theme: (
 
         .linkedin-link,
         .github-link {
-        
+
           svg {
             fill: $sec;
             transition: fill 0.2s ease;
@@ -369,11 +369,11 @@ $light-theme: (
           color: $sec;
         }
       }
-      
+
       .linkedin-link,
       .github-link,
       .contact-email {
-        
+
         svg {
           fill: $sec;
           transition: fill 0.2s ease;
@@ -436,10 +436,10 @@ body {
 
           .linkedin-link,
           .github-link {
-          
+
             svg {
               fill: map-get($light-theme, acc1);
-  
+
               &:hover {
                 fill: lighten(map-get($light-theme, acc1), 10%);
               }
@@ -502,24 +502,24 @@ body {
         .linkedin-link,
         .github-link,
         .contact-email {
-        
-        svg {
-          fill: map-get($light-theme, acc1);
 
-          &:hover {
-            fill: lighten(map-get($light-theme, acc1), 10%);
+          svg {
+            fill: map-get($light-theme, acc1);
+
+            &:hover {
+              fill: lighten(map-get($light-theme, acc1), 10%);
+            }
           }
         }
-      }
       }
     }
 
     .footer-container {
-      color: map-get($light-theme, acc2);;
+      color: map-get($light-theme, acc2);
 
       a {
         color: map-get($light-theme, acc1);
-  
+
         &:hover {
           color: lighten(map-get($light-theme, acc1), 10%);
         }

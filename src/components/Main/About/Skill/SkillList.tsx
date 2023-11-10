@@ -40,7 +40,7 @@ const SkillList = () => {
 
   return (
     <div className="about-skills">
-      <h3 className="about-skills-title">What I've been working with &rarr;</h3>
+      <h3 className="about-skills-title">I've been working with &rarr;</h3>
       <ul className="about-skills-list">
         {TECHNOLOGIES.map((tech, index) => (
           <Skill key={index} skillName={tech.skillName} svg={tech.svg} />

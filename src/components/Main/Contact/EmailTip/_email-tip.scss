@@ -2,16 +2,17 @@
   position: absolute;
   padding: 0.75rem;
   transform: translateX(-50%);
-  left: 50%;
+  left: 25%;
   top: 11rem;
   font-size: 1rem;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.3s linear;
 }
 
 @media (min-width: 768px) {
   .email-tip {
-    top: -2.25rem;
+    left: 50%;
+    top: -2.5rem;
   }
 }

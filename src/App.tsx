@@ -14,8 +14,8 @@ const App = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(prev => !prev);
-  }
+    setIsMobileMenuOpen((prev) => !prev);
+  };
 
   const { theme } = useLightDark();
 
