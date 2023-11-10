@@ -14,13 +14,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0 0 0 1rem;
-  
+
     .about-skill {
       display: flex;
       align-items: center;
       gap: 1rem;
       margin: 0 0 1rem 0;
-  
+
       span {
         height: 1.5rem;
         width: 1.5rem;
@@ -36,10 +36,6 @@
     .about-skills-title {
       font-size: 1.15rem;
     }
-
-    .about-skills-list {
-      grid-template-columns: repeat(auto-fill, minmax(6rem, 10rem));
-    }
   }
 }
 
@@ -47,7 +43,71 @@
   .about-skills {
 
     .about-skills-list {
-      grid-template-columns: repeat(auto-fill, minmax(6rem, 12rem));
+      grid-template-columns: repeat(4, 1fr);
+
+      .javascript {
+        order: 1;
+      }
+
+      .typescript {
+        order: 2;
+      }
+
+      .java {
+        order: 3;
+      }
+
+      .git {
+        order: 4;
+      }
+
+      .html {
+        order: 5;
+      }
+
+      .react {
+        order: 6;
+      }
+
+      .spring {
+        order: 7;
+      }
+
+      .postgresql {
+        order: 8;
+      }
+
+      .css {
+        order: 9;
+      }
+
+      .redux {
+        order: 10;
+      }
+
+      .node {
+        order: 11;
+      }
+
+      .figma {
+        order: 12;
+      }
+
+      .sass {
+        order: 13;
+      }
+
+      .jest {
+        order: 14;
+      }
+
+      .express {
+        order: 15;
+      }
+
+      .docker {
+        order: 16;
+      }
     }
   }
 }

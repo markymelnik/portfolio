@@ -5,7 +5,7 @@ type SkillProps = {
 
 const Skill = ({ skillName, svg }: SkillProps) => {
   return (
-    <li className={`about-skill`}><span>{svg}</span>{skillName}</li>
+    <li className={`about-skill ${skillName.toLowerCase()}`}><span>{svg}</span>{skillName}</li>
   )
 }
 

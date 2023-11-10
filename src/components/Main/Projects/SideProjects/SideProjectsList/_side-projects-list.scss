@@ -2,7 +2,6 @@
 
 .side-projects-top {
   display: flex;
-  justify-content: center;
   padding: 2rem 0;
 
   button.side-projects-toggle-btn {
@@ -13,7 +12,7 @@
     border: none;
     background: transparent;
     border-radius: 5px;
-    padding: 1rem 1.25rem;
+    padding: 1rem 1.25rem 1rem 0;
     transform: translateY(-1rem);
     opacity: 0;
     transition: transform 2s ease, opacity 2s ease;
@@ -37,7 +36,6 @@
 
 .side-projects-description {
   font-size: 1.1rem;
-  text-align: center;
   padding: 1rem 0 2rem;
   opacity: 0;
   transition: opacity 0.3s ease, max-height 0.6s ease;

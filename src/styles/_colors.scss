@@ -389,9 +389,15 @@ $light-theme: (
   // Footer
 
   .footer-container {
+    color: lighten($acc2, 5%);
 
-    .footer-text {
+    a {
       color: $sec;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $acc1;
+      }
     }
   }
 }
@@ -424,6 +430,21 @@ body {
 
         .road-vector {
           fill: map-get($light-theme, acc1);
+        }
+
+        .home-links {
+
+          .linkedin-link,
+          .github-link {
+          
+            svg {
+              fill: map-get($light-theme, acc1);
+  
+              &:hover {
+                fill: lighten(map-get($light-theme, acc1), 10%);
+              }
+            }
+          }
         }
       }
 
@@ -476,6 +497,31 @@ body {
             stroke: map-get($light-theme, acc1);
             opacity: 0.15;
           }
+        }
+
+        .linkedin-link,
+        .github-link,
+        .contact-email {
+        
+        svg {
+          fill: map-get($light-theme, acc1);
+
+          &:hover {
+            fill: lighten(map-get($light-theme, acc1), 10%);
+          }
+        }
+      }
+      }
+    }
+
+    .footer-container {
+      color: map-get($light-theme, acc2);;
+
+      a {
+        color: map-get($light-theme, acc1);
+  
+        &:hover {
+          color: lighten(map-get($light-theme, acc1), 10%);
         }
       }
     }

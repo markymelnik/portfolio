@@ -6,10 +6,15 @@
   align-items: center;
   border-radius: 0.25rem;
   @include animateFadeIn(1.2s);
-  transition: background-color 0.2s ease;
 
   .logo-text {
     font-size: 1rem;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      cursor: default;
+      transform: scale(1.05);
+    }
   }
 }
 

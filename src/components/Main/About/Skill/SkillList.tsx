@@ -21,26 +21,26 @@ const SkillList = () => {
 
   const TECHNOLOGIES = [
     { svg: <JS_SVG />, skillName:'JavaScript' },
-    { svg: <GIT_SVG />, skillName:'Git'},
-    { svg: <TS_SVG/>, skillName:'TypeScript' },
     { svg: <JAVA_SVG/>, skillName:'Java' },
-    { svg: <HTML_SVG/>, skillName:'HTML' },
+    { svg: <TS_SVG/>, skillName:'TypeScript' },
     { svg: <SPRING_SVG/>, skillName:'Spring' },
-    { svg: <CSS_SVG />, skillName:'CSS' },
+    { svg: <HTML_SVG/>, skillName:'HTML' },
     { svg: <NODE_SVG/>, skillName:'Node' },
-    { svg: <REACT_SVG/>, skillName:'React' },
+    { svg: <CSS_SVG />, skillName:'CSS' },
     { svg: <EXPRESS_SVG />, skillName:'Express' },
-    { svg: <REDUX_SVG/>, skillName:'Redux' },
-    { svg: <JEST_SVG />, skillName:'Jest' },
-    { svg: <SASS_SVG/>, skillName:'Sass' },
+    { svg: <REACT_SVG/>, skillName:'React' },
     { svg: <POSTGRES_SVG/>, skillName:'PostgreSQL' },
-    { svg: <FIGMA_SVG />, skillName:'Figma'},
+    { svg: <REDUX_SVG/>, skillName:'Redux' },
+    { svg: <GIT_SVG />, skillName:'Git'},
+    { svg: <SASS_SVG/>, skillName:'Sass' },
     { svg: <DOCKER_SVG/>, skillName:'Docker' },
-  ]
+    { svg: <JEST_SVG />, skillName:'Jest' },
+    { svg: <FIGMA_SVG />, skillName:'Figma'},
+  ];
 
   return (
     <div className="about-skills">
-      <h3 className="about-skills-title">Technologies I've been working with:</h3>
+      <h3 className="about-skills-title">What I've been working with &rarr;</h3>
       <ul className="about-skills-list">
         {TECHNOLOGIES.map((tech, index) => (
           <Skill key={index} skillName={tech.skillName} svg={tech.svg} />

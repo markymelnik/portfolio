@@ -1,11 +1,17 @@
 .footer-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 10vh;
+  align-items: flex-start;
+  gap: 1rem;
+  height: 12vh;
   width: 100%;
-
-  .footer-text {
-    font-size: 0.85rem;
-  }
+  font-size: 1rem;
+  margin: 2rem 0;
 }
+
+/* @media (min-width: 768px) {
+  .footer-container {
+    align-items: center;
+  }
+} */
