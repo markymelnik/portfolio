@@ -1,4 +1,4 @@
-const LinkedinSVG = () => {
+const LinkedinIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -10,4 +10,4 @@ const LinkedinSVG = () => {
   );
 };
 
-export default LinkedinSVG;
+export default LinkedinIcon;

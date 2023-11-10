@@ -1,10 +1,10 @@
 import { forwardRef, useState } from 'react';
 import './_contact.scss';
-import EmailSVG from './contact_icons/email_svg';
-import LinkedinSVG from './contact_icons/linkedin_svg';
-import GithubSVG from './contact_icons/github_svg';
+import EmailIcon from './EmailIcon';
 import EmailTip from './EmailTip/EmailTip';
 import NodeVectorSVG from './NodeVector/NodeVectorSVG';
+import LinkedinLink from '../Links/LinkedinLink/LinkedinLink';
+import GithubLink from '../Links/GIthubLink/GithubLink';
 
 interface ContactProps extends React.HTMLProps<HTMLDivElement> {}
 
@@ -35,9 +35,9 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
       </h2>
       <div ref={ref} className="contact-info" {...props}>
         <p className="contact-paragraph">
-          Feel free to reach out! I am currently seeking a full-time software
-          role, internship, or any industry experience. I would love to talk
-          about my projects!
+          Feel free to reach out! I am actively seeking a full-time software
+          role, internship, or industry experience. I would love to talk
+          about my journey thus far and dive into the details of my projects!
         </p>
         <div className="contact-selection">
           <div className="contact-top">
@@ -59,28 +59,14 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
                 rel="noopener noreferrer"
                 className="contact-email"
               >
-                <EmailSVG />
+                <EmailIcon />
               </a>
             </div>
             <div className="contact-option">
-              <a
-                href="https://www.linkedin.com/in/markmelnik/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="contact-linkedin"
-              >
-                <LinkedinSVG />
-              </a>
+              <LinkedinLink />
             </div>
             <div className="contact-option">
-              <a
-                href="https://www.github.com/markymelnik/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="contact-github"
-              >
-                <GithubSVG />
-              </a>
+              <GithubLink />
             </div>
           </div>
         </div>

@@ -19,8 +19,7 @@
   .contact-info {
     display: flex;
     flex-direction: column;
-    padding: 2rem 0;
-
+    padding: 2rem 0 2.5rem;
     transform: translateX(-5%);
     opacity: 0;
     transition: transform 0.6s ease, opacity 0.6s ease;
@@ -56,6 +55,7 @@
           font-size: 1.15rem;
           border-radius: 5px;
           transition: color 0.2s ease;
+          text-decoration: none;
   
           &:hover {
             cursor: pointer;
@@ -71,34 +71,20 @@
       .contact-bottom {
         display: inherit;
         justify-content: center;
-        align-items: center;
         gap: 1.5rem;
   
         .contact-option {
           display: inherit;
-          justify-content: center;
-          align-items: center;
           border-radius: 5px;
-          transition: background-color 0.2s ease;
   
           &:hover {
             cursor: pointer;
           }
-  
-          .contact-linkedin,
-          .contact-github,
+
           .contact-email {
             display: flex;
             height: 2rem;
             width: 2rem;
-            
-            svg {
-              transition: fill 0.2s ease;
-            }
-          }
-
-          .contact-linkedin {
-            margin: 0 0 0 0.15rem;
           }
         }
       }
@@ -140,9 +126,7 @@
           
           .contact-option {
   
-            .contact-linkedin,
-            .contact-github,
-            .contact-email {
+            .contact-linkedin {
               height: 2rem;
               width: 2rem;
             }
@@ -159,7 +143,7 @@
     .contact-info {
 
       .contact-paragraph {
-        width: 60%;
+        width: 50%;
       }
     }
   }

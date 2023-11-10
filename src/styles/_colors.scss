@@ -126,6 +126,22 @@ $light-theme: (
         color: $sec;
       }
 
+      .home-links {
+
+        .linkedin-link,
+        .github-link {
+        
+          svg {
+            fill: $sec;
+            transition: fill 0.2s ease;
+
+            &:hover {
+              fill: $acc1;
+            }
+          }
+        }
+      }
+
       .road-vector {
         fill: $acc2;
       }
@@ -311,11 +327,11 @@ $light-theme: (
     .contact-container {
 
       .node-vector {
-        
+
         g {
-          fill: $acc2;
+          fill: map-get($light-theme, acc2);
+          stroke: map-get($light-theme, acc2);
         }
-        
       }
 
       .contact-title {
@@ -353,13 +369,14 @@ $light-theme: (
           color: $sec;
         }
       }
-
-      .contact-linkedin,
-      .contact-email,
-      .contact-github {
-
+      
+      .linkedin-link,
+      .github-link,
+      .contact-email {
+        
         svg {
           fill: $sec;
+          transition: fill 0.2s ease;
 
           &:hover {
             fill: $acc1;
@@ -456,8 +473,9 @@ body {
 
           g {
             fill: map-get($light-theme, acc1);
+            stroke: map-get($light-theme, acc1);
+            opacity: 0.15;
           }
-          
         }
       }
     }

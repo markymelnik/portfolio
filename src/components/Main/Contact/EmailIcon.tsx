@@ -1,4 +1,4 @@
-const EmailSVG = () => {
+const EmailIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -10,4 +10,4 @@ const EmailSVG = () => {
   );
 };
 
-export default EmailSVG;
+export default EmailIcon;
