@@ -311,7 +311,11 @@ $light-theme: (
     .contact-container {
 
       .node-vector {
-        stroke: $acc2;
+        
+        g {
+          fill: $acc2;
+        }
+        
       }
 
       .contact-title {
@@ -449,7 +453,11 @@ body {
       .contact-container {
 
         .node-vector {
-          stroke: map-get($light-theme, acc1);
+
+          g {
+            fill: map-get($light-theme, acc1);
+          }
+          
         }
       }
     }

@@ -1,6 +1,7 @@
 import useMobileMenuHideOnScroll from '../../../hooks/useMobileMenuHideOnScroll';
 import LightDarkToggleButton from '../LightDark/LightDarkToggleButton';
 import NavBar from '../NavBar/NavBar';
+import DimOverlay from './DimOverlay/DimOverlay';
 import './_mobile-menu.scss';
 
 type MobileMenuProps = {
@@ -19,12 +20,24 @@ const MobileMenu = ({ isOpen, activeTab, setActiveTab, setIsScrolling, closeMobi
   useMobileMenuHideOnScroll({ closeMobileMenu });
 
   return (
-    <div ref={mobileMenuRef} className={`mobile-menu-container ${isOpen ? `open` : ``}`}>
+    <>
+      <DimOverlay isShown={isOpen} />
+      <div
+        ref={mobileMenuRef}
+        className={`mobile-menu-container ${isOpen ? `open` : ``}`}
+      >
       <div className="mobile-menu-top">
         <LightDarkToggleButton />
       </div>
-      <NavBar activeTab={activeTab} setActiveTab={setActiveTab} setIsScrolling={setIsScrolling} customClass={customClass} onNavClick={closeMobileMenu}/>
+      <NavBar
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+        setIsScrolling={setIsScrolling}
+        customClass={customClass}
+        onNavClick={closeMobileMenu}
+      />
     </div>
+    </>
   );
 };
 

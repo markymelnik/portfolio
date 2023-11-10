@@ -1,12 +1,11 @@
 .node-vector {
   position: absolute;
-  bottom: 11rem;
-  right: -4rem;
-  height: 16rem;
-  width: 16rem;
-  
-  transform: rotate(45deg);
-  z-index: -1;
+  bottom: 10rem;
+  right: -5rem;
+  height: 20rem;
+  width: 20rem;
+  transform: rotate(-15deg);
+  z-index: 1;
 
   g {
     opacity: 0.15;
@@ -15,9 +14,9 @@
 
 @media (min-width: 768px) {
   .node-vector {
-    bottom: 1rem;
-    right: -10rem;
-    height: 26rem;
-    width: 26rem;
+    bottom: 2rem;
+    right: -9rem;
+    height: 30rem;
+    width: 30rem;
   }
 }

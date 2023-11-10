@@ -8,9 +8,8 @@
   right: 0;
   height: 100dvh;
   width: 55%;
-  opacity: 0.9;
   transform: translateX(100%);
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
   z-index: 2;
 
   &.open {
