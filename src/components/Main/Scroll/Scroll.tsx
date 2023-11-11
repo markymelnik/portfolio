@@ -1,7 +1,8 @@
-import { useRef } from 'react';
-import DownIcon from '../Projects/SideProjects/DownIcon';
-import './_scroll.scss';
-import useHideOnScroll from '../../../hooks/useHideOnScroll';
+import { useRef } from "react";
+
+import useHideOnScroll from "../../../hooks/useHideOnScroll";
+import DownIcon from "../Projects/SideProjects/DownIcon";
+import "./_scroll.scss";
 
 const Scroll = () => {
   const arrowRef = useRef<HTMLDivElement>(null);
@@ -14,7 +15,7 @@ const Scroll = () => {
         <span>{<DownIcon />}</span>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Scroll;

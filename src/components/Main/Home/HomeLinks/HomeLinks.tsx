@@ -1,4 +1,4 @@
-import GithubLink from "../../Links/GIthubLink/GithubLink";
+import GithubLink from "../../Links/GithubLink/GithubLink";
 import LinkedinLink from "../../Links/LinkedinLink/LinkedinLink";
 import "./_home-links.scss";
 

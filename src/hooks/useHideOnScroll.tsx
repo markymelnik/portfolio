@@ -8,9 +8,9 @@ const useHideOnScroll = ({ ref }: UseHideOnScrollProps) => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
-        ref.current?.classList.add('slide-down');
+        ref.current?.classList.add("slide-down");
       } else {
-        ref.current?.classList.remove('slide-down');
+        ref.current?.classList.remove("slide-down");
       }
     };
 

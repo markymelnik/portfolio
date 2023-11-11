@@ -1,6 +1,6 @@
 @import '@styles/animations';
 
-.home-subtitle {
+.dynamic-subtitle {
   position: relative;
   height: 1.75rem;
   font-size: 1.5rem;
@@ -34,7 +34,7 @@
 }
 
 @media (min-width: 768px) {
-  .home-subtitle {
+  .dynamic-subtitle {
     height: 2.25rem;
     font-size: 2rem;
   }

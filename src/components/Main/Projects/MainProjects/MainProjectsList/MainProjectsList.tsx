@@ -1,20 +1,22 @@
-import MainProject from "../MainProject/MainProject";
-import FitFinderScreenshot from '../../../../../assets/images/project/fitfinder-screenshot.jpg';
-import PersonalSiteScreenshot from '../../../../../assets/images/project/personal-site-screenshot.jpg';
-import BattleshipScreenshot from '../../../../../assets/images/project/battleship-screenshot.jpg';
-import ShoppingCartScreenshot from '../../../../../assets/images/project/shopping-cart-screenshot.jpg';
-import './_main-projects-list.scss';
 import { MutableRefObject } from "react";
+
+import MainProject from "../MainProject/MainProject";
+import FitFinderScreenshot from "../../../../../assets/images/project/fitfinder-screenshot.jpg";
+import PersonalSiteScreenshot from "../../../../../assets/images/project/personal-site-screenshot.jpg";
+import BattleshipScreenshot from "../../../../../assets/images/project/battleship-screenshot.jpg";
+import ShoppingCartScreenshot from "../../../../../assets/images/project/shopping-cart-screenshot.jpg";
+import "./_main-projects-list.scss";
 
 type MainProjectsList = {
   projectRefs: MutableRefObject<HTMLLIElement | null>[];
-}
+};
 
 const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
-
   return (
     <>
-      <h2 className="main-projects-title"><span>.02</span>My Projects</h2>
+      <h2 className="main-projects-title">
+        <span>.02</span>My Projects
+      </h2>
       <ul className="main-projects-list">
         <MainProject
           ref={projectRefs[0]}
@@ -59,7 +61,7 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
         />
       </ul>
     </>
-  )
-}
+  );
+};
 
 export default MainProjectsList;

@@ -2,7 +2,7 @@ import { MutableRefObject, useEffect } from "react";
 
 type UseProjectObserverProps = {
   refs: MutableRefObject<HTMLElement | null>[];
-}
+};
 
 const useProjectObserver = ({ refs }: UseProjectObserverProps) => {
   useEffect(() => {
@@ -10,11 +10,12 @@ const useProjectObserver = ({ refs }: UseProjectObserverProps) => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('slide-in');
+            entry.target.classList.add("slide-in");
           }
-        })
-      }, { threshold: 0.5 }
-    )
+        });
+      },
+      { threshold: 0.5 }
+    );
 
     refs.forEach((ref) => {
       if (ref.current) {
@@ -27,9 +28,9 @@ const useProjectObserver = ({ refs }: UseProjectObserverProps) => {
         if (ref.current) {
           projectObserver.unobserve(ref.current);
         }
-      })
-    }
+      });
+    };
   }, [refs]);
-}
+};
 
 export default useProjectObserver;

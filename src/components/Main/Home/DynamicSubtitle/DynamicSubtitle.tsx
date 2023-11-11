@@ -1,8 +1,8 @@
-import './_cycling-subtitle.scss';
+import "./_dynamic-subtitle.scss";
 
-const CyclingSubtitle = () => {
+const DynamicSubtitle = () => {
   return (
-    <h2 className="home-subtitle">
+    <h2 className="dynamic-subtitle">
       <span>Full Stack Developer</span>
       <span>Lifelong learning 📚</span>
       <span>Говорит на трёх языках!</span>
@@ -11,4 +11,4 @@ const CyclingSubtitle = () => {
   );
 };
 
-export default CyclingSubtitle;
+export default DynamicSubtitle;

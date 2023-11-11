@@ -24,4 +24,3 @@ export const LightDarkProvider = ({ children }: LightDarkProviderProps) => {
     </LightDarkContext.Provider>
   );
 };
-

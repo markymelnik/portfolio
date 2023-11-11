@@ -1,12 +1,12 @@
 import { forwardRef } from "react";
-import SkillList from "./Skill/SkillList";
-import HeadshotPhoto from '../../../assets/images/headshot.jpg';
+
+import SkillList from "./Skills/SkillList";
+import HeadshotPhoto from "../../../assets/images/headshot.jpg";
 import "./_about.scss";
 
 interface AboutProps extends React.HTMLProps<HTMLDivElement> {}
 
 const About = forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
-
   return (
     <section ref={ref} className="about-container" {...props}>
       <h2 className="about-title">
@@ -32,8 +32,8 @@ const About = forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
             and Russian. During my final semester, I took a genetics class
             involving automating data analysis with R. Since that initial
             exposure to programming, I've been hooked. I have dedicated myself
-            to learning computer science fundamentals and theory to
-            develop web applications through a project-based approach.
+            to learning computer science fundamentals and theory, building web
+            applications through a project-based approach.
           </p>
           <hr />
           <p>

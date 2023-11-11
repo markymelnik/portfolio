@@ -10,9 +10,8 @@ import Footer from "./components/Footer/Footer";
 import { useLightDark } from "./components/Header/LightDark/useLightDark";
 
 const App = () => {
-
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
-  
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
   };
@@ -26,8 +25,8 @@ const App = () => {
   const [activeTab, setActiveTab] = useState<string>("home");
   const [isScrolling, setIsScrolling] = useState<boolean>(false);
 
-  if ('scrollRestoration' in history) {
-    history.scrollRestoration = 'manual';
+  if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
   }
 
   return (

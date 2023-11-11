@@ -9,7 +9,11 @@ const Footer = () => {
           React
         </a>{" "}
         and{" "}
-        <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://sass-lang.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Sass
         </a>
         ; deployed on{" "}

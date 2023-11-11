@@ -1,4 +1,5 @@
-import { useContext } from "react"
+import { useContext } from "react";
+
 import { LightDarkContext } from "./LightDark";
 
 export const useLightDark = () => {
@@ -7,4 +8,4 @@ export const useLightDark = () => {
     throw new Error("useLightDark must be inside LightDarkProvider");
   }
   return context;
-}
+};

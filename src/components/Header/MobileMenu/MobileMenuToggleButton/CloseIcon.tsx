@@ -1,6 +1,6 @@
 type CloseIconTypes = {
-  className: string,
-}
+  className: string;
+};
 
 const CloseIcon = ({ className }: CloseIconTypes) => {
   return (

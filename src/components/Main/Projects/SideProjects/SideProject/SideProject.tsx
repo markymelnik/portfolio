@@ -1,5 +1,5 @@
 import LinkIcon from "../../LinkIcon";
-import './_side-project.scss';
+import "./_side-project.scss";
 
 type SideProjectProps = {
   projectId: string;

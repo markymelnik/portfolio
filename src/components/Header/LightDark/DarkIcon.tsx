@@ -14,6 +14,6 @@ const DarkIcon = () => {
       />
     </svg>
   );
-}
+};
 
 export default DarkIcon;

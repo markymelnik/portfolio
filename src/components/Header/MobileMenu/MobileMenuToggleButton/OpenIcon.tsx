@@ -1,6 +1,6 @@
 type OpenIconTypes = {
-  className: string,
-}
+  className: string;
+};
 
 const OpenIcon = ({ className }: OpenIconTypes) => {
   return (
