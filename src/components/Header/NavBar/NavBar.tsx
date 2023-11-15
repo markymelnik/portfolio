@@ -1,7 +1,7 @@
 import { useRef } from "react";
 
 import LightDarkToggleButton from "../LightDark/LightDarkToggleButton";
-import "./_mobile-navar.scss";
+import "./_mobile-navbar.scss";
 import "./_desktop-navbar.scss";
 
 type NavbarProps = {

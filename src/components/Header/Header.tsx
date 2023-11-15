@@ -37,7 +37,7 @@ const Header = ({
 
   return (
     <header className="header-container">
-      <div className="header-top">
+      <div className="header-content">
         <Logo />
         <NavBar
           activeTab={activeTab}

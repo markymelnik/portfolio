@@ -4,7 +4,7 @@ import EmailIcon from "./EmailIcon";
 import EmailTip from "./EmailTip/EmailTip";
 import NodeVectorSVG from "./NodeVector/NodeVectorSVG";
 import LinkedinLink from "../Links/LinkedinLink/LinkedinLink";
-import GithubLink from "../Links/GithubLink/GithubLink";
+import GithubLink from "../Links/GIthubLink/GithubLink";
 import "./_contact.scss";
 
 interface ContactProps extends React.HTMLProps<HTMLDivElement> {}

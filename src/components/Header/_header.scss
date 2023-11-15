@@ -17,7 +17,7 @@
     top: -6.5rem;
   }
 
-  .header-top {
+  .header-content {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -30,7 +30,7 @@
   .header-container {
     padding: 0 4rem;
 
-    .header-top {
+    .header-content {
       flex-direction: row;
       padding: 2.5rem 0;
     }
