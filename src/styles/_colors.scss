@@ -397,7 +397,7 @@ $light-theme: (
   // Footer
 
   .footer-container {
-    color: lighten($acc2, 5%);
+    color: lighten($acc2, 10%);
 
     a {
       color: $sec;
@@ -523,7 +523,7 @@ body {
     }
 
     .footer-container {
-      color: map-get($light-theme, acc2);
+      color: darken(map-get($light-theme, acc2), 10%);
 
       a {
         color: map-get($light-theme, acc1);

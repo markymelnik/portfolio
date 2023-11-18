@@ -8,6 +8,7 @@ const GithubLink = () => {
       target="_blank"
       rel="noopener noreferrer"
       className="github-link"
+      aria-label="Visit my github profile"
     >
       <GithubIcon />
     </a>

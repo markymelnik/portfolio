@@ -58,6 +58,7 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-email"
+                aria-label={`Open email client to write an email to ${email}`}
               >
                 <EmailIcon />
               </a>

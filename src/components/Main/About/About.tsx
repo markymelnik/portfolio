@@ -15,7 +15,10 @@ const About = forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
       <div className="about-information">
         <div className="about-left">
           <div className="about-photo">
-            <img src={HeadshotPhoto} alt="photo of site creator, Mark Melnik" />
+            <img
+              src={HeadshotPhoto}
+              alt="Headshot of site developer, Mark Melnik"
+            />
           </div>
           <div className="about-photo-name">Mark Melnik</div>
         </div>
@@ -29,7 +32,7 @@ const About = forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
           </p>
           <hr />
           <p>
-            I graduated from{" "}
+            I graduated with a major in Neuroscience and a minor in Russian from{" "}
             <a
               href="https://binghamton.edu"
               target="_blank"
@@ -37,21 +40,20 @@ const About = forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
               className="university-link"
             >
               Binghamton University
-            </a>{" "}
-            with degrees in Neuroscience and Russian. During my final semester,
-            I took a genetics class involving automating data analysis with R.
-            Since that first exposure to programming, I've been hooked. I have
-            dedicated myself to learning computer science theory and
+            </a>
+            . During my last semester, I had my first exposure to programming
+            and quickly developed a fascination for technology and software. Since
+            then, I've dedicated myself to learning computer science theory and
             fundamentals, focusing on building web applications through a
-            project-based approach. I am deeply fascinated by the inner workings
+            project-based approach. I am deeply interested in the inner workings
             of software and its capacity to benefit others.
           </p>
           <hr />
           <p>
             I am eager to enter the software world, bringing a fresh perspective
             and contributing my skills and unique insights to a collaborative,
-            professional environment. I am ready for new challenges that will
-            further develop my knowledge and skillset. Check out what I've
+            professional environment. I am ready to tackle new challenges and
+            further develop my skillset. Check out what I've
             created as I search for my first opportunity!
           </p>
           <SkillList />

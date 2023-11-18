@@ -8,7 +8,13 @@ const LightDarkToggleButton = () => {
   const { theme, toggleTheme } = useLightDark();
 
   return (
-    <button className="light-dark-toggle-btn" onClick={toggleTheme}>
+    <button
+      className="light-dark-toggle-btn"
+      onClick={toggleTheme}
+      aria-label={
+        theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+      }
+    >
       {theme === "dark" ? <LightIcon /> : <DarkIcon />}
     </button>
   );

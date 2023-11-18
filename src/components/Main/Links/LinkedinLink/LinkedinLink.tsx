@@ -8,6 +8,7 @@ const LinkedinLink = () => {
       target="_blank"
       rel="noopener noreferrer"
       className="linkedin-link"
+      aria-label="Visit my linkedin profile"
     >
       <LinkedinIcon />
     </a>

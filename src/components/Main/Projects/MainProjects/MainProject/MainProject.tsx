@@ -13,7 +13,9 @@ type MainProjectProps = {
   projectSourceUrl?: string;
   overrideSource?: boolean;
   projectImage?: string;
+  imageDescription?: string;
   newProject?: boolean;
+  linkDescription?: string;
 };
 
 const MainProject = React.forwardRef<HTMLLIElement, MainProjectProps>(
@@ -27,7 +29,9 @@ const MainProject = React.forwardRef<HTMLLIElement, MainProjectProps>(
       projectSourceUrl,
       overrideSource,
       projectImage,
+      imageDescription,
       newProject,
+      linkDescription,
     },
     ref
   ) => {
@@ -72,8 +76,9 @@ const MainProject = React.forwardRef<HTMLLIElement, MainProjectProps>(
           className="main-project-image"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={linkDescription}
         >
-          <img src={projectImage} />
+          <img src={projectImage} alt={imageDescription} />
         </a>
       </li>
     );

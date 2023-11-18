@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Jost';
   src: url('../assets/fonts/Jost.ttf');
+  font-display: swap;
   font-weight: 400;
 }
 
@@ -15,7 +16,7 @@ html {
 }
 
 body {
-  font-family: 'Jost';
+  font-family: 'Jost', Arial, Helvetica, sans-serif;
 }
 
 a,

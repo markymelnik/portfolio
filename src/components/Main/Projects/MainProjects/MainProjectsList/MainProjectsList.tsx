@@ -27,7 +27,9 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           projectDemoUrl={`https://fitfinder.app`}
           overrideSource={true}
           projectImage={FitFinderScreenshot}
+          imageDescription={"Screenshot of fit finder project page"}
           newProject={true}
+          linkDescription={"Visit my fit finder project site"}
         />
         <MainProject
           ref={projectRefs[1]}
@@ -38,6 +40,8 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           projectDemoUrl={`https://markmelnik.com`}
           projectSourceUrl={`https://github.com/markymelnik/personal-site`}
           projectImage={PersonalSiteScreenshot}
+          imageDescription={"Screenshot of personal portfolio project page"}
+          linkDescription={"Visit my personal portfolio project site"}
         />
         <MainProject
           ref={projectRefs[2]}
@@ -48,6 +52,8 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           projectDemoUrl={`https://battleship.markmelnik.com`}
           projectSourceUrl={`https://github.com/markymelnik/battleship`}
           projectImage={BattleshipScreenshot}
+          imageDescription={"Screenshot of battleship project page"}
+          linkDescription={"Visit my battleship project site"}
         />
         <MainProject
           ref={projectRefs[3]}
@@ -58,6 +64,8 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           projectDemoUrl={`https://shopping-cart.markmelnik.com`}
           projectSourceUrl={`https://github.com/markymelnik/shopping-cart`}
           projectImage={ShoppingCartScreenshot}
+          imageDescription={"Screenshot of shopping cart project page"}
+          linkDescription={"Visit my shopping cart project site"}
         />
       </ul>
     </>
