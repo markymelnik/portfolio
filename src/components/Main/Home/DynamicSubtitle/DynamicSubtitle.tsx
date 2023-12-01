@@ -6,7 +6,7 @@ const DynamicSubtitle = () => {
       <span>Full Stack Developer</span>
       <span>Lifelong learning 📚</span>
       <span>Говорит на трёх языках!</span>
-      <span>Very nice, I like 😎</span>
+      <span>Curious and self-driven 🔍</span>
     </h2>
   );
 };

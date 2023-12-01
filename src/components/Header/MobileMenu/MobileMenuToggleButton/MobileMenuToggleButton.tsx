@@ -18,6 +18,7 @@ const MobileMenuToggleButton = ({
       className="mobile-menu-toggle-btn"
       onClick={onClick}
       aria-expanded={isMobileMenuOpen}
+      aria-label={isMobileMenuOpen ? "Close mobile menu" : "Open mobile menu"}
     >
       <IconComponent className={`mobile-menu-icon`} />
     </button>

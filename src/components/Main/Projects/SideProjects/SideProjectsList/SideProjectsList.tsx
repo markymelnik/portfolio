@@ -1,7 +1,6 @@
 import { MutableRefObject, useState } from "react";
 
 import SideProject from "../SideProject/SideProject";
-import UpIcon from "../UpIcon";
 import DownIcon from "../DownIcon";
 import "./_side-projects-list.scss";
 
@@ -22,7 +21,7 @@ const SideProjectsList = ({ seeMoreRef }: SideProjectsListProps) => {
           onClick={() => setShowSideProductsList((prev) => !prev)}
         >
           <span>See More</span>
-          <span>{showSideProjectsList ? <UpIcon /> : <DownIcon />}</span>
+          <span>{<DownIcon isActive={showSideProjectsList} />}</span>
         </button>
       </div>
 

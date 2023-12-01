@@ -36,7 +36,7 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           projectId={`project-2`}
           projectYear={2023}
           projectName={`markmelnik.com`}
-          projectDescription={`Hey, you're on this site right now! I designed it to be simple yet elegant. I utilized the Intersection Observer API to create the dynamic navbar and scroll into view transitions. Let me know what you think 👀.`}
+          projectDescription={`Hey, you're on this site right now! I designed it to be simple yet elegant. I utilized the Intersection Observer API to create the dynamic navbar and scroll into view transitions. Let me know what you think!`}
           projectDemoUrl={`https://markmelnik.com`}
           projectSourceUrl={`https://github.com/markymelnik/personal-site`}
           projectImage={PersonalSiteScreenshot}
@@ -60,7 +60,7 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           projectId={`project-4`}
           projectYear={2023}
           projectName={`Shopping Cart`}
-          projectDescription={`A mock shopping site with dynamic cart functionality.`}
+          projectDescription={`A mock shopping site with dynamic cart functionality that you would encounter on an e-commerce site.`}
           projectDemoUrl={`https://shopping-cart.markmelnik.com`}
           projectSourceUrl={`https://github.com/markymelnik/shopping-cart`}
           projectImage={ShoppingCartScreenshot}
