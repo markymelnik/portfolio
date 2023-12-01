@@ -1,5 +1,5 @@
 type ArrowIconProps = {
-  isActive: boolean;
+  isActive?: boolean;
 }
 
 const DownIcon = ({ isActive }: ArrowIconProps) => {
