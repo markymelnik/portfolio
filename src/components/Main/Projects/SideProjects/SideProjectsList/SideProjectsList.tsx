@@ -1,4 +1,4 @@
-import { MutableRefObject, useState } from "react";
+import { type MutableRefObject, useState } from "react";
 
 import SideProject from "../SideProject/SideProject";
 import DownIcon from "../DownIcon";

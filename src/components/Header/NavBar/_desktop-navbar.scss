@@ -1,4 +1,4 @@
-@import '@styles/animations';
+@import '../../../styles/animations';
 
 .desktop-navbar-container {
   display: none;
@@ -28,7 +28,7 @@
       }
     }
 
-    .desktop-navbar-home {
+/*     .desktop-navbar-home {
       @include animateFadeIn(1.3s);
     }
 
@@ -42,6 +42,6 @@
 
     .desktop-navbar-contact {
       @include animateFadeIn(1.45s);
-    }
+    } */
   }
 }

@@ -1,4 +1,4 @@
-@import '@styles/animations';
+@import '../../../../styles/animations';
 
 .road-vector {
   position: absolute;
@@ -6,7 +6,7 @@
   right: -45%;
   height: 65vh;
 
-  @include animateFadeIn(1.5s);
+/*   @include animateFadeIn(1.5s); */
 
   path {
     opacity: 0.15;
@@ -18,7 +18,7 @@
     height: 65vh;
     bottom: -2vh;
     right: 2%;
-    @include animateFadeIn(1.8s);
+  /*   @include animateFadeIn(1.8s); */
   }
 }
 

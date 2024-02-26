@@ -1,15 +1,16 @@
-import { MutableRefObject } from "react";
+import type { MutableRefObject } from "react";
 
 import MainProject from "../MainProject/MainProject";
-import FitFinderScreenshot from "../../../../../assets/images/project/fitfinder-screenshot.jpg";
-import PersonalSiteScreenshot from "../../../../../assets/images/project/personal-site-screenshot.jpg";
-import BattleshipScreenshot from "../../../../../assets/images/project/battleship-screenshot.jpg";
-import BallBattleScreenshot from "../../../../../assets/images/project/ball-battle-screenshot.jpg";
 import "./_main-projects-list.scss";
 
 type MainProjectsList = {
   projectRefs: MutableRefObject<HTMLLIElement | null>[];
 };
+
+const FitFinderScreenshot = "/src/assets/images/project/fitfinder-screenshot.jpg";
+const PersonalSiteScreenshot = 'src/assets/images/project/personal-site-screenshot.jpg'
+const BattleshipScreenshot = "src/assets/images/project/battleship-screenshot.jpg";
+const BallBattleScreenshot = "src/assets/images/project/ball-battle-screenshot.jpg";
 
 const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
   return (
@@ -36,7 +37,7 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           ref={projectRefs[1]}
           projectId={`project-2`}
           projectYear={2023}
-          projectName={`FitFinder`}
+          projectName={`Fit Finder`}
           projectDescription={`Looking for a new workout spot? Find it with FitFinder! This project was a tremendous learning experience from start to finish. The resulting solution is the product of many design choices and technical implementations on both the frontend and backend.`}
           projectDemoUrl={`https://fitfinder.app`}
           overrideSource={true}

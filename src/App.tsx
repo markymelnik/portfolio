@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { /* useEffect, */ useState } from "react";
 
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -7,7 +7,7 @@ import ScrollToTop from "./hooks/useScrollToTop";
 import Header from "./components/Header/Header";
 import "./styles/_global.scss";
 import Footer from "./components/Footer/Footer";
-import { useLightDark } from "./components/Header/LightDark/useLightDark";
+/* import { useLightDark } from "./components/Header/LightDark/useLightDark"; */
 
 const App = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -16,18 +16,18 @@ const App = () => {
     setIsMobileMenuOpen((prev) => !prev);
   };
 
-  const { theme } = useLightDark();
+/*   const { theme } = useLightDark(); */
 
-  useEffect(() => {
+/*   useEffect(() => {
     document.body.className = `${theme}-theme`;
-  }, [theme]);
+  }, [theme]); */
 
   const [activeTab, setActiveTab] = useState<string>("home");
   const [isScrolling, setIsScrolling] = useState<boolean>(false);
 
-  if ("scrollRestoration" in history) {
+  /* if ("scrollRestoration" in history) {
     history.scrollRestoration = "manual";
-  }
+  } */
 
   return (
     <Router>

@@ -1,8 +1,9 @@
 import { forwardRef } from "react";
 
 import SkillList from "./Skills/SkillList";
-import HeadshotPhoto from "../../../assets/images/headshot.jpg";
 import "./_about.scss";
+
+const HeadshotPhoto = 'src/assets/images/headshot.jpg';
 
 interface AboutProps extends React.HTMLProps<HTMLDivElement> {}
 

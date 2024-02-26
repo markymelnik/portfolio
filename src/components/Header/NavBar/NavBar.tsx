@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-import LightDarkToggleButton from "../LightDark/LightDarkToggleButton";
+/* import LightDarkToggleButton from "../LightDark/LightDarkToggleButton"; */
 import "./_mobile-navbar.scss";
 import "./_desktop-navbar.scss";
 
@@ -24,7 +24,9 @@ const NavBar = ({
   const scrollValue = window.innerWidth < 768 ? 90 : 140;
 
   const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
+    if (typeof window !== undefined) {
+
+      const section = document.getElementById(sectionId);
     if (section) {
       const sectionRect = section.getBoundingClientRect();
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
@@ -52,6 +54,10 @@ const NavBar = ({
     if (customClass === "mobile-navbar" && onNavClick) {
       onNavClick();
     }
+
+
+    }
+    
   };
 
   return (
@@ -88,7 +94,7 @@ const NavBar = ({
       >
         Contact
       </div>
-      {customClass == "desktop-navbar" ? <LightDarkToggleButton /> : null}
+      {/* {customClass == "desktop-navbar" ? <LightDarkToggleButton /> : null} */}
     </div>
   );
 };

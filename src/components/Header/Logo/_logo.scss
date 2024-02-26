@@ -1,11 +1,11 @@
-@import '@styles/animations';
+@import '../../../styles/animations';
 
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0.25rem;
-  @include animateFadeIn(1.2s);
+  /* @include animateFadeIn(1.2s); */
 
   .logo-text {
     font-size: 1rem;
