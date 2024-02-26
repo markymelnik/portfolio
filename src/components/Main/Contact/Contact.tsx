@@ -34,11 +34,14 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
         <span>.03</span>Contact Me
       </h2>
       <div ref={ref} className="contact-info" {...props}>
-        <p className="contact-paragraph">
+        {/* <p className="contact-paragraph">
           Feel free to reach out! I am actively seeking a full-time software
           role, internship, or industry experience. I would love to talk about
           my journey thus far and dive into the details of my projects!
-        </p>
+        </p> */}
+        <div className="contact-paragraph">
+          Feel free to reach out! <br/> I am currently seeking an entry-level software development role.
+        </div>
         <div className="contact-selection">
           <div className="contact-top">
             <div

@@ -4,7 +4,7 @@ import MainProject from "../MainProject/MainProject";
 import FitFinderScreenshot from "../../../../../assets/images/project/fitfinder-screenshot.jpg";
 import PersonalSiteScreenshot from "../../../../../assets/images/project/personal-site-screenshot.jpg";
 import BattleshipScreenshot from "../../../../../assets/images/project/battleship-screenshot.jpg";
-import ShoppingCartScreenshot from "../../../../../assets/images/project/shopping-cart-screenshot.jpg";
+import BallBattleScreenshot from "../../../../../assets/images/project/ball-battle-screenshot.jpg";
 import "./_main-projects-list.scss";
 
 type MainProjectsList = {
@@ -21,6 +21,20 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
         <MainProject
           ref={projectRefs[0]}
           projectId={`project-1`}
+          projectYear={2024}
+          projectName={`Ball Battle`}
+          projectDescription={`A basketball prediction and social networking application.`}
+          projectDemoUrl={`https://markmelnik.com`}
+          overrideDemo={true}
+          overrideSource={true}
+          projectImage={BallBattleScreenshot}
+          imageDescription={"Screenshot of ball battle project page"}
+          linkDescription={"Visit my ball battle site"}
+          newProject={true}
+        />
+        <MainProject
+          ref={projectRefs[1]}
+          projectId={`project-2`}
           projectYear={2023}
           projectName={`FitFinder`}
           projectDescription={`Looking for a new workout spot? Find it with FitFinder! This project was a tremendous learning experience from start to finish. The resulting solution is the product of many design choices and technical implementations on both the frontend and backend.`}
@@ -28,12 +42,11 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           overrideSource={true}
           projectImage={FitFinderScreenshot}
           imageDescription={"Screenshot of fit finder project page"}
-          newProject={true}
           linkDescription={"Visit my fit finder project site"}
         />
         <MainProject
-          ref={projectRefs[1]}
-          projectId={`project-2`}
+          ref={projectRefs[2]}
+          projectId={`project-3`}
           projectYear={2023}
           projectName={`markmelnik.com`}
           projectDescription={`Hey, you're on this site right now! I designed it to be simple yet elegant. I utilized the Intersection Observer API to create the dynamic navbar and scroll into view transitions. Let me know what you think!`}
@@ -44,8 +57,8 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           linkDescription={"Visit my personal portfolio project site"}
         />
         <MainProject
-          ref={projectRefs[2]}
-          projectId={`project-3`}
+          ref={projectRefs[3]}
+          projectId={`project-4`}
           projectYear={2023}
           projectName={`Battleship`}
           projectDescription={`A game of Battleship played in the web browser. This solution is written in vanilla JavaScript, HTML, and CSS. I underwent a test-driven development process using the Jest testing library to see this project to completion.`}
@@ -55,7 +68,7 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           imageDescription={"Screenshot of battleship project page"}
           linkDescription={"Visit my battleship project site"}
         />
-        <MainProject
+      {/*   <MainProject
           ref={projectRefs[3]}
           projectId={`project-4`}
           projectYear={2023}
@@ -66,7 +79,7 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           projectImage={ShoppingCartScreenshot}
           imageDescription={"Screenshot of shopping cart project page"}
           linkDescription={"Visit my shopping cart project site"}
-        />
+        /> */}
       </ul>
     </>
   );

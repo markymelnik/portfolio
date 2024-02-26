@@ -31,9 +31,9 @@ const Main = ({ setActiveTab, isScrolling }: MainProps) => {
       <Home ref={homeRef} id="home" />
       <Scroll />
       <About ref={aboutRef} id="about" />
-      <Divider />
+      <Divider customClass={'divi-1'} />
       <Projects ref={projectsRef} id="projects" />
-      <Divider />
+      <Divider customClass={'divi-2'} />
       <Contact ref={contactRef} id="contact" />
     </main>
   );

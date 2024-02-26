@@ -14,7 +14,7 @@
     .desktop-navbar-about,
     .desktop-navbar-projects,
     .desktop-navbar-contact {
-      padding: 0 1.25rem;
+      padding: 0 1rem;
       font-size: 1rem;
       transition: color 0.25s ease;
 
@@ -33,15 +33,15 @@
     }
 
     .desktop-navbar-about {
-      @include animateFadeIn(1.4s);
+      @include animateFadeIn(1.35s);
     }
 
     .desktop-navbar-projects {
-      @include animateFadeIn(1.5s);
+      @include animateFadeIn(1.4s);
     }
 
     .desktop-navbar-contact {
-      @include animateFadeIn(1.6s);
+      @include animateFadeIn(1.45s);
     }
   }
 }

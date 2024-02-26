@@ -2,6 +2,7 @@ import React from "react";
 
 import LinkIcon from "../../LinkIcon";
 import OverrideButton from "../OverrideButton/OverrideButton";
+import NoDemoButton from "../NoDemoButton/NoDemoButton";
 import "./_main-project.scss";
 
 type MainProjectProps = {
@@ -11,6 +12,7 @@ type MainProjectProps = {
   projectDescription: string;
   projectDemoUrl?: string;
   projectSourceUrl?: string;
+  overrideDemo?: boolean;
   overrideSource?: boolean;
   projectImage?: string;
   imageDescription?: string;
@@ -27,6 +29,7 @@ const MainProject = React.forwardRef<HTMLLIElement, MainProjectProps>(
       projectDescription,
       projectDemoUrl,
       projectSourceUrl,
+      overrideDemo,
       overrideSource,
       projectImage,
       imageDescription,
@@ -37,7 +40,7 @@ const MainProject = React.forwardRef<HTMLLIElement, MainProjectProps>(
   ) => {
     return (
       <li ref={ref} className={`main-project ${projectId}`}>
-        {newProject && <div className="new-project-label">New!</div>}
+        {newProject && <div className="new-project-label">Work In Progress</div>}
         <div className="main-project-stuff">
           <div className="main-project-info">
             <div className="main-project-year">{projectYear}</div>
@@ -45,7 +48,9 @@ const MainProject = React.forwardRef<HTMLLIElement, MainProjectProps>(
             <p className="main-project-description">{projectDescription}</p>
           </div>
           <div className="main-project-links">
-            {projectDemoUrl && (
+            {overrideDemo ? (
+              <NoDemoButton />
+            ) : (
               <a
                 href={projectDemoUrl}
                 className="main-project-demo-link"
