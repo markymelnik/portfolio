@@ -1,4 +1,5 @@
-@import '@styles/animations';
+@import '../../../styles/animations';
+@import '../../../styles/colors';
 
 .home-container {
   position: relative;
@@ -16,6 +17,7 @@
       font-weight: 550;
       margin: 0 0 0.25rem;
       @include animateFadeIn(0.5s);
+      @include theme-color(color, accent);
     }
   }
 }

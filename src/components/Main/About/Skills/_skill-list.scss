@@ -1,13 +1,18 @@
+@import '../../../../styles/colors.scss';
+
 .about-skills {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin: 2rem 0 0;
   padding: 2rem 0 0;
+  border-top: 1px solid;
+  @include theme-color(border-color, border);
 
   .about-skills-title {
     font-size: 1rem;
     margin: 0 0 2rem;
+    @include theme-color(color, text);
   }
 
   .about-skills-list {

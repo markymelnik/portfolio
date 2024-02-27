@@ -1,8 +1,8 @@
-import { MutableRefObject, useState } from "react";
+import { type MutableRefObject, useState } from "react";
 
 import SideProject from "../SideProject/SideProject";
-import DownIcon from "../DownIcon";
 import "./_side-projects-list.scss";
+import { Icons } from "../../../../../lib/Icons";
 
 type SideProjectsListProps = {
   seeMoreRef: MutableRefObject<HTMLButtonElement | null>;
@@ -21,7 +21,7 @@ const SideProjectsList = ({ seeMoreRef }: SideProjectsListProps) => {
           onClick={() => setShowSideProductsList((prev) => !prev)}
         >
           <span>See More</span>
-          <span>{<DownIcon isActive={showSideProjectsList} />}</span>
+          <span className={`sp-rotate-btn ${showSideProjectsList ? 'rotate': ''}`}>{<Icons.CaretDown />}</span>
         </button>
       </div>
 

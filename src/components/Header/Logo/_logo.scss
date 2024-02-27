@@ -1,15 +1,18 @@
-@import '@styles/animations';
+@import '../../../styles/animations';
+@import '../../../styles/colors';
 
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0.25rem;
-  @include animateFadeIn(1.2s);
+  padding: 0.25rem 0 0;
+  /* @include animateFadeIn(1.2s); */
 
   .logo-text {
     font-size: 1rem;
     transition: transform 0.2s ease;
+    @include theme-color(color, text);
 
     &:hover {
       cursor: default;

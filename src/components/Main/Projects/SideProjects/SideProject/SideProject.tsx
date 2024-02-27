@@ -1,4 +1,4 @@
-import LinkIcon from "../../LinkIcon";
+import { Icons } from "../../../../../lib/Icons";
 import "./_side-project.scss";
 
 type SideProjectProps = {
@@ -34,7 +34,7 @@ const SideProject = ({
             rel="noopener noreferrer"
           >
             <span className="side-project-link-text">Demo</span>
-            <LinkIcon />
+            <Icons.Link size={20} />
           </a>
         )}
         {projectSourceUrl && (
@@ -45,7 +45,7 @@ const SideProject = ({
             rel="noopener noreferrer"
           >
             <span className="side-project-link-text">Source</span>
-            <LinkIcon />
+            <Icons.Link size={20} />
           </a>
         )}
       </div>

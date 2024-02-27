@@ -1,0 +1,9 @@
+@import '../styles/colors.scss';
+
+.icon {
+	@include theme-color(color, text);
+
+	&:hover {
+		@include theme-color(color, accent);
+	}
+}

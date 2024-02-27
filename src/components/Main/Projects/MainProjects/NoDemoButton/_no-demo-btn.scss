@@ -1,3 +1,5 @@
+@import '../../../../../styles/colors.scss';
+
 .no-demo-btn {
   position: relative;
   display: inline-flex;
@@ -7,9 +9,16 @@
   border-radius: 4px;
   transition: border 0.2s ease;
   z-index: 2;
+  border: 1px solid;
+  @include theme-color(border-color, border);
 
   &:hover {
     cursor: pointer;
+    @include theme-color(border-color, text);
+  }
+
+  .no-demo-btn-text {
+    @include theme-color(color, text);
   }
 
   .no-demo-msg {
@@ -17,10 +26,12 @@
     top: -5.75rem;
     left: -1rem;
     padding: 1.25rem 1.5rem;
+    border: 1px solid;
+    @include theme-color(border-color, accent);
+    @include theme-color(background-color, bg);
     border-radius: 5px;
     white-space: nowrap;
     visibility: hidden;
-    opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     z-index: 2;
 
@@ -46,6 +57,11 @@
     &::after {
       bottom: -1.9rem;
     }
+
+    @include theme-border-top(before, accent);
+    @include theme-border-top(after, bg);
+
+    
   }
 
   .project-link-icon {

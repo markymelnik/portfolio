@@ -1,0 +1,29 @@
+@import '../../../styles/colors';
+@import '../../../styles/animations';
+
+.light-dark-btn {
+  display: flex;
+  align-items: center;
+  padding: 0.32rem 1rem 0 0;
+
+  svg {
+    @include theme-color(color, border);
+    transition: color 0.2s ease;
+    height: 1.5rem;
+    width: 1.5rem;
+    
+
+    &:hover {
+      cursor: pointer;
+      @include theme-color(color, text);
+    }
+
+  }
+  
+}
+
+@media (min-width: 768px) {
+  .light-dark-btn {
+    padding: 0 0 0 0.75rem;
+  }
+}

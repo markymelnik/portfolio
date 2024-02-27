@@ -1,0 +1,35 @@
+---
+import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
+import Main from "../components/Main/Main";
+import { AppStateProvider } from "../context/AppStateContext";
+import '../styles/global.scss';
+---
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Mark Melnik is a software developer specializing in the web - see more!" />
+  <title>Mark Melnik</title>
+  <link rel="icon" href="src/assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="src/styles/global.scss">
+</head>
+
+<body>
+  <AppStateProvider client:only>
+    <div class="app-container">
+      <Header client:only/>
+      <Main client:only/>
+      <Footer />
+    </div>
+  </AppStateProvider>
+  <script>
+    document.body.className = 'dark';
+  </script>
+</body>
+
+</html>

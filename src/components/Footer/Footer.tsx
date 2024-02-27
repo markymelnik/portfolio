@@ -5,9 +5,12 @@ const Footer = () => {
     <footer className="footer-container">
       <p className="footer-tech">
         Built with{" "}
+        <a href="https://astro.build/" target="_blank" rel="noopener noreferrer">
+          Astro
+        </a>,{" "}
         <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">
           React
-        </a>{" "}
+        </a>,{" "}
         and{" "}
         <a
           href="https://sass-lang.com/"

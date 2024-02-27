@@ -1,4 +1,5 @@
-@import '@styles/animations';
+@import '../../../styles/animations';
+@import '../../../styles/colors';
 
 .mobile-navbar-container {
   display: flex;
@@ -11,6 +12,12 @@
   .mobile-navbar-contact {
     font-size: 1.25rem;
     padding: 1.25rem 0;
+    @include theme-color(color, border);
+
+    &:hover {
+      cursor: pointer;
+      @include theme-color(color, text);
+    }
   }
 }
 

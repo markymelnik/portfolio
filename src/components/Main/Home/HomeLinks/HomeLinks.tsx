@@ -1,5 +1,5 @@
-import GithubLink from "../../Links/GIthubLink/GithubLink";
-import LinkedinLink from "../../Links/LinkedinLink/LinkedinLink";
+import GithubLink from "./Links/GithubLink";
+import LinkedinLink from "./Links/LinkedinLink";
 import "./_home-links.scss";
 
 const HomeLinks = () => {

@@ -1,0 +1,29 @@
+@import '../../../styles/animations';
+@import '../../../styles/colors';
+
+.road-vector {
+  position: absolute;
+  bottom: -1rem;
+  right: -45%;
+  height: 65vh;
+  /* @include animateFadeIn(0.3s); */
+
+  path {
+    @include theme-color(fill, border);
+    opacity: 0.15;
+  }
+}
+
+@media (min-width: 768px) {
+  .road-vector {
+    height: 65vh;
+    bottom: -2vh;
+    right: 2%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .road-vector {
+    right: 15%;
+  }
+}

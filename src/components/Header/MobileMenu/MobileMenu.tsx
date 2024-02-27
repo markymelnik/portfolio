@@ -1,7 +1,8 @@
+import type { MutableRefObject } from "react";
 import useMobileMenuHideOnScroll from "../../../hooks/useMobileMenuHideOnScroll";
-import LightDarkToggleButton from "../LightDark/LightDarkToggleButton";
 import NavBar from "../NavBar/NavBar";
 import DimOverlay from "./DimOverlay/DimOverlay";
+import LightDarkBtn from "../LightDark/LightDarkBtn";
 import "./_mobile-menu.scss";
 
 type MobileMenuProps = {
@@ -9,10 +10,9 @@ type MobileMenuProps = {
   activeTab: string;
   setActiveTab: (tab: string) => void;
   setIsScrolling: (status: boolean) => void;
-  onMobileMenuButtonClick: React.MouseEventHandler<HTMLButtonElement>;
   closeMobileMenu: () => void;
   customClass: string;
-  mobileMenuRef: React.MutableRefObject<null>;
+  mobileMenuRef: MutableRefObject<null>;
 };
 
 const MobileMenu = ({
@@ -34,7 +34,7 @@ const MobileMenu = ({
         className={`mobile-menu-container ${isOpen ? `open` : ``}`}
       >
         <div className="mobile-menu-top">
-          <LightDarkToggleButton />
+          <LightDarkBtn />
         </div>
         <NavBar
           activeTab={activeTab}
