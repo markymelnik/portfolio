@@ -4,31 +4,28 @@ import useHeaderHideOnScroll from "../../hooks/useHeaderHideOnScroll";
 import useOutsideClick from "../../hooks/useOutsideClick";
 import Logo from "./Logo/Logo";
 import MobileMenu from "./MobileMenu/MobileMenu";
-import MobileMenuToggleButton from "./MobileMenu/MobileMenuToggleButton/MobileMenuToggleButton";
+import MobileMenuToggleButton from "./MobileMenuToggleButton/MobileMenuToggleButton";
 import NavBar from "./NavBar/NavBar";
 import "./_header.scss";
+import { useAppState } from "../../context/AppStateContext";
 
-type HeaderProps = {
-  activeTab: string;
-  setActiveTab: (tab: string) => void;
-  setIsScrolling: (status: boolean) => void;
-  toggleMobileMenu: () => void;
-  isMobileMenuOpen: boolean;
-};
+const Header = () => {
+  const { activeTab, setActiveTab, toggleMobileMenu, isMobileMenuOpen, setIsScrolling } = useAppState();
 
-const Header = ({
-  activeTab,
-  setActiveTab,
-  setIsScrolling,
-  toggleMobileMenu,
-  isMobileMenuOpen,
-}: HeaderProps) => {
+  console.log(isMobileMenuOpen);
+
+
   const mobileMenuRef = useRef(null);
 
   const closeMobileMenu = () => {
     if (isMobileMenuOpen) {
       toggleMobileMenu();
     }
+  };
+
+  const handleMobileMenuToggle = () => {
+    toggleMobileMenu();
+    console.log('hit')
   };
 
   useOutsideClick(mobileMenuRef, closeMobileMenu);
@@ -56,7 +53,7 @@ const Header = ({
           closeMobileMenu={closeMobileMenu}
         />
         <MobileMenuToggleButton
-          onClick={toggleMobileMenu}
+          onClick={handleMobileMenuToggle}
           isMobileMenuOpen={isMobileMenuOpen}
         />
       </div>

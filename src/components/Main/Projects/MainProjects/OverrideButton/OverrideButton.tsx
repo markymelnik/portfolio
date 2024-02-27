@@ -14,13 +14,13 @@ const OverrideButton = () => {
   };
 
   return (
-    <div className="override-btn" onClick={handleButtonClick}>
+    <button className="override-btn" onClick={handleButtonClick}>
       <div className={`override-msg ${isMessageVisible ? `show` : ``}`}>
         Contact me to talk about this project!
       </div>
       <div className="override-btn-text">Source</div>
       <Icons.Link size={20} />
-    </div>
+    </button>
   );
 };
 

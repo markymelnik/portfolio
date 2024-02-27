@@ -7,14 +7,12 @@ import About from "./About/About";
 import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
 import Divider from "./Divider/Divider";
+import { useAppState } from "../../context/AppStateContext";
 import "./_main.scss";
 
-type MainProps = {
-  setActiveTab: (tab: string) => void;
-  isScrolling: boolean;
-};
+const Main = () => {
+  const { setActiveTab, isScrolling } = useAppState();
 
-const Main = ({ setActiveTab, isScrolling }: MainProps) => {
   const homeRef = useRef<HTMLDivElement | null>(null);
   const aboutRef = useRef<HTMLDivElement | null>(null);
   const projectsRef = useRef<HTMLDivElement | null>(null);

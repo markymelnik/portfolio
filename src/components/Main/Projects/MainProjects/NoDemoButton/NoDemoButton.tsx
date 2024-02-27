@@ -14,13 +14,13 @@ const NoDemoButton = () => {
   };
 
   return (
-    <div className='no-demo-btn' onClick={handleButtonClick}>
+    <button className='no-demo-btn' onClick={handleButtonClick}>
       <div className={`no-demo-msg ${isMessageVisible ? `show` : ``}`}>
         Currently in development!
       </div>
       <div className='no-demo-btn-text'>Demo</div>
       <Icons.Link size={20} />
-    </div>
+    </button>
   );
 };
 

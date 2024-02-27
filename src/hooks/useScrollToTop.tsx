@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const useScrollToTop = () => {
+const ScrollToTop = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       window.scrollTo(0, 0);
@@ -8,11 +8,8 @@ const useScrollToTop = () => {
 
     return () => clearTimeout(timer);
   }, []);
-};
 
-const ScrollToTop = () => {
-  useScrollToTop();
   return null;
-}
+};
 
 export default ScrollToTop;

@@ -1,9 +1,9 @@
-
-import { Icons } from "../../../../lib/Icons";
+import { MouseEventHandler } from "react";
+import { Icons } from "../../../lib/Icons";
 import "./_mobile-menu-toggle-btn.scss";
 
 type MobileMenuToggleButtonProps = {
-  onClick: React.MouseEventHandler<HTMLButtonElement>;
+  onClick: MouseEventHandler<HTMLButtonElement>;
   isMobileMenuOpen: boolean;
 };
 

@@ -1,4 +1,4 @@
-@import '../../../../styles/animations';
+@import '../../../styles/animations';
 
 .mobile-menu-toggle-btn {
   display: flex;
@@ -6,7 +6,6 @@
   align-items: center;
   height: 2.5rem;
   width: 2.5rem;
-  z-index: 2;
   /* @include animateFadeIn(1.1s); */
 }
 

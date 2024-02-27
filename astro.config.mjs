@@ -1,5 +1,5 @@
 import { defineConfig } from 'astro/config';
-import react from '@vitejs/plugin-react';
+import react from '@astrojs/react';
 
 export default defineConfig({
   integrations: [react()],

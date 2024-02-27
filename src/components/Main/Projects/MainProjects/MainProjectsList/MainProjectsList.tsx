@@ -24,7 +24,7 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           projectId={`project-1 new-project`}
           projectYear={2024}
           projectName={`Ball Battle`}
-          projectDescription={`A basketball prediction and social networking application.`}
+          projectDescription={`A basketball prediction and social networking application. A basketball prediction and social networking application. A basketball prediction and social networking application.`}
           projectDemoUrl={`https://markmelnik.com`}
           overrideDemo={true}
           overrideSource={true}

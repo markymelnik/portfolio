@@ -74,6 +74,7 @@ ol {
   padding: 0 1.25rem;
   overflow: hidden;
   @include theme-color(background-color, bg);
+  min-height: 120vh;
 }
 
 @media (min-width: 468px) {

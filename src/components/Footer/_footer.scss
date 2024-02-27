@@ -10,6 +10,7 @@
   width: 100%;
   font-size: 1rem;
   margin: 2rem 0;
+  margin-top: auto;
 
   .footer-tech {
     @include theme-color(color, border);
