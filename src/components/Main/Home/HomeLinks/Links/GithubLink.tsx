@@ -1,5 +1,4 @@
-import "./_github-link.scss";
-import GithubIcon from "./GithubIcon";
+import { Icons } from "../../../../../lib/Icons";
 
 const GithubLink = () => {
   return (
@@ -10,7 +9,7 @@ const GithubLink = () => {
       className="github-link"
       aria-label="Visit my github profile"
     >
-      <GithubIcon />
+      <Icons.Github className='icon' />
     </a>
   );
 };

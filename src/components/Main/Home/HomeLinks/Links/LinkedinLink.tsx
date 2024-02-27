@@ -1,5 +1,4 @@
-import "./_linkedin-link.scss";
-import LinkedinIcon from "./LinkedinIcon";
+import { Icons } from "../../../../../lib/Icons";
 
 const LinkedinLink = () => {
   return (
@@ -10,7 +9,7 @@ const LinkedinLink = () => {
       className="linkedin-link"
       aria-label="Visit my linkedin profile"
     >
-      <LinkedinIcon />
+      <Icons.LinkedIn className="icon" />
     </a>
   );
 };

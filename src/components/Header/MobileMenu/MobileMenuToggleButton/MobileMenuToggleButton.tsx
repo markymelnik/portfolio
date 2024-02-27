@@ -1,4 +1,5 @@
 
+import { Icons } from "../../../../lib/Icons";
 import "./_mobile-menu-toggle-btn.scss";
 
 type MobileMenuToggleButtonProps = {
@@ -18,7 +19,7 @@ const MobileMenuToggleButton = ({
       aria-expanded={isMobileMenuOpen}
       aria-label={isMobileMenuOpen ? "Close mobile menu" : "Open mobile menu"}
     >
-  
+      {isMobileMenuOpen ? <Icons.XIcon size={25} /> : <Icons.MobileMenu size={30} /> }
     </button>
   );
 };

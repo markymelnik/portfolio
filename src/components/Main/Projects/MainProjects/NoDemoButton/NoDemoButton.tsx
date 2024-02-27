@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import LinkIcon from '../../LinkIcon';
 import './_no-demo-btn.scss';
+import { Icons } from '../../../../../lib/Icons';
 
 const NoDemoButton = () => {
   const [isMessageVisible, setIsMessageVisible] = useState<boolean>(false);
@@ -19,7 +19,7 @@ const NoDemoButton = () => {
         Currently in development!
       </div>
       <div className='no-demo-btn-text'>Demo</div>
-      <LinkIcon />
+      <Icons.Link size={20} />
     </div>
   );
 };

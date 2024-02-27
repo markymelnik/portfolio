@@ -16,12 +16,13 @@ const useMobileMenuHideOnScroll = ({
           mobileMenu.classList.remove('open');
           closeMobileMenu();
         }
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-        };
+      
       }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [closeMobileMenu]);
 };

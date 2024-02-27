@@ -4,30 +4,26 @@
 .light-dark-btn {
   display: flex;
   align-items: center;
-  background: transparent;
-  border: none;
-  padding: 0 1rem 0 0;
-/*   @include animateFadeIn(1.6s); */
+  padding: 0.32rem 1rem 0 0;
 
-  .dark-icon,
-  .light-icon {
-    height: 1.75rem;
-    width: 1.75rem;
-  }
+  svg {
+    @include theme-color(color, border);
+    transition: color 0.2s ease;
+    height: 1.5rem;
+    width: 1.5rem;
+    
 
-  &:hover {
-    cursor: pointer;
+    &:hover {
+      cursor: pointer;
+      @include theme-color(color, text);
+    }
+
   }
+  
 }
 
 @media (min-width: 768px) {
   .light-dark-btn {
     padding: 0 0 0 0.75rem;
-
-    .dark-icon,
-    .light-icon {
-      height: 1.25rem;
-      width: 1.25rem;
-    }
   }
 }

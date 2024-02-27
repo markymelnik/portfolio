@@ -1,10 +1,9 @@
 import { forwardRef, useState } from "react";
-
-import EmailIcon from "./EmailIcon";
 import EmailTip from "./EmailTip/EmailTip";
 import NodeVectorSVG from "./NodeVector/NodeVectorSVG";
-import LinkedinLink from "../Links/LinkedinLink/LinkedinLink";
-import GithubLink from "../Links/GIthubLink/GithubLink";
+import LinkedinLink from "../Home/HomeLinks/Links/LinkedinLink";
+import GithubLink from "../Home/HomeLinks/Links/GithubLink";
+import { Icons } from "../../../lib/Icons";
 import "./_contact.scss";
 
 interface ContactProps extends React.HTMLProps<HTMLDivElement> {}
@@ -34,11 +33,6 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
         <span>.03</span>Contact Me
       </h2>
       <div ref={ref} className="contact-info" {...props}>
-        {/* <p className="contact-paragraph">
-          Feel free to reach out! I am actively seeking a full-time software
-          role, internship, or industry experience. I would love to talk about
-          my journey thus far and dive into the details of my projects!
-        </p> */}
         <div className="contact-paragraph">
           Feel free to reach out! <br/> I am currently seeking an entry-level software development role.
         </div>
@@ -63,7 +57,7 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
                 className="contact-email"
                 aria-label={`Open email client to write an email to ${email}`}
               >
-                <EmailIcon />
+                <Icons.Envelope />
               </a>
             </div>
             <div className="contact-option">

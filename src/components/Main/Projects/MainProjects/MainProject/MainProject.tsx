@@ -1,9 +1,9 @@
 import React from "react";
 
-import LinkIcon from "../../LinkIcon";
 import OverrideButton from "../OverrideButton/OverrideButton";
 import NoDemoButton from "../NoDemoButton/NoDemoButton";
 import "./_main-project.scss";
+import { Icons } from "../../../../../lib/Icons";
 
 type MainProjectProps = {
   projectId: string;
@@ -58,7 +58,7 @@ const MainProject = React.forwardRef<HTMLLIElement, MainProjectProps>(
                 rel="noopener noreferrer"
               >
                 <span className="main-project-link-text">Demo</span>
-                <LinkIcon />
+                <Icons.Link size={20} />
               </a>
             )}
             {overrideSource ? (
@@ -71,7 +71,7 @@ const MainProject = React.forwardRef<HTMLLIElement, MainProjectProps>(
                 rel="noopener noreferrer"
               >
                 <span className="main-project-link-text">Source</span>
-                <LinkIcon />
+                <Icons.Link size={20} />
               </a>
             )}
           </div>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Main from "./components/Main/Main";
 import ScrollToTop from "./hooks/useScrollToTop";
 import Header from "./components/Header/Header";
@@ -14,15 +14,18 @@ const App = () => {
   };
 
   useEffect(() => {
-    document.body.className = `light`;
+    document.body.className = `dark`;
   }, []);
 
   const [activeTab, setActiveTab] = useState<string>("home");
   const [isScrolling, setIsScrolling] = useState<boolean>(false);
 
   return (
-    <Router>
-      <ScrollToTop />
+    <>
+  
+  
+    <BrowserRouter>
+    <ScrollToTop />
       <div className="app-container">
         <Header
           activeTab={activeTab}
@@ -34,7 +37,8 @@ const App = () => {
         <Main setActiveTab={setActiveTab} isScrolling={isScrolling} />
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
+    </>
   );
 };
 
