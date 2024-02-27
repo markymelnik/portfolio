@@ -1,16 +1,15 @@
-import type { MouseEventHandler, MutableRefObject } from "react";
+import type { MutableRefObject } from "react";
 import useMobileMenuHideOnScroll from "../../../hooks/useMobileMenuHideOnScroll";
 import NavBar from "../NavBar/NavBar";
 import DimOverlay from "./DimOverlay/DimOverlay";
-import "./_mobile-menu.scss";
 import LightDarkBtn from "../LightDark/LightDarkBtn";
+import "./_mobile-menu.scss";
 
 type MobileMenuProps = {
   isOpen: boolean;
   activeTab: string;
   setActiveTab: (tab: string) => void;
   setIsScrolling: (status: boolean) => void;
-  onMobileMenuButtonClick: MouseEventHandler<HTMLButtonElement>;
   closeMobileMenu: () => void;
   customClass: string;
   mobileMenuRef: MutableRefObject<null>;

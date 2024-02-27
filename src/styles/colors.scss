@@ -2,11 +2,13 @@ $dark-theme-bg: #1A1A1A;
 $dark-theme-text: #F7F7FC;
 $dark-theme-border: #7C7C7C;
 $dark-theme-accent: #67B896;
+$dark-theme-proj-border: #7C7C7C;
 
-$light-theme-bg: #F7F7FC;
+$light-theme-bg: #FAF9F6;
 $light-theme-text: #1A1A1A;
-$light-theme-border: #8C8C8C;
+$light-theme-border: #888888;
 $light-theme-accent: #38369A;
+$light-theme-proj-border: #FAF9F6;
 
 $themes: (
   dark: (
@@ -14,12 +16,14 @@ $themes: (
     text: $dark-theme-text,
     border: $dark-theme-border,
     accent: $dark-theme-accent,
+    proj-border: $dark-theme-proj-border,
   ),
   light: (
     bg: $light-theme-bg,
     text: $light-theme-text,
     border: $light-theme-border,
     accent: $light-theme-accent,
+    proj-border: $light-theme-proj-border,
   )
 );
 

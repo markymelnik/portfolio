@@ -27,7 +27,7 @@ const Main = () => {
   return (
     <main className="main-container">
       <Home ref={homeRef} id="home" />
-      <Scroll />
+        <Scroll />
       <About ref={aboutRef} id="about" />
       <Divider customClass={'divi-1'} />
       <Projects ref={projectsRef} id="projects" />

@@ -1,32 +1,27 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 import useHeaderHideOnScroll from "../../hooks/useHeaderHideOnScroll";
 import useOutsideClick from "../../hooks/useOutsideClick";
 import Logo from "./Logo/Logo";
 import MobileMenu from "./MobileMenu/MobileMenu";
-import MobileMenuToggleButton from "./MobileMenuToggleButton/MobileMenuToggleButton";
+import MobileMenuToggleButton from "./MobileMenuBtn/MobileMenuBtn";
 import NavBar from "./NavBar/NavBar";
 import "./_header.scss";
 import { useAppState } from "../../context/AppStateContext";
 
 const Header = () => {
-  const { activeTab, setActiveTab, toggleMobileMenu, isMobileMenuOpen, setIsScrolling } = useAppState();
-
-  console.log(isMobileMenuOpen);
-
+  const { activeTab, setActiveTab, setIsScrolling } = useAppState();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
 
   const mobileMenuRef = useRef(null);
 
-  const closeMobileMenu = () => {
-    if (isMobileMenuOpen) {
-      toggleMobileMenu();
-    }
-  };
-
   const handleMobileMenuToggle = () => {
-    toggleMobileMenu();
-    console.log('hit')
-  };
+    setIsMobileMenuOpen(prev => !prev);
+  }
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  }
 
   useOutsideClick(mobileMenuRef, closeMobileMenu);
 
@@ -49,7 +44,6 @@ const Header = () => {
           setActiveTab={setActiveTab}
           setIsScrolling={setIsScrolling}
           customClass={`mobile-navbar`}
-          onMobileMenuButtonClick={toggleMobileMenu}
           closeMobileMenu={closeMobileMenu}
         />
         <MobileMenuToggleButton

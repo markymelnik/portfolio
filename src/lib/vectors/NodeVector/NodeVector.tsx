@@ -1,6 +1,6 @@
-import "./_node-vector.scss";
+import "./node-vector.scss";
 
-const NodeVectorSVG = () => {
+const NodeVector = () => {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -16,4 +16,4 @@ const NodeVectorSVG = () => {
   );
 };
 
-export default NodeVectorSVG;
+export default NodeVector;

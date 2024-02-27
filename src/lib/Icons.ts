@@ -1,4 +1,4 @@
-import { PiEnvelopeSimple, PiGithubLogo, PiLink, PiLinkedinLogo, PiList, PiMoon, PiSun, PiX } from "react-icons/pi";
+import { PiCaretDown, PiEnvelopeSimple, PiGithubLogo, PiLink, PiLinkedinLogo, PiList, PiMoon, PiSun, PiX } from "react-icons/pi";
 import './icons.scss';
 
 export const Icons = {
@@ -10,4 +10,5 @@ export const Icons = {
 	Envelope: PiEnvelopeSimple,
 	MobileMenu: PiList,
 	XIcon: PiX,
+	CaretDown: PiCaretDown,
 }

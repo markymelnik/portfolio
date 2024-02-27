@@ -1,6 +1,6 @@
-import "./_road-vector.scss";
+import "./road-vector.scss";
 
-const RoadVectorSVG = () => {
+const RoadVector = () => {
   return (
     <svg
       viewBox="0 0 512 512"
@@ -12,4 +12,4 @@ const RoadVectorSVG = () => {
   );
 };
 
-export default RoadVectorSVG;
+export default RoadVector;

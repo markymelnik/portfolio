@@ -9,7 +9,7 @@ const useMobileMenuHideOnScroll = ({
 }: UseMobileMenuHideOnScrollProps) => {
   useEffect(() => {
     const handleScroll = () => {
-      if (typeof window !== undefined) {
+    
         const mobileMenu = document.querySelector('.mobile-menu-container');
 
         if (mobileMenu && mobileMenu.classList.contains('open')) {
@@ -17,7 +17,7 @@ const useMobileMenuHideOnScroll = ({
           closeMobileMenu();
         }
       
-      }
+      
     };
     window.addEventListener('scroll', handleScroll);
 

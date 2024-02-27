@@ -1,6 +1,6 @@
 import { forwardRef, useState } from "react";
 import EmailTip from "./EmailTip/EmailTip";
-import NodeVectorSVG from "./NodeVector/NodeVectorSVG";
+import NodeVector from "../../../lib/vectors/NodeVector/NodeVector";
 import LinkedinLink from "../Home/HomeLinks/Links/LinkedinLink";
 import GithubLink from "../Home/HomeLinks/Links/GithubLink";
 import { Icons } from "../../../lib/Icons";
@@ -28,7 +28,7 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
 
   return (
     <section className="contact-container">
-      <NodeVectorSVG />
+      <NodeVector />
       <h2 className="contact-title">
         <span>.03</span>Contact Me
       </h2>
@@ -57,7 +57,7 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
                 className="contact-email"
                 aria-label={`Open email client to write an email to ${email}`}
               >
-                <Icons.Envelope />
+                <Icons.Envelope size={30}/>
               </a>
             </div>
             <div className="contact-option">

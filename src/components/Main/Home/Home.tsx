@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
 
 import DynamicSubtitle from "./DynamicSubtitle/DynamicSubtitle";
-import RoadVectorSVG from "./RoadVector/RoadVectorSVG";
+import RoadVector from "../../../lib/vectors/RoadVector/RoadVector";
 import HomeLinks from "./HomeLinks/HomeLinks";
 import "./_home.scss";
 
@@ -15,7 +15,7 @@ const Home = forwardRef<HTMLDivElement, HomeProps>((props, ref) => {
         <DynamicSubtitle />
         <HomeLinks />
       </div>
-      <RoadVectorSVG />
+      <RoadVector />
     </section>
   );
 });

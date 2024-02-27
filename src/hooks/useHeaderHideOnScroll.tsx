@@ -5,7 +5,7 @@ export const useHeaderHideOnScroll = () => {
     let lastScrollTop = 0;
 
     const handleScroll = () => {
-      if (typeof window !== undefined) {
+
         const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
         const header = document.querySelector('.header-container');
@@ -21,7 +21,7 @@ export const useHeaderHideOnScroll = () => {
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 
       
-      }
+      
     };
     window.addEventListener('scroll', handleScroll);
 

@@ -13,7 +13,7 @@ const useSectionObserver = ({
 }: UseSectionObserverProps) => {
   
   useEffect(() => {
-    if (typeof window !== undefined) {
+
       const activeTabThreshold = innerWidth < 768 ? 0.3 : 0.5;
       const slideInThreshold = innerWidth < 768 ? 0.2 : 0.3;
   
@@ -44,7 +44,7 @@ const useSectionObserver = ({
           }
         });
       };
-    }
+    
     
   }, [setActiveTab, isScrolling, refs]);
 };

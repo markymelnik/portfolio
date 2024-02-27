@@ -3,7 +3,7 @@ import { forwardRef, useRef } from "react";
 import useProjectObserver from "../../../hooks/useProjectObserver";
 import MainProjectsList from "./MainProjects/MainProjectsList/MainProjectsList";
 import SideProjectsList from "./SideProjects/SideProjectsList/SideProjectsList";
-import ProjectVectorSVG from "./ProjectVector/ProjectVectorSVG";
+import ProjectVector from "../../../lib/vectors/ProjectVector/ProjectVector";
 import "./_projects.scss";
 
 interface ProjectsProps extends React.HTMLProps<HTMLDivElement> {}
@@ -22,7 +22,7 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>((props, ref) => {
 
   return (
     <section ref={ref} className="projects-container" {...props}>
-      <ProjectVectorSVG />
+      <ProjectVector />
       <MainProjectsList projectRefs={projectRefs} />
       <SideProjectsList seeMoreRef={seeMoreRef} />
     </section>

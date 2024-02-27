@@ -5,7 +5,7 @@ const useOutsideClick = (
   callback: () => void
 ) => {
   useEffect(() => {
-    if (typeof window !== undefined) {
+
       const handleOutsideClick = (event: MouseEvent) => {
         if (ref.current && !ref.current.contains(event.target as Node)) {
           callback();
@@ -16,7 +16,7 @@ const useOutsideClick = (
       return () => {
         document.removeEventListener('mousedown', handleOutsideClick);
       };
-    }
+    
   }, [ref, callback]);
 };
 

@@ -11,9 +11,11 @@
   height: 100dvh;
   width: 55%;
   transform: translateX(100%);
-  transition: transform 0.5s ease;
+  transition: transform 0.4s ease;
   z-index: 2;
   @include theme-color(background-color, bg);
+  border-left: 1px solid;
+  @include theme-color(border-color, border);
 
   &.open {
     transform: translateX(0);

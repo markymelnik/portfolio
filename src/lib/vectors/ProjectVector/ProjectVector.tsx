@@ -1,6 +1,6 @@
-import "./_project-vector.scss";
+import "./project-vector.scss";
 
-const ProjectVectorSVG = () => {
+const ProjectVector = () => {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -17,4 +17,4 @@ const ProjectVectorSVG = () => {
   );
 };
 
-export default ProjectVectorSVG;
+export default ProjectVector;
