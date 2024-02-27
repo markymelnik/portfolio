@@ -1,11 +1,16 @@
 @import '../../../../../styles/animations';
+@import '../../../../../styles/colors';
 
 .main-projects-title {
   font-size: 1.5rem;
-  margin: 0 0 2.5rem;
+  padding: 0 0 2.5rem;
+  @include theme-color(color, text);
+  border-bottom: 1px solid;
+  @include theme-color(border-color, border);
 
   span {
     margin: 0 0.5rem 0 0;
+    @include theme-color(color, accent);
   }
 }
 

@@ -1,4 +1,5 @@
 @import '../../../styles/animations';
+@import '../../../styles/colors.scss';
 
 .desktop-navbar-container {
   display: none;
@@ -16,15 +17,18 @@
     .desktop-navbar-contact {
       padding: 0 1rem;
       font-size: 1rem;
-      transition: color 0.25s ease;
+      @include theme-color(color, border);
+      transition: color 0.2s ease;
 
       &:hover {
         cursor: pointer;
+        @include theme-color(color, text);
       }
 
       &.active {
         font-weight: 550;
         pointer-events: none;
+        @include theme-color(color, text);
       }
     }
 

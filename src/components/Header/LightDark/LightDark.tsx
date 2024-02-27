@@ -1,4 +1,4 @@
-import { ReactNode, createContext, useState } from "react";
+import { createContext, useState, type FC, type ReactNode } from "react";
 
 type LightDarkContextProps = {
   theme: string;
@@ -11,7 +11,7 @@ type LightDarkProviderProps = {
 
 export const LightDarkContext = createContext<LightDarkContextProps | undefined>(undefined);
 
-export const LightDarkProvider = ({ children }: LightDarkProviderProps) => {
+export const LightDarkProvider: FC<LightDarkProviderProps> = ({ children }) => {
   const [theme, setTheme] = useState("dark");
 
   const toggleTheme = () => {

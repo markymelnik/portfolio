@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-/* import LightDarkToggleButton from "../LightDark/LightDarkToggleButton"; */
+import LightDarkToggleButton from "../LightDark/LightDarkBtn";
 import "./_mobile-navbar.scss";
 import "./_desktop-navbar.scss";
 
@@ -94,7 +94,7 @@ const NavBar = ({
       >
         Contact
       </div>
-      {/* {customClass == "desktop-navbar" ? <LightDarkToggleButton /> : null} */}
+      {customClass == "desktop-navbar" ? <LightDarkToggleButton /> : null}
     </div>
   );
 };

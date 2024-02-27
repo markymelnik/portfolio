@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 @font-face {
   font-family: 'Jost';
   src: url('../assets/fonts/Jost.ttf');
@@ -13,16 +15,40 @@
 
 html {
   font-size: 16px;
+  line-height: 1;
 }
 
 body {
   font-family: 'Jost', Arial, Helvetica, sans-serif;
+
+  &.light {
+		background-color: #F7F7FC;
+		color: #1A1A1A;
+		--spinner-color: #1A1A1A;
+		--input-autofill-bg: #F7F7FC;
+	}
+
+	&.dark {
+		background-color: #1A1A1A;
+		color: #F7F7FC;
+		--spinner-color: #F7F7FC;
+		--input-autofill-bg: #1A1A1A;
+	}
 }
 
-a,
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 button {
-  text-decoration: none;
-  color: inherit;
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	font: inherit;
+	color: inherit;
+	cursor: pointer;
 }
 
 img {
@@ -30,25 +56,16 @@ img {
   height: auto;
 }
 
-h1,
-h2,
-h3 {
-  font-size: 1em;
-  font-weight: normal;
-}
-
-h1,
-h2,
-h3,
-p,
-span,
-div {
-  line-height: 1;
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0;
 }
 
 ul,
 ol {
   list-style-type: none;
+  padding: 0;
+	margin: 0;
 }
 
 .app-container {
@@ -56,6 +73,7 @@ ol {
   flex-direction: column;
   padding: 0 1.25rem;
   overflow: hidden;
+  @include theme-color(background-color, bg);
 }
 
 @media (min-width: 468px) {

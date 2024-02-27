@@ -1,9 +1,9 @@
 import type { MouseEventHandler, MutableRefObject } from "react";
 import useMobileMenuHideOnScroll from "../../../hooks/useMobileMenuHideOnScroll";
-/* import LightDarkToggleButton from "../LightDark/LightDarkToggleButton"; */
 import NavBar from "../NavBar/NavBar";
 import DimOverlay from "./DimOverlay/DimOverlay";
 import "./_mobile-menu.scss";
+import LightDarkBtn from "../LightDark/LightDarkBtn";
 
 type MobileMenuProps = {
   isOpen: boolean;
@@ -35,7 +35,7 @@ const MobileMenu = ({
         className={`mobile-menu-container ${isOpen ? `open` : ``}`}
       >
         <div className="mobile-menu-top">
-          {/* <LightDarkToggleButton /> */}
+          <LightDarkBtn />
         </div>
         <NavBar
           activeTab={activeTab}

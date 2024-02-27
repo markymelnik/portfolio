@@ -1,5 +1,4 @@
-import CloseIcon from "./CloseIcon";
-import OpenIcon from "./OpenIcon";
+
 import "./_mobile-menu-toggle-btn.scss";
 
 type MobileMenuToggleButtonProps = {
@@ -11,7 +10,6 @@ const MobileMenuToggleButton = ({
   onClick,
   isMobileMenuOpen,
 }: MobileMenuToggleButtonProps) => {
-  const IconComponent = isMobileMenuOpen ? CloseIcon : OpenIcon;
 
   return (
     <button
@@ -20,7 +18,7 @@ const MobileMenuToggleButton = ({
       aria-expanded={isMobileMenuOpen}
       aria-label={isMobileMenuOpen ? "Close mobile menu" : "Open mobile menu"}
     >
-      <IconComponent className={`mobile-menu-icon`} />
+  
     </button>
   );
 };

@@ -1,13 +1,13 @@
-@import '@styles/colors';
-@import '@styles/animations';
+@import '../../../styles/colors';
+@import '../../../styles/animations';
 
-.light-dark-toggle-btn {
+.light-dark-btn {
   display: flex;
   align-items: center;
   background: transparent;
   border: none;
   padding: 0 1rem 0 0;
-  @include animateFadeIn(1.6s);
+/*   @include animateFadeIn(1.6s); */
 
   .dark-icon,
   .light-icon {
@@ -21,7 +21,7 @@
 }
 
 @media (min-width: 768px) {
-  .light-dark-toggle-btn {
+  .light-dark-btn {
     padding: 0 0 0 0.75rem;
 
     .dark-icon,

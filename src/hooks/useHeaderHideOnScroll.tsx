@@ -20,12 +20,13 @@ export const useHeaderHideOnScroll = () => {
 
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-        };
+      
       }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 };

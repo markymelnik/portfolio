@@ -1,3 +1,5 @@
+@import '../../styles/colors.scss';
+
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -8,4 +10,21 @@
   width: 100%;
   font-size: 1rem;
   margin: 2rem 0;
+
+  .footer-tech {
+    @include theme-color(color, border);
+    
+    a {
+      @include theme-color(color, text);
+      transition: color 0.2s ease;
+
+      &:hover {
+        @include theme-color(color, accent);
+      }
+    }
+  }
+
+  .footer-copyright {
+    @include theme-color(color, border);
+  }
 }

@@ -1,4 +1,5 @@
 @import '../../styles/animations';
+@import '../../styles/colors';
 
 .header-container {
   position: fixed;
@@ -12,6 +13,8 @@
   width: 100%;
   transition: top 0.4s;
   z-index: 2;
+  @include theme-color(background-color, bg);
+
 
   &.hidden {
     top: -6.5rem;
