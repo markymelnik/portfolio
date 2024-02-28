@@ -3,7 +3,7 @@ import { forwardRef } from "react";
 import SkillList from "./Skills/SkillList";
 import "./_about.scss";
 
-const HeadshotPhoto = 'src/assets/images/headshot.jpg';
+import HeadshotPhoto from '../../../assets/images/headshot.jpg';
 
 interface AboutProps extends React.HTMLProps<HTMLDivElement> {}
 
@@ -17,7 +17,7 @@ const About = forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
         <div className='about-left'>
           <div className='about-photo'>
             <img
-              src={HeadshotPhoto}
+              src={HeadshotPhoto.src}
               alt='Headshot of site developer, Mark Melnik'
             />
           </div>

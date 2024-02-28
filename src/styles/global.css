@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Jost";
+  src: url("../assets/fonts/Jost.ttf");
+  font-display: swap;
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1;
+}
+
+body {
+  font-family: "Jost", Arial, Helvetica, sans-serif;
+}
+body.light {
+  background-color: #F7F7FC;
+  color: #1A1A1A;
+  --spinner-color: #1A1A1A;
+  --input-autofill-bg: #F7F7FC;
+}
+body.dark {
+  background-color: #1A1A1A;
+  color: #F7F7FC;
+  --spinner-color: #F7F7FC;
+  --input-autofill-bg: #1A1A1A;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.25rem;
+  overflow: hidden;
+}
+.dark .app-container {
+  background-color: #1A1A1A;
+}
+.light .app-container {
+  background-color: #FAF9F6;
+}
+
+@media (min-width: 468px) {
+  .app-container {
+    padding: 0 5rem;
+  }
+}
+@media (min-width: 992px) {
+  .app-container {
+    padding: 0 10rem;
+  }
+}
+@media (min-width: 1200px) {
+  .app-container {
+    padding: 0 15rem;
+  }
+}
+
+/*# sourceMappingURL=global.css.map */

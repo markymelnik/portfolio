@@ -3,7 +3,7 @@ import "./light-dark-btn.scss";
 import { Icons } from "../../../lib/Icons";
 
 const LightDarkBtn = () => {
-  const [theme, setTheme] = useState<string>('light');
+  const [theme, setTheme] = useState<string>('dark');
 
   useEffect(() => {
 		const initialTheme = document.body.classList.contains('dark') ? 'dark' : 'light';

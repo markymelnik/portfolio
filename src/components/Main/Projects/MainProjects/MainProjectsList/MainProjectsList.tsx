@@ -3,14 +3,14 @@ import type { MutableRefObject } from "react";
 import MainProject from "../MainProject/MainProject";
 import "./_main-projects-list.scss";
 
+import BallBattleScreenshot from '../../../../../assets/images/project/ball-battle-screenshot.jpg';
+import FitFinderScreenshot from '../../../../../assets/images/project/fitfinder-screenshot.jpg';
+import PersonalSiteScreenshot from '../../../../../assets/images/project/personal-site-screenshot.jpg';
+import BattleshipScreenshot from '../../../../../assets/images/project/battleship-screenshot.jpg';
+
 type MainProjectsList = {
   projectRefs: MutableRefObject<HTMLLIElement | null>[];
 };
-
-const FitFinderScreenshot = "/src/assets/images/project/fitfinder-screenshot.jpg";
-const PersonalSiteScreenshot = 'src/assets/images/project/personal-site-screenshot.jpg'
-const BattleshipScreenshot = "src/assets/images/project/battleship-screenshot.jpg";
-const BallBattleScreenshot = "src/assets/images/project/ball-battle-screenshot.jpg";
 
 const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
   return (
@@ -28,7 +28,7 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           projectDemoUrl={`https://markmelnik.com`}
           overrideDemo={true}
           overrideSource={true}
-          projectImage={BallBattleScreenshot}
+          projectImage={BallBattleScreenshot.src}
           imageDescription={"Screenshot of ball battle project page"}
           linkDescription={"Visit my ball battle site"}
           newProject={true}
@@ -41,7 +41,7 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           projectDescription={`Looking for a new workout spot? Find it with FitFinder! This project was a tremendous learning experience from start to finish. The resulting solution is the product of many design choices and technical implementations on both the frontend and backend.`}
           projectDemoUrl={`https://fitfinder.app`}
           overrideSource={true}
-          projectImage={FitFinderScreenshot}
+          projectImage={FitFinderScreenshot.src}
           imageDescription={"Screenshot of fit finder project page"}
           linkDescription={"Visit my fit finder project site"}
         />
@@ -53,7 +53,7 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           projectDescription={`Hey, you're on this site right now! I designed it to be simple yet elegant. I utilized the Intersection Observer API to create the dynamic navbar and scroll into view transitions. Let me know what you think!`}
           projectDemoUrl={`https://markmelnik.com`}
           projectSourceUrl={`https://github.com/markymelnik/personal-site`}
-          projectImage={PersonalSiteScreenshot}
+          projectImage={PersonalSiteScreenshot.src}
           imageDescription={"Screenshot of personal portfolio project page"}
           linkDescription={"Visit my personal portfolio project site"}
         />
@@ -65,7 +65,7 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           projectDescription={`A game of Battleship played in the web browser. This solution is written in vanilla JavaScript, HTML, and CSS. I underwent a test-driven development process using the Jest testing library to see this project to completion.`}
           projectDemoUrl={`https://battleship.markmelnik.com`}
           projectSourceUrl={`https://github.com/markymelnik/battleship`}
-          projectImage={BattleshipScreenshot}
+          projectImage={BattleshipScreenshot.src}
           imageDescription={"Screenshot of battleship project page"}
           linkDescription={"Visit my battleship project site"}
         />
