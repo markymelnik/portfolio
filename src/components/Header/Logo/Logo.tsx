@@ -1,3 +1,4 @@
+import { CONTENT } from "../../../lib/content";
 import "./logo.scss";
 
 const Logo = () => {
@@ -7,7 +8,7 @@ const Logo = () => {
 
   return (
     <div className="logo" onClick={handleClick}>
-      <div className="logo-text">markmelnik</div>
+      <div className="logo-text">{CONTENT.logo}</div>
     </div>
   );
 };

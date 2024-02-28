@@ -1,16 +1,16 @@
-import { forwardRef } from "react";
+import { HTMLProps, forwardRef } from "react";
 import SkillList from "./Skills/SkillList";
+import HeadshotPhoto from '../../../assets/images/headshot/headshot.webp';
+import { CONTENT } from "../../../lib/content";
 import "./about.scss";
 
-import HeadshotPhoto from '../../../assets/images/headshot/headshot.webp';
-
-interface AboutProps extends React.HTMLProps<HTMLDivElement> {}
+interface AboutProps extends HTMLProps<HTMLDivElement> {}
 
 const About = forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
   return (
     <section ref={ref} className='about-container' {...props}>
       <h2 className='about-title'>
-        <span>.01</span>About Me
+        <span>{CONTENT.about.number}</span>{CONTENT.about.header}
       </h2>
       <div className='about-information'>
         <div className='about-left'>
@@ -20,13 +20,11 @@ const About = forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
               alt='Headshot of site developer, Mark Melnik'
             />
           </div>
-          <div className='about-photo-name'>Mark Melnik</div>
+          <div className='about-photo-name'>{CONTENT.fullname}</div>
         </div>
         <div className='about-right'>
           <p>
-            Hey there! I'm Mark, a software developer based in New York City. I
-            solve complex technical problems and build full-stack applications
-            for the web. I am currently seeking an entry-level software development role.
+            {CONTENT.about.p1}
           </p>
           {/* <p>
           I graduated from{" "}
@@ -42,7 +40,7 @@ const About = forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
             Studies.
           </p> */}
           <hr />
-          <p>Check out my projects below!</p>
+          <p>{CONTENT.about.p2}</p>
           <SkillList />
         </div>
       </div>

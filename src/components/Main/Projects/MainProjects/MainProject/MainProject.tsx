@@ -1,9 +1,10 @@
-import React from "react";
+import { forwardRef } from "react";
 
 import OverrideButton from "../OverrideButton/OverrideButton";
 import NoDemoButton from "../NoDemoButton/NoDemoButton";
-import "./main-project.scss";
 import { Icons } from "../../../../../lib/icons/Icons";
+import { CONTENT } from "../../../../../lib/content";
+import "./main-project.scss";
 
 type MainProjectProps = {
   projectId: string;
@@ -20,7 +21,7 @@ type MainProjectProps = {
   linkDescription?: string;
 };
 
-const MainProject = React.forwardRef<HTMLLIElement, MainProjectProps>(
+const MainProject = forwardRef<HTMLLIElement, MainProjectProps>(
   (
     {
       projectId,
@@ -40,7 +41,7 @@ const MainProject = React.forwardRef<HTMLLIElement, MainProjectProps>(
   ) => {
     return (
       <li ref={ref} className={`main-project ${projectId}`}>
-        {newProject && <div className="new-project-label">Work In Progress</div>}
+        {newProject && <div className="new-project-label">{CONTENT.projects.main.label}</div>}
         <div className="main-project-stuff">
           <div className="main-project-info">
             <div className="main-project-year">{projectYear}</div>
@@ -57,7 +58,7 @@ const MainProject = React.forwardRef<HTMLLIElement, MainProjectProps>(
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="main-project-link-text">Demo</span>
+                <span className="main-project-link-text">{CONTENT.projects.button.demo}</span>
                 <Icons.Link size={20} />
               </a>
             )}
@@ -70,7 +71,7 @@ const MainProject = React.forwardRef<HTMLLIElement, MainProjectProps>(
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="main-project-link-text">Source</span>
+                <span className="main-project-link-text">{CONTENT.projects.button.demo}</span>
                 <Icons.Link size={20} />
               </a>
             )}

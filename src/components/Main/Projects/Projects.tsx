@@ -1,4 +1,4 @@
-import { forwardRef, useRef } from "react";
+import { HTMLProps, forwardRef, useRef } from "react";
 
 import useProjectObserver from "../../../hooks/useProjectObserver";
 import MainProjectsList from "./MainProjects/MainProjectsList/MainProjectsList";
@@ -6,7 +6,7 @@ import SideProjectsList from "./SideProjects/SideProjectsList/SideProjectsList";
 import ProjectVector from "../../../lib/vectors/ProjectVector/ProjectVector";
 import "./projects.scss";
 
-interface ProjectsProps extends React.HTMLProps<HTMLDivElement> {}
+interface ProjectsProps extends HTMLProps<HTMLDivElement> {}
 
 const Projects = forwardRef<HTMLDivElement, ProjectsProps>((props, ref) => {
   const projectRef1 = useRef<HTMLLIElement>(null);

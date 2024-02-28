@@ -1,4 +1,5 @@
 import LightDarkToggleButton from "../LightDark/LightDarkBtn";
+import { CONTENT } from "../../../lib/content";
 import "./mobile-navbar.scss";
 import "./desktop-navbar.scss";
 
@@ -34,25 +35,25 @@ const NavBar = ({
         onClick={() => scrollToSection('home')}
         className={`${customClass}-home`}
       >
-        Home
+        {CONTENT.home.title}
       </div>
       <div
         onClick={() => scrollToSection('about')}
         className={`${customClass}-about`}
       >
-        About
+        {CONTENT.about.title}
       </div>
       <div
         onClick={() => scrollToSection('projects')}
         className={`${customClass}-projects`}
       >
-        Projects
+        {CONTENT.projects.title}
       </div>
       <div
         onClick={() => scrollToSection('contact')}
         className={`${customClass}-contact`}
       >
-        Contact
+        {CONTENT.contact.title}
       </div>
       {customClass == 'desktop-navbar' ? <LightDarkToggleButton /> : null}
     </div>

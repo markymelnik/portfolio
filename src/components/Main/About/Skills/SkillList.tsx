@@ -1,45 +1,46 @@
-import JS_SVG from "../../../../lib/SkillIcons/JavaScriptIcon";
-import JAVA_SVG from "../../../../lib/SkillIcons/JavaIcon";
-import TS_SVG from "../../../../lib/SkillIcons/TypeScriptIcon";
-import SPRING_SVG from "../../../../lib/SkillIcons/SpringIcon";
-import HTML_SVG from "../../../../lib/SkillIcons/HTMLIcon";
-import NODE_SVG from "../../../../lib/SkillIcons/NodeIcon";
-import CSS_SVG from "../../../../lib/SkillIcons/CSSIcon";
-import EXPRESS_SVG from "../../../../lib/SkillIcons/ExpressIcon";
-import REACT_SVG from "../../../../lib/SkillIcons/ReactIcon";
-import POSTGRES_SVG from "../../../../lib/SkillIcons/PostgresIcon";
-import ASTRO_SVG from "../../../../lib/SkillIcons/AstroIcon";
-import GIT_SVG from "../../../../lib/SkillIcons/GitIcon";
-import SASS_SVG from "../../../../lib/SkillIcons/SassIcon";
-import DOCKER_SVG from "../../../../lib/SkillIcons/DockerIcon";
-import JEST_SVG from "../../../../lib/SkillIcons/JestIcon";
-import FIGMA_SVG from "../../../../lib/SkillIcons/FigmaIcon";
+import JavaScriptIcon from "../../../../lib/skill-icons/JavaScriptIcon";
+import JavaIcon from "../../../../lib/skill-icons/JavaIcon";
+import TypeScriptIcon from "../../../../lib/skill-icons/TypeScriptIcon";
+import SpringIcon from "../../../../lib/skill-icons/SpringIcon";
+import HTMLIcon from "../../../../lib/skill-icons/HTMLIcon";
+import NodeIcon from "../../../../lib/skill-icons/NodeIcon";
+import CssIcon from "../../../../lib/skill-icons/CSSIcon";
+import ExpressIcon from "../../../../lib/skill-icons/ExpressIcon";
+import ReactIcon from "../../../../lib/skill-icons/ReactIcon";
+import PostgresIcon from "../../../../lib/skill-icons/PostgresIcon";
+import AstroIcon from "../../../../lib/skill-icons/AstroIcon";
+import GitIcon from "../../../../lib/skill-icons/GitIcon";
+import SassIcon from "../../../../lib/skill-icons/SassIcon";
+import DockerIcon from "../../../../lib/skill-icons/DockerIcon";
+import JestIcon from "../../../../lib/skill-icons/JestIcon";
+import FigmaIcon from "../../../../lib/skill-icons/FigmaIcon";
 import Skill from "./Skill/Skill";
+import { CONTENT } from "../../../../lib/content";
 import "./skill-list.scss";
 
 const SkillList = () => {
   const TECHNOLOGIES = [
-    { svg: <JS_SVG />, skillName: "JavaScript" },
-    { svg: <JAVA_SVG />, skillName: "Java" },
-    { svg: <TS_SVG />, skillName: "TypeScript" },
-    { svg: <SPRING_SVG />, skillName: "Spring" },
-    { svg: <HTML_SVG />, skillName: "HTML" },
-    { svg: <NODE_SVG />, skillName: "Node" },
-    { svg: <CSS_SVG />, skillName: "CSS" },
-    { svg: <EXPRESS_SVG />, skillName: "Express" },
-    { svg: <REACT_SVG />, skillName: "React" },
-    { svg: <POSTGRES_SVG />, skillName: "PostgreSQL" },
-    { svg: <ASTRO_SVG />, skillName: "Astro" },
-    { svg: <GIT_SVG />, skillName: "Git" },
-    { svg: <SASS_SVG />, skillName: "Sass" },
-    { svg: <DOCKER_SVG />, skillName: "Docker" },
-    { svg: <JEST_SVG />, skillName: "Jest" },
-    { svg: <FIGMA_SVG />, skillName: "Figma" },
+    { svg: <JavaScriptIcon />, skillName: "JavaScript" },
+    { svg: <JavaIcon />, skillName: "Java" },
+    { svg: <TypeScriptIcon />, skillName: "TypeScript" },
+    { svg: <SpringIcon />, skillName: "Spring" },
+    { svg: <HTMLIcon />, skillName: "HTML" },
+    { svg: <NodeIcon />, skillName: "Node" },
+    { svg: <CssIcon />, skillName: "CSS" },
+    { svg: <ExpressIcon />, skillName: "Express" },
+    { svg: <ReactIcon />, skillName: "React" },
+    { svg: <PostgresIcon />, skillName: "PostgreSQL" },
+    { svg: <AstroIcon />, skillName: "Astro" },
+    { svg: <GitIcon />, skillName: "Git" },
+    { svg: <SassIcon />, skillName: "Sass" },
+    { svg: <DockerIcon />, skillName: "Docker" },
+    { svg: <JestIcon />, skillName: "Jest" },
+    { svg: <FigmaIcon />, skillName: "Figma" },
   ];
 
   return (
     <div className="skills-container">
-      <h3 className="skills-title">I've been working with &rarr;</h3>
+      <h3 className="skills-title">{CONTENT.skills.header} &rarr;</h3>
       <ul className="skills-list">
         {TECHNOLOGIES.map((tech, index) => (
           <Skill key={index} skillName={tech.skillName} svg={tech.svg} />

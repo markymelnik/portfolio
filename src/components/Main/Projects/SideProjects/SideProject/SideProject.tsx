@@ -1,3 +1,4 @@
+import { CONTENT } from "../../../../../lib/content";
 import { Icons } from "../../../../../lib/icons/Icons";
 import "./side-project.scss";
 
@@ -33,7 +34,7 @@ const SideProject = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="side-project-link-text">Demo</span>
+            <span className="side-project-link-text">{CONTENT.projects.button.demo}</span>
             <Icons.Link size={20} />
           </a>
         )}
@@ -44,7 +45,7 @@ const SideProject = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="side-project-link-text">Source</span>
+            <span className="side-project-link-text">{CONTENT.projects.button.source}</span>
             <Icons.Link size={20} />
           </a>
         )}

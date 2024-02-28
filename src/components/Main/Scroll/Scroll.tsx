@@ -1,8 +1,8 @@
 import { useRef } from "react";
 
 import useHideOnScroll from "../../../hooks/useHideOnScroll";
-import "./scroll.scss";
 import { Icons } from "../../../lib/icons/Icons";
+import "./scroll.scss";
 
 const Scroll = () => {
   const arrowRef = useRef<HTMLDivElement>(null);

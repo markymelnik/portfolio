@@ -1,12 +1,11 @@
 import type { MutableRefObject } from "react";
-
 import MainProject from "../MainProject/MainProject";
-import "./main-projects-list.scss";
-
 import BallBattleScreenshot from '../../../../../assets/images/project/ballbattle-screenshot.webp';
 import FitFinderScreenshot from '../../../../../assets/images/project/fitfinder-screenshot.webp';
 import PersonalSiteScreenshot from '../../../../../assets/images/project/portfolio-screenshot.webp';
 import BattleshipScreenshot from '../../../../../assets/images/project/battleship-screenshot.webp';
+import { CONTENT } from "../../../../../lib/content";
+import "./main-projects-list.scss";
 
 type MainProjectsList = {
   projectRefs: MutableRefObject<HTMLLIElement | null>[];
@@ -16,58 +15,58 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
   return (
     <>
       <h2 className="main-projects-title">
-        <span>.02</span>My Projects
+        <span>{CONTENT.projects.number}</span>{CONTENT.projects.header}
       </h2>
       <ul className="main-projects-list">
         <MainProject
           ref={projectRefs[0]}
-          projectId={`project-1 new-project`}
-          projectYear={2024}
-          projectName={`Ball Battle`}
-          projectDescription={`A basketball prediction and social networking application. A basketball prediction and social networking application. A basketball prediction and social networking application.`}
-          projectDemoUrl={`https://markmelnik.com`}
+          projectId={`${CONTENT.projects.main.project[1].id} new-project`}
+          projectYear={CONTENT.projects.main.project[1].year}
+          projectName={CONTENT.projects.main.project[1].name}
+          projectDescription={CONTENT.projects.main.project[1].desc}
+          projectDemoUrl={CONTENT.projects.main.project[1].demourl}
+          imageDescription={CONTENT.projects.main.project[1].imagedesc}
+          linkDescription={CONTENT.projects.main.project[1].linkdesc}
+          projectImage={BallBattleScreenshot.src}
           overrideDemo={true}
           overrideSource={true}
-          projectImage={BallBattleScreenshot.src}
-          imageDescription={"Screenshot of ball battle project page"}
-          linkDescription={"Visit my ball battle site"}
           newProject={true}
         />
         <MainProject
           ref={projectRefs[1]}
-          projectId={`project-2`}
-          projectYear={2023}
-          projectName={`Fit Finder`}
-          projectDescription={`Looking for a new workout spot? Find it with FitFinder! This project was a tremendous learning experience from start to finish. The resulting solution is the product of many design choices and technical implementations on both the frontend and backend.`}
-          projectDemoUrl={`https://fitfinder.app`}
-          overrideSource={true}
+          projectId={CONTENT.projects.main.project[2].id}
+          projectYear={CONTENT.projects.main.project[2].year}
+          projectName={CONTENT.projects.main.project[2].name}
+          projectDescription={CONTENT.projects.main.project[2].desc}
+          projectDemoUrl={CONTENT.projects.main.project[2].demourl}
+          imageDescription={CONTENT.projects.main.project[2].imagedesc}
+          linkDescription={CONTENT.projects.main.project[2].linkdesc}
           projectImage={FitFinderScreenshot.src}
-          imageDescription={"Screenshot of fit finder project page"}
-          linkDescription={"Visit my fit finder project site"}
+          overrideSource={true}
         />
         <MainProject
           ref={projectRefs[2]}
-          projectId={`project-3`}
-          projectYear={2023}
-          projectName={`markmelnik.com`}
-          projectDescription={`Hey, you're on this site right now! I designed it to be simple yet elegant. I utilized the Intersection Observer API to create the dynamic navbar and scroll into view transitions. Let me know what you think!`}
-          projectDemoUrl={`https://markmelnik.com`}
-          projectSourceUrl={`https://github.com/markymelnik/personal-site`}
+          projectId={CONTENT.projects.main.project[1].id}
+          projectYear={CONTENT.projects.main.project[3].year}
+          projectName={CONTENT.projects.main.project[3].name}
+          projectDescription={CONTENT.projects.main.project[3].desc}
+          projectDemoUrl={CONTENT.projects.main.project[3].demourl}
+          imageDescription={CONTENT.projects.main.project[3].imagedesc}
+          linkDescription={CONTENT.projects.main.project[3].linkdesc}
+          projectSourceUrl={CONTENT.projects.main.project[3].sourceurl}
           projectImage={PersonalSiteScreenshot.src}
-          imageDescription={"Screenshot of personal portfolio project page"}
-          linkDescription={"Visit my personal portfolio project site"}
         />
         <MainProject
           ref={projectRefs[3]}
-          projectId={`project-4`}
-          projectYear={2023}
-          projectName={`Battleship`}
-          projectDescription={`A game of Battleship played in the web browser. This solution is written in vanilla JavaScript, HTML, and CSS. I underwent a test-driven development process using the Jest testing library to see this project to completion.`}
-          projectDemoUrl={`https://battleship.markmelnik.com`}
-          projectSourceUrl={`https://github.com/markymelnik/battleship`}
+          projectId={CONTENT.projects.main.project[1].id}
+          projectYear={CONTENT.projects.main.project[4].year}
+          projectName={CONTENT.projects.main.project[4].name}
+          projectDescription={CONTENT.projects.main.project[4].desc}
+          projectDemoUrl={CONTENT.projects.main.project[4].demourl}
+          imageDescription={CONTENT.projects.main.project[4].imagedesc}
+          linkDescription={CONTENT.projects.main.project[4].linkdesc}
+          projectSourceUrl={CONTENT.projects.main.project[4].sourceurl}
           projectImage={BattleshipScreenshot.src}
-          imageDescription={"Screenshot of battleship project page"}
-          linkDescription={"Visit my battleship project site"}
         />
       </ul>
     </>

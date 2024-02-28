@@ -1,6 +1,8 @@
 import { useState } from "react";
-import "./override-btn.scss";
+
 import { Icons } from "../../../../../lib/icons/Icons";
+import { CONTENT } from "../../../../../lib/content";
+import "./override-btn.scss";
 
 const OverrideButton = () => {
   const [isMessageVisible, setIsMessageVisible] = useState<boolean>(false);
@@ -16,9 +18,9 @@ const OverrideButton = () => {
   return (
     <button className="override-btn" onClick={handleButtonClick}>
       <div className={`override-msg ${isMessageVisible ? `show` : ``}`}>
-        Contact me to talk about this project!
+      {CONTENT.projects.button.talktome}
       </div>
-      <div className="override-btn-text">Source</div>
+      <div className="override-btn-text">{CONTENT.projects.button.source}</div>
       <Icons.Link size={20} />
     </button>
   );

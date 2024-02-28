@@ -1,12 +1,13 @@
-import { forwardRef, useState } from "react";
+import { HTMLProps, forwardRef, useState } from "react";
 import EmailTip from "./EmailTip/EmailTip";
 import NodeVector from "../../../lib/vectors/NodeVector/NodeVector";
 import LinkedinLink from "../Home/HomeLinks/Links/LinkedinLink";
 import GithubLink from "../Home/HomeLinks/Links/GithubLink";
 import { Icons } from "../../../lib/icons/Icons";
+import { CONTENT } from "../../../lib/content";
 import "./contact.scss";
 
-interface ContactProps extends React.HTMLProps<HTMLDivElement> {}
+interface ContactProps extends HTMLProps<HTMLDivElement> {}
 
 const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
   const email = `markymelnik@gmail.com`;
@@ -14,7 +15,6 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
   const [tipText, setTipText] = useState<string>("Copy");
 
   const handleMouseEnter = () => setTipText("Copy");
-
   const handleMouseLeave = () => setTipText("");
 
   const handleEmailCopy = () => {
@@ -30,11 +30,11 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
     <section className="contact-container">
       <NodeVector />
       <h2 className="contact-title">
-        <span>.03</span>Contact Me
+        <span>{CONTENT.contact.number}</span>{CONTENT.contact.header}
       </h2>
       <div ref={ref} className="contact-info" {...props}>
         <div className="contact-paragraph">
-          Feel free to reach out! <br/> I am currently seeking an entry-level software development role.
+          {CONTENT.contact.p1} <br/> {CONTENT.contact.p2}
         </div>
         <div className="contact-selection">
           <div className="contact-top">
