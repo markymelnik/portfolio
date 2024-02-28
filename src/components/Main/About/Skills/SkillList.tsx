@@ -8,7 +8,7 @@ import CSS_SVG from "./skill_icons/css_svg";
 import EXPRESS_SVG from "./skill_icons/express.svg";
 import REACT_SVG from "./skill_icons/react_svg";
 import POSTGRES_SVG from "./skill_icons/postgres_svg";
-import REDUX_SVG from "./skill_icons/redux_svg";
+import ASTRO_SVG from "./skill_icons/astro_svg";
 import GIT_SVG from "./skill_icons/git_svg";
 import SASS_SVG from "./skill_icons/sass_svg";
 import DOCKER_SVG from "./skill_icons/docker_svg";
@@ -29,7 +29,7 @@ const SkillList = () => {
     { svg: <EXPRESS_SVG />, skillName: "Express" },
     { svg: <REACT_SVG />, skillName: "React" },
     { svg: <POSTGRES_SVG />, skillName: "PostgreSQL" },
-    { svg: <REDUX_SVG />, skillName: "Redux" },
+    { svg: <ASTRO_SVG />, skillName: "Astro" },
     { svg: <GIT_SVG />, skillName: "Git" },
     { svg: <SASS_SVG />, skillName: "Sass" },
     { svg: <DOCKER_SVG />, skillName: "Docker" },

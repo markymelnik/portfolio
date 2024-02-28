@@ -3,10 +3,10 @@ import type { MutableRefObject } from "react";
 import MainProject from "../MainProject/MainProject";
 import "./_main-projects-list.scss";
 
-import BallBattleScreenshot from '../../../../../assets/images/project/ball-battle-screenshot.jpg';
-import FitFinderScreenshot from '../../../../../assets/images/project/fitfinder-screenshot.jpg';
-import PersonalSiteScreenshot from '../../../../../assets/images/project/personal-site-screenshot.jpg';
-import BattleshipScreenshot from '../../../../../assets/images/project/battleship-screenshot.jpg';
+import BallBattleScreenshot from '../../../../../assets/images/project/ball-battle-screenshot.webp';
+import FitFinderScreenshot from '../../../../../assets/images/project/fitfinder-screenshot.webp';
+import PersonalSiteScreenshot from '../../../../../assets/images/project/personal-site-screenshot.webp';
+import BattleshipScreenshot from '../../../../../assets/images/project/battleship-screenshot.webp';
 
 type MainProjectsList = {
   projectRefs: MutableRefObject<HTMLLIElement | null>[];

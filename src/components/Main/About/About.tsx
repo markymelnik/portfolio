@@ -3,7 +3,7 @@ import { forwardRef } from "react";
 import SkillList from "./Skills/SkillList";
 import "./_about.scss";
 
-import HeadshotPhoto from '../../../assets/images/headshot.jpg';
+import HeadshotPhoto from '../../../assets/images/headshot/headshot.webp';
 
 interface AboutProps extends React.HTMLProps<HTMLDivElement> {}
 

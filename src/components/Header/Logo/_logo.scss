@@ -15,7 +15,7 @@
     @include theme-color(color, text);
 
     &:hover {
-      cursor: default;
+      cursor: pointer;
       transform: scale(1.05);
     }
   }
