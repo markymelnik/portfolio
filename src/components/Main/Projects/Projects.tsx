@@ -4,7 +4,7 @@ import useProjectObserver from "../../../hooks/useProjectObserver";
 import MainProjectsList from "./MainProjects/MainProjectsList/MainProjectsList";
 import SideProjectsList from "./SideProjects/SideProjectsList/SideProjectsList";
 import ProjectVector from "../../../lib/vectors/ProjectVector/ProjectVector";
-import "./_projects.scss";
+import "./projects.scss";
 
 interface ProjectsProps extends React.HTMLProps<HTMLDivElement> {}
 

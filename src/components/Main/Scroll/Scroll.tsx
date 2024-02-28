@@ -1,8 +1,8 @@
 import { useRef } from "react";
 
 import useHideOnScroll from "../../../hooks/useHideOnScroll";
-import "./_scroll.scss";
-import { Icons } from "../../../lib/Icons";
+import "./scroll.scss";
+import { Icons } from "../../../lib/icons/Icons";
 
 const Scroll = () => {
   const arrowRef = useRef<HTMLDivElement>(null);
@@ -11,7 +11,7 @@ const Scroll = () => {
 
   return (
     <div className="scroll-container">
-      <div className="scroll-down" ref={arrowRef}>
+      <div className="scroll-down-arrow" ref={arrowRef}>
         <span>{<Icons.CaretDown />}</span>
       </div>
     </div>

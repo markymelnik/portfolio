@@ -1,4 +1,4 @@
-const JAVA_SVG = () => {
+const JavaIcon = () => {
   return (
     <svg
       viewBox="0 0 32 32"
@@ -41,4 +41,4 @@ const JAVA_SVG = () => {
   );
 };
 
-export default JAVA_SVG;
+export default JavaIcon;

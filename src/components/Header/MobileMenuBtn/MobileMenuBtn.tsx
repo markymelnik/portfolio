@@ -1,5 +1,5 @@
-import { Icons } from "../../../lib/Icons";
-import "./_mobile-menu-btn.scss";
+import { Icons } from "../../../lib/icons/Icons";
+import "./mobile-menu-btn.scss";
 
 type MobileMenuBtnProps = {
   onClick: () => void;

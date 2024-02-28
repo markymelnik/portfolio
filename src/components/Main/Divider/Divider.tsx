@@ -1,4 +1,4 @@
-import "./_divider.scss";
+import "./divider.scss";
 
 type DividerProps = {
   customClass: string;

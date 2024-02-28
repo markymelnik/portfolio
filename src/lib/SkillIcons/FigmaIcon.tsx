@@ -1,4 +1,4 @@
-const FIGMA_SVG = () => {
+const FigmaIcon = () => {
   return (
     <svg
       viewBox="0 0 32 32"
@@ -29,4 +29,4 @@ const FIGMA_SVG = () => {
   );
 };
 
-export default FIGMA_SVG;
+export default FigmaIcon;

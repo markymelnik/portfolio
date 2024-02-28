@@ -9,10 +9,7 @@
   svg {
     @include theme-color(color, border);
     transition: color 0.2s ease;
-    height: 1.5rem;
-    width: 1.5rem;
     
-
     &:hover {
       cursor: pointer;
       @include theme-color(color, text);

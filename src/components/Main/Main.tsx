@@ -7,7 +7,7 @@ import About from "./About/About";
 import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
 import Divider from "./Divider/Divider";
-import "./_main.scss";
+import "./main.scss";
 
 const Main = () => {
   const homeRef = useRef<HTMLDivElement | null>(null);

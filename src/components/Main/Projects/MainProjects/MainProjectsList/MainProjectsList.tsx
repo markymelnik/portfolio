@@ -1,11 +1,11 @@
 import type { MutableRefObject } from "react";
 
 import MainProject from "../MainProject/MainProject";
-import "./_main-projects-list.scss";
+import "./main-projects-list.scss";
 
-import BallBattleScreenshot from '../../../../../assets/images/project/ball-battle-screenshot.webp';
+import BallBattleScreenshot from '../../../../../assets/images/project/ballbattle-screenshot.webp';
 import FitFinderScreenshot from '../../../../../assets/images/project/fitfinder-screenshot.webp';
-import PersonalSiteScreenshot from '../../../../../assets/images/project/personal-site-screenshot.webp';
+import PersonalSiteScreenshot from '../../../../../assets/images/project/portfolio-screenshot.webp';
 import BattleshipScreenshot from '../../../../../assets/images/project/battleship-screenshot.webp';
 
 type MainProjectsList = {
@@ -69,18 +69,6 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           imageDescription={"Screenshot of battleship project page"}
           linkDescription={"Visit my battleship project site"}
         />
-      {/*   <MainProject
-          ref={projectRefs[3]}
-          projectId={`project-4`}
-          projectYear={2023}
-          projectName={`Shopping Cart`}
-          projectDescription={`A mock shopping site with dynamic cart functionality that you would encounter on an e-commerce site.`}
-          projectDemoUrl={`https://shopping-cart.markmelnik.com`}
-          projectSourceUrl={`https://github.com/markymelnik/shopping-cart`}
-          projectImage={ShoppingCartScreenshot}
-          imageDescription={"Screenshot of shopping cart project page"}
-          linkDescription={"Visit my shopping cart project site"}
-        /> */}
       </ul>
     </>
   );

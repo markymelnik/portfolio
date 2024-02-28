@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './_footer.scss';
+import './footer.scss';
 
 const Footer = () => {
   const [isHidden, setIsHidden] = useState<boolean>(true);

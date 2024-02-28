@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
 type UseMobileMenuHideOnScrollProps = {
   closeMobileMenu: () => void;
@@ -9,15 +9,12 @@ const useMobileMenuHideOnScroll = ({
 }: UseMobileMenuHideOnScrollProps) => {
   useEffect(() => {
     const handleScroll = () => {
-    
-        const mobileMenu = document.querySelector('.mobile-menu-container');
+      const mobileMenu = document.querySelector('.mobile-menu-container');
 
-        if (mobileMenu && mobileMenu.classList.contains('open')) {
-          mobileMenu.classList.remove('open');
-          closeMobileMenu();
-        }
-      
-      
+      if (mobileMenu && mobileMenu.classList.contains('open')) {
+        mobileMenu.classList.remove('open');
+        closeMobileMenu();
+      }
     };
     window.addEventListener('scroll', handleScroll);
 

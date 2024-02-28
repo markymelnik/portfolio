@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./light-dark-btn.scss";
-import { Icons } from "../../../lib/Icons";
+import { Icons } from "../../../lib/icons/Icons";
 
 const LightDarkBtn = () => {
   const [theme, setTheme] = useState<string>('dark');

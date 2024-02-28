@@ -1,4 +1,4 @@
-import "./_email-tip.scss";
+import "./email-tip.scss";
 
 type EmailTipProps = {
   tipText: string;

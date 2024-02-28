@@ -1,13 +1,14 @@
-import "./_skill.scss";
+import { ReactElement } from "react";
+import "./skill.scss";
 
 type SkillProps = {
   skillName: string;
-  svg: React.ReactElement;
+  svg: ReactElement;
 };
 
 const Skill = ({ skillName, svg }: SkillProps) => {
   return (
-    <li className={`about-skill ${skillName.toLowerCase()}`}>
+    <li className={`skill ${skillName.toLowerCase()}`}>
       <span>{svg}</span>
       {skillName}
     </li>

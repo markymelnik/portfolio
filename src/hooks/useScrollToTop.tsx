@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
 const ScrollToTop = () => {
   useEffect(() => {
@@ -6,10 +6,10 @@ const ScrollToTop = () => {
       window.scrollTo(0, 0);
     };
 
-    window.addEventListener("load", handleRefresh);
+    window.addEventListener('load', handleRefresh);
 
     return () => {
-      window.removeEventListener("load", handleRefresh);
+      window.removeEventListener('load', handleRefresh);
     };
   }, []);
 

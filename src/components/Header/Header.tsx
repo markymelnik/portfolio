@@ -6,7 +6,7 @@ import Logo from "./Logo/Logo";
 import MobileMenu from "./MobileMenu/MobileMenu";
 import MobileMenuToggleButton from "./MobileMenuBtn/MobileMenuBtn";
 import NavBar from "./NavBar/NavBar";
-import "./_header.scss";
+import "./header.scss";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);

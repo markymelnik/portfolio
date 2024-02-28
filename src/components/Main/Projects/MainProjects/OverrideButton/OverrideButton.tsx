@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./_override-btn.scss";
-import { Icons } from "../../../../../lib/Icons";
+import "./override-btn.scss";
+import { Icons } from "../../../../../lib/icons/Icons";
 
 const OverrideButton = () => {
   const [isMessageVisible, setIsMessageVisible] = useState<boolean>(false);

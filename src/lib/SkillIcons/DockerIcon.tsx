@@ -1,4 +1,4 @@
-const DOCKER_SVG = () => {
+const DockerIcon = () => {
   return (
     <svg
       viewBox="0 0 16 16"
@@ -22,4 +22,4 @@ const DOCKER_SVG = () => {
   );
 };
 
-export default DOCKER_SVG;
+export default DockerIcon;

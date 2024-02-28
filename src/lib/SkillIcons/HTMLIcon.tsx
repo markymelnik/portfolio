@@ -1,4 +1,4 @@
-const HTML_SVG = () => {
+const HTMLIcon = () => {
   return (
     <svg
       viewBox="0 0 32 32"
@@ -15,4 +15,4 @@ const HTML_SVG = () => {
   );
 };
 
-export default HTML_SVG;
+export default HTMLIcon;

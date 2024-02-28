@@ -1,4 +1,4 @@
-const SASS_SVG = () => {
+const SassIcon = () => {
   return (
     <svg
       viewBox="0 -32 256 256"
@@ -28,4 +28,4 @@ const SASS_SVG = () => {
   );
 };
 
-export default SASS_SVG;
+export default SassIcon;

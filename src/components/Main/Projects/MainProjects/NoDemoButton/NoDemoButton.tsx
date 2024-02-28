@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import './_no-demo-btn.scss';
-import { Icons } from '../../../../../lib/Icons';
+import './no-demo-btn.scss';
+import { Icons } from '../../../../../lib/icons/Icons';
 
 const NoDemoButton = () => {
   const [isMessageVisible, setIsMessageVisible] = useState<boolean>(false);

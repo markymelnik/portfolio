@@ -1,6 +1,6 @@
 @import '../../../../styles/colors.scss';
 
-.about-skills {
+.skills-container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -9,13 +9,13 @@
   border-top: 1px solid;
   @include theme-color(border-color, border);
 
-  .about-skills-title {
+  .skills-title {
     font-size: 1rem;
     margin: 0 0 2rem;
     @include theme-color(color, text);
   }
 
-  .about-skills-list {
+  .skills-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0 0 0 1rem;
@@ -23,19 +23,19 @@
 }
 
 @media (min-width: 768px) {
-  .about-skills {
+  .skills-container {
     padding: 2rem 0 0;
 
-    .about-skills-title {
+    .skills-title {
       font-size: 1.15rem;
     }
   }
 }
 
 @media (min-width: 1200px) {
-  .about-skills {
+  .skills-container {
 
-    .about-skills-list {
+    .skills-list {
       grid-template-columns: repeat(4, 1fr);
 
       .javascript {

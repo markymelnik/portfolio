@@ -1,4 +1,4 @@
-import { Icons } from "../../../../../lib/Icons";
+import { Icons } from "../../../../../lib/icons/Icons";
 
 const LinkedinLink = () => {
   return (

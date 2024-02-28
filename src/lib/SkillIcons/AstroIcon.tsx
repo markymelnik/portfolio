@@ -1,4 +1,4 @@
-const ASTRO_SVG = () => {
+const AstroIcon = () => {
   return (
     <svg
       viewBox='0 0 32 32'
@@ -14,4 +14,4 @@ const ASTRO_SVG = () => {
   );
 };
 
-export default ASTRO_SVG;
+export default AstroIcon;

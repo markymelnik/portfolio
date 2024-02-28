@@ -1,4 +1,4 @@
-import { type MutableRefObject, useEffect } from "react";
+import { type MutableRefObject, useEffect } from 'react';
 
 type UseProjectObserverProps = {
   refs: MutableRefObject<HTMLElement | null>[];
@@ -10,7 +10,7 @@ const useProjectObserver = ({ refs }: UseProjectObserverProps) => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("slide-in");
+            entry.target.classList.add('slide-in');
           }
         });
       },

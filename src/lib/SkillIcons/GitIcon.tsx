@@ -1,4 +1,4 @@
-const GIT_SVG = () => {
+const GitIcon = () => {
   return (
     <svg
       viewBox="0 0 256 256"
@@ -13,4 +13,4 @@ const GIT_SVG = () => {
   );
 };
 
-export default GIT_SVG;
+export default GitIcon;

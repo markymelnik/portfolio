@@ -1,4 +1,4 @@
-const NODE_SVG = () => {
+const NodeIcon = () => {
   return (
     <svg
       viewBox="0 0 32 32"
@@ -27,4 +27,4 @@ const NODE_SVG = () => {
   );
 };
 
-export default NODE_SVG;
+export default NodeIcon;

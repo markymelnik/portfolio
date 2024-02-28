@@ -1,4 +1,4 @@
-const JS_SVG = () => {
+const JavaScriptIcon = () => {
   return (
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#F1DC50" className="tech-svg">
       <rect width="24" height="24" fill="#F1DC50"></rect>
@@ -7,5 +7,5 @@ const JS_SVG = () => {
   );
 };
 
-export default JS_SVG;
+export default JavaScriptIcon;
 

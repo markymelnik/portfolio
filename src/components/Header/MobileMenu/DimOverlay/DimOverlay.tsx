@@ -1,4 +1,4 @@
-import "./_dim-overlay.scss";
+import "./dim-overlay.scss";
 
 type DimOverlayProps = {
   isShown: boolean;

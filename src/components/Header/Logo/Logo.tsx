@@ -1,4 +1,4 @@
-import "./_logo.scss";
+import "./logo.scss";
 
 const Logo = () => {
   const handleClick = () => {

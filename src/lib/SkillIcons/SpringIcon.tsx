@@ -1,4 +1,4 @@
-const SPRING_SVG = () => {
+const SpringIcon = () => {
   return (
     <svg
       viewBox="0 0 256 256"
@@ -37,4 +37,4 @@ const SPRING_SVG = () => {
   );
 };
 
-export default SPRING_SVG;
+export default SpringIcon;

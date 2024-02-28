@@ -1,4 +1,4 @@
-const CSS_SVG = () => {
+const CSSIcon = () => {
   return (
     <svg
       viewBox="0 0 32 32"
@@ -16,4 +16,4 @@ const CSS_SVG = () => {
   );
 };
 
-export default CSS_SVG;
+export default CSSIcon;

@@ -1,6 +1,6 @@
 import LightDarkToggleButton from "../LightDark/LightDarkBtn";
-import "./_mobile-navbar.scss";
-import "./_desktop-navbar.scss";
+import "./mobile-navbar.scss";
+import "./desktop-navbar.scss";
 
 type NavbarProps = {
   customClass: string;

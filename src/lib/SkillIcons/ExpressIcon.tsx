@@ -1,4 +1,4 @@
-const EXPRESS_SVG = () => {
+const ExpressIcon = () => {
   return (
     <svg
       viewBox="-2.5 0 32 32"
@@ -27,4 +27,4 @@ const EXPRESS_SVG = () => {
   );
 };
 
-export default EXPRESS_SVG;
+export default ExpressIcon;

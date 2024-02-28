@@ -1,8 +1,8 @@
 import { type MutableRefObject, useState } from "react";
 
 import SideProject from "../SideProject/SideProject";
-import "./_side-projects-list.scss";
-import { Icons } from "../../../../../lib/Icons";
+import "./side-projects-list.scss";
+import { Icons } from "../../../../../lib/icons/Icons";
 
 type SideProjectsListProps = {
   seeMoreRef: MutableRefObject<HTMLButtonElement | null>;

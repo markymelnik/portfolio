@@ -1,4 +1,4 @@
-const POSTGRES_SVG = () => {
+const PostgresIcon = () => {
   return (
     <svg
       viewBox="-4 0 264 264"
@@ -55,4 +55,4 @@ const POSTGRES_SVG = () => {
   );
 };
 
-export default POSTGRES_SVG;
+export default PostgresIcon;

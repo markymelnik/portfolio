@@ -1,4 +1,4 @@
-const TS_SVG = () => {
+const TypeScriptIcon = () => {
   return (
     <svg
       viewBox="0 0 256 256"
@@ -23,4 +23,4 @@ const TS_SVG = () => {
   );
 };
 
-export default TS_SVG;
+export default TypeScriptIcon;

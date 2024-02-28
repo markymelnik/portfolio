@@ -2,8 +2,8 @@ import React from "react";
 
 import OverrideButton from "../OverrideButton/OverrideButton";
 import NoDemoButton from "../NoDemoButton/NoDemoButton";
-import "./_main-project.scss";
-import { Icons } from "../../../../../lib/Icons";
+import "./main-project.scss";
+import { Icons } from "../../../../../lib/icons/Icons";
 
 type MainProjectProps = {
   projectId: string;

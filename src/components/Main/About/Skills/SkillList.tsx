@@ -1,21 +1,21 @@
-import JS_SVG from "./skill_icons/js_svg";
-import JAVA_SVG from "./skill_icons/java_svg";
-import TS_SVG from "./skill_icons/ts_svg";
-import SPRING_SVG from "./skill_icons/spring_svg";
-import HTML_SVG from "./skill_icons/html_svg";
-import NODE_SVG from "./skill_icons/node_svg";
-import CSS_SVG from "./skill_icons/css_svg";
-import EXPRESS_SVG from "./skill_icons/express.svg";
-import REACT_SVG from "./skill_icons/react_svg";
-import POSTGRES_SVG from "./skill_icons/postgres_svg";
-import ASTRO_SVG from "./skill_icons/astro_svg";
-import GIT_SVG from "./skill_icons/git_svg";
-import SASS_SVG from "./skill_icons/sass_svg";
-import DOCKER_SVG from "./skill_icons/docker_svg";
-import JEST_SVG from "./skill_icons/jest_svg";
-import FIGMA_SVG from "./skill_icons/figma_svg";
+import JS_SVG from "../../../../lib/SkillIcons/JavaScriptIcon";
+import JAVA_SVG from "../../../../lib/SkillIcons/JavaIcon";
+import TS_SVG from "../../../../lib/SkillIcons/TypeScriptIcon";
+import SPRING_SVG from "../../../../lib/SkillIcons/SpringIcon";
+import HTML_SVG from "../../../../lib/SkillIcons/HTMLIcon";
+import NODE_SVG from "../../../../lib/SkillIcons/NodeIcon";
+import CSS_SVG from "../../../../lib/SkillIcons/CSSIcon";
+import EXPRESS_SVG from "../../../../lib/SkillIcons/ExpressIcon";
+import REACT_SVG from "../../../../lib/SkillIcons/ReactIcon";
+import POSTGRES_SVG from "../../../../lib/SkillIcons/PostgresIcon";
+import ASTRO_SVG from "../../../../lib/SkillIcons/AstroIcon";
+import GIT_SVG from "../../../../lib/SkillIcons/GitIcon";
+import SASS_SVG from "../../../../lib/SkillIcons/SassIcon";
+import DOCKER_SVG from "../../../../lib/SkillIcons/DockerIcon";
+import JEST_SVG from "../../../../lib/SkillIcons/JestIcon";
+import FIGMA_SVG from "../../../../lib/SkillIcons/FigmaIcon";
 import Skill from "./Skill/Skill";
-import "./_skill-list.scss";
+import "./skill-list.scss";
 
 const SkillList = () => {
   const TECHNOLOGIES = [
@@ -38,9 +38,9 @@ const SkillList = () => {
   ];
 
   return (
-    <div className="about-skills">
-      <h3 className="about-skills-title">I've been working with &rarr;</h3>
-      <ul className="about-skills-list">
+    <div className="skills-container">
+      <h3 className="skills-title">I've been working with &rarr;</h3>
+      <ul className="skills-list">
         {TECHNOLOGIES.map((tech, index) => (
           <Skill key={index} skillName={tech.skillName} svg={tech.svg} />
         ))}

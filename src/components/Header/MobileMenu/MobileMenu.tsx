@@ -3,7 +3,7 @@ import useMobileMenuHideOnScroll from "../../../hooks/useMobileMenuHideOnScroll"
 import NavBar from "../NavBar/NavBar";
 import DimOverlay from "./DimOverlay/DimOverlay";
 import LightDarkBtn from "../LightDark/LightDarkBtn";
-import "./_mobile-menu.scss";
+import "./mobile-menu.scss";
 
 type MobileMenuProps = {
   isMobileMenuOpen: boolean;

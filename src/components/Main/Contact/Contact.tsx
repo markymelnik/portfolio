@@ -3,8 +3,8 @@ import EmailTip from "./EmailTip/EmailTip";
 import NodeVector from "../../../lib/vectors/NodeVector/NodeVector";
 import LinkedinLink from "../Home/HomeLinks/Links/LinkedinLink";
 import GithubLink from "../Home/HomeLinks/Links/GithubLink";
-import { Icons } from "../../../lib/Icons";
-import "./_contact.scss";
+import { Icons } from "../../../lib/icons/Icons";
+import "./contact.scss";
 
 interface ContactProps extends React.HTMLProps<HTMLDivElement> {}
 

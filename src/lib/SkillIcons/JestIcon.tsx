@@ -1,4 +1,4 @@
-const JEST_SVG = () => (
+const JestIcon = () => (
   <svg
     viewBox="0 0 32 32"
     xmlns="http://www.w3.org/2000/svg"
@@ -16,4 +16,4 @@ const JEST_SVG = () => (
   </svg>
 );
 
-export default JEST_SVG;
+export default JestIcon;

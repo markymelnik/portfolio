@@ -1,4 +1,4 @@
-import "./_dynamic-subtitle.scss";
+import "./dynamic-subtitle.scss";
 
 const DynamicSubtitle = () => {
   return (

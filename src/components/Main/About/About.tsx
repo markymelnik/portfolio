@@ -1,7 +1,6 @@
 import { forwardRef } from "react";
-
 import SkillList from "./Skills/SkillList";
-import "./_about.scss";
+import "./about.scss";
 
 import HeadshotPhoto from '../../../assets/images/headshot/headshot.webp';
 

@@ -1,5 +1,5 @@
-import { Icons } from "../../../../../lib/Icons";
-import "./_side-project.scss";
+import { Icons } from "../../../../../lib/icons/Icons";
+import "./side-project.scss";
 
 type SideProjectProps = {
   projectId: string;

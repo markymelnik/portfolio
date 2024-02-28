@@ -3,7 +3,7 @@ import { forwardRef } from "react";
 import DynamicSubtitle from "./DynamicSubtitle/DynamicSubtitle";
 import RoadVector from "../../../lib/vectors/RoadVector/RoadVector";
 import HomeLinks from "./HomeLinks/HomeLinks";
-import "./_home.scss";
+import "./home.scss";
 
 interface HomeProps extends React.HTMLProps<HTMLDivElement> {}
 
