@@ -1,34 +1,25 @@
 import { useEffect, type MutableRefObject } from "react";
 
 type UseSectionObserverProps = {
-  setActiveTab: (id: string) => void;
-  isScrolling: boolean;
   refs: MutableRefObject<HTMLElement | null>[];
 };
 
 const useSectionObserver = ({
-  setActiveTab,
-  isScrolling,
   refs,
 }: UseSectionObserverProps) => {
   
   useEffect(() => {
-
-      const activeTabThreshold = innerWidth < 768 ? 0.3 : 0.5;
       const slideInThreshold = innerWidth < 768 ? 0.2 : 0.3;
   
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
-            if (!isScrolling && entry.intersectionRatio >= activeTabThreshold) {
-              setActiveTab(entry.target.id);
-            }
-            if (!isScrolling && entry.intersectionRatio >= slideInThreshold) {
+            if (entry.intersectionRatio >= slideInThreshold) {
               entry.target.classList.add("slide-in");
             }
           });
         },
-        { threshold: [activeTabThreshold, slideInThreshold] }
+        { threshold: [slideInThreshold] }
       );
   
       refs.forEach((ref) => {
@@ -46,7 +37,7 @@ const useSectionObserver = ({
       };
     
     
-  }, [setActiveTab, isScrolling, refs]);
+  }, [refs]);
 };
 
 export default useSectionObserver;

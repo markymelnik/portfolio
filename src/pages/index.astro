@@ -2,7 +2,6 @@
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Main from "../components/Main/Main";
-import { AppStateProvider } from "../context/AppStateContext";
 import '../styles/global.scss';
 ---
 
@@ -15,18 +14,16 @@ import '../styles/global.scss';
   <meta name="description"
     content="Mark Melnik is a software developer specializing in the web - see more!" />
   <title>Mark Melnik</title>
-  <link rel="icon" href="src/assets/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="src/styles/global.scss">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="src/styles/global.css">
 </head>
 
 <body>
-  <AppStateProvider client:only>
-    <div class="app-container">
-      <Header client:only/>
-      <Main client:only/>
-      <Footer />
-    </div>
-  </AppStateProvider>
+  <div class="app-container">
+    <Header client:load/>
+    <Main client:only/>
+    <Footer />
+  </div>
   <script>
     document.body.className = 'dark';
   </script>

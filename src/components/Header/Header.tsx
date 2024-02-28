@@ -7,10 +7,8 @@ import MobileMenu from "./MobileMenu/MobileMenu";
 import MobileMenuToggleButton from "./MobileMenuBtn/MobileMenuBtn";
 import NavBar from "./NavBar/NavBar";
 import "./_header.scss";
-import { useAppState } from "../../context/AppStateContext";
 
 const Header = () => {
-  const { activeTab, setActiveTab, setIsScrolling } = useAppState();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
 
   const mobileMenuRef = useRef(null);
@@ -32,17 +30,11 @@ const Header = () => {
       <div className="header-content">
         <Logo />
         <NavBar
-          activeTab={activeTab}
-          setActiveTab={setActiveTab}
-          setIsScrolling={setIsScrolling}
           customClass={"desktop-navbar"}
         />
         <MobileMenu
           mobileMenuRef={mobileMenuRef}
-          isOpen={isMobileMenuOpen}
-          activeTab={activeTab}
-          setActiveTab={setActiveTab}
-          setIsScrolling={setIsScrolling}
+          isMobileMenuOpen={isMobileMenuOpen}
           customClass={`mobile-navbar`}
           closeMobileMenu={closeMobileMenu}
         />

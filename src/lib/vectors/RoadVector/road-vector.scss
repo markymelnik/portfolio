@@ -6,7 +6,7 @@
   bottom: -1rem;
   right: -45%;
   height: 65vh;
-  /* @include animateFadeIn(0.3s); */
+  @include animateFadeIn(0.1s);
 
   path {
     @include theme-color(fill, border);

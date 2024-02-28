@@ -1,7 +1,7 @@
 @mixin animateFadeIn($delay) {
   opacity: 0;
-  transform: translateY(1rem);
-  animation: fadeInSlideUp 0.5s forwards;
+  transform: translateY(0.5rem);
+  animation: fadeInSlideUp 0.4s forwards;
   animation-delay: $delay;
 }
 

@@ -2,11 +2,15 @@ import { useEffect } from "react";
 
 const ScrollToTop = () => {
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const handleRefresh = () => {
       window.scrollTo(0, 0);
-    }, 100);
+    };
 
-    return () => clearTimeout(timer);
+    window.addEventListener("load", handleRefresh);
+
+    return () => {
+      window.removeEventListener("load", handleRefresh);
+    };
   }, []);
 
   return null;

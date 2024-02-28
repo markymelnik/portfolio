@@ -7,20 +7,15 @@ import About from "./About/About";
 import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
 import Divider from "./Divider/Divider";
-import { useAppState } from "../../context/AppStateContext";
 import "./_main.scss";
 
 const Main = () => {
-  const { setActiveTab, isScrolling } = useAppState();
-
   const homeRef = useRef<HTMLDivElement | null>(null);
   const aboutRef = useRef<HTMLDivElement | null>(null);
   const projectsRef = useRef<HTMLDivElement | null>(null);
   const contactRef = useRef<HTMLDivElement | null>(null);
 
   useSectionObserver({
-    setActiveTab,
-    isScrolling,
     refs: [homeRef, aboutRef, projectsRef, contactRef],
   });
 

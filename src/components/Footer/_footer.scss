@@ -12,7 +12,11 @@
   margin: 2rem 0;
   margin-top: auto;
 
-  .footer-tech {
+  .footer-tech-stack,
+  .footer-copyright {
+    line-height: 1.2;
+  }
+  .footer-tech-stack {
     @include theme-color(color, border);
     
     a {
@@ -27,5 +31,11 @@
 
   .footer-copyright {
     @include theme-color(color, border);
+  }
+
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
   }
 }

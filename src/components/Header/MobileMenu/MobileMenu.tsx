@@ -6,20 +6,14 @@ import LightDarkBtn from "../LightDark/LightDarkBtn";
 import "./_mobile-menu.scss";
 
 type MobileMenuProps = {
-  isOpen: boolean;
-  activeTab: string;
-  setActiveTab: (tab: string) => void;
-  setIsScrolling: (status: boolean) => void;
+  isMobileMenuOpen: boolean;
   closeMobileMenu: () => void;
   customClass: string;
   mobileMenuRef: MutableRefObject<null>;
 };
 
 const MobileMenu = ({
-  isOpen,
-  activeTab,
-  setActiveTab,
-  setIsScrolling,
+  isMobileMenuOpen,
   closeMobileMenu,
   customClass,
   mobileMenuRef,
@@ -28,20 +22,16 @@ const MobileMenu = ({
 
   return (
     <>
-      <DimOverlay isShown={isOpen} />
+      <DimOverlay isShown={isMobileMenuOpen} />
       <div
         ref={mobileMenuRef}
-        className={`mobile-menu-container ${isOpen ? `open` : ``}`}
+        className={`mobile-menu-container ${isMobileMenuOpen ? `open` : ``}`}
       >
         <div className="mobile-menu-top">
           <LightDarkBtn />
         </div>
         <NavBar
-          activeTab={activeTab}
-          setActiveTab={setActiveTab}
-          setIsScrolling={setIsScrolling}
           customClass={customClass}
-          onNavClick={closeMobileMenu}
         />
       </div>
     </>
