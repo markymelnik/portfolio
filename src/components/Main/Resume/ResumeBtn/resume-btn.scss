@@ -1,0 +1,10 @@
+@import '../../../../styles/colors.scss';
+
+.resume-btn {
+	@include theme-color(color, text);
+	transition: color 0.2s ease;
+
+	&:hover {
+		@include theme-color(color, accent);
+	}
+}

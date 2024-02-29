@@ -3,8 +3,8 @@ import { HTMLProps, forwardRef } from "react";
 import DynamicSubtitle from "./DynamicSubtitle/DynamicSubtitle";
 import RoadVector from "../../../lib/vectors/RoadVector/RoadVector";
 import HomeLinks from "./HomeLinks/HomeLinks";
-import "./home.scss";
 import { CONTENT } from "../../../lib/content";
+import "./home.scss";
 
 interface HomeProps extends HTMLProps<HTMLDivElement> {}
 

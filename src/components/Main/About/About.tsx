@@ -26,8 +26,9 @@ const About = forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
           <p>
             {CONTENT.about.p1}
           </p>
-          {/* <p>
-          I graduated from{" "}
+          {/* <hr />
+          <p>
+          A little more about me: I graduated from{" "}
             <a
               href="https://binghamton.edu"
               target="_blank"
@@ -37,7 +38,7 @@ const About = forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
               Binghamton University
             </a>{" "}
             with a bachelor's degree in Integrative Neuroscience and a minor in Russian
-            Studies.
+            Studies. I am fascinated by everything to do with computers and the brain! I can read, write, and speak in Russian and Ukrainian (also English). I love hiking, skiing, ice skating, working out, and just staying active.
           </p> */}
           <hr />
           <p>{CONTENT.about.p2}</p>

@@ -83,8 +83,38 @@
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes appearFromLeft {
+  from {
+    transform: translateX(-4%);
+    opacity: 0;
+  }
+  to {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToLeft {
+  from {
+    transform: translatex(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-4%);
+    opacity: 0;
   }
 }
