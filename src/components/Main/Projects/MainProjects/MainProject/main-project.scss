@@ -103,16 +103,17 @@
         z-index: 2;
         border: 1px solid;
         @include theme-color(border-color, border);
-        transition: border-color 0.2s ease;
+        transition: all 0.2s ease;
 
         &:hover {
           cursor: pointer;
-          @include theme-color(border-color, text);
+          @include theme-color(background-color, proj-button-bg);
+          @include theme-color(border-color, proj-button-border);
+          @include theme-color(color, proj-button-color);
         }
 
         .main-project-link-text {
           font-size: 1rem;
-          @include theme-color(color, text);
         }
 
         .project-link-icon {
@@ -127,6 +128,7 @@
     display: block;
     border-radius: 6px;
     overflow: hidden;
+    z-index: 2;
 
     img {
       width: 100%;

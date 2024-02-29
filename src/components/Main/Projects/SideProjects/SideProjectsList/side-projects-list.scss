@@ -64,7 +64,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
   gap: 2rem;
-  overflow: hidden;
   max-height: 0;
   visibility: hidden;
   opacity: 0;

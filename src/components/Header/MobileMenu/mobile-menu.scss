@@ -17,6 +17,10 @@
   border-left: 1px solid;
   @include theme-color(border-color, border);
 
+  @media (min-width: 768px) {
+    display: none;
+  }
+
   &.open {
     transform: translateX(0);
   }
@@ -28,8 +32,3 @@
   }
 }
 
-@media (min-width: 768px) {
-  .mobile-menu-container {
-    display: none;
-  }
-}

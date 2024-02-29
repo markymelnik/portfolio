@@ -1,27 +1,29 @@
 @import '../../../../../styles/colors.scss';
 
-.override-btn {
+.no-source-btn {
   position: relative;
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
   padding: 0.75rem 1rem;
   border-radius: 4px;
-  transition: border 0.2s ease;
+  transition: all 0.2s ease;
   z-index: 2;
   border: 1px solid;
   @include theme-color(border-color, border);
 
   &:hover {
     cursor: pointer;
-    @include theme-color(border-color, text);
+    @include theme-color(background-color, proj-button-bg);
+    @include theme-color(border-color, proj-button-border);
+    @include theme-color(color, proj-button-color);
   }
 
-  .override-btn-text {
-    @include theme-color(color, text);
+  .no-source-btn-text {
+    font-size: 1;
   }
 
-  .override-msg {
+  .no-source-msg {
     position: absolute;
     top: -5.75rem;
     right: -75%;
@@ -69,9 +71,9 @@
 }
 
 @media (min-width: 768px) {
-  .override-btn {
+  .no-source-btn {
 
-    .override-msg {
+    .no-source-msg {
       right: -10%;
 
       &::before,

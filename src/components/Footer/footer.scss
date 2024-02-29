@@ -5,16 +5,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 0.5rem;
   width: 100%;
   font-size: 1rem;
-  margin: 2rem 0;
+  margin: 0 0 4rem;
   margin-top: auto;
 
   .footer-tech-stack,
   .footer-copyright {
     line-height: 1.2;
   }
+
   .footer-tech-stack {
     @include theme-color(color, border);
     

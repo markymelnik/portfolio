@@ -2,9 +2,9 @@ import { useState } from "react";
 
 import { Icons } from "../../../../../lib/icons/Icons";
 import { CONTENT } from "../../../../../lib/content";
-import "./override-btn.scss";
+import "./no-source-btn.scss";
 
-const OverrideButton = () => {
+const NoSourceBtn = () => {
   const [isMessageVisible, setIsMessageVisible] = useState<boolean>(false);
 
   const handleButtonClick = () => {
@@ -16,14 +16,14 @@ const OverrideButton = () => {
   };
 
   return (
-    <button className="override-btn" onClick={handleButtonClick}>
-      <div className={`override-msg ${isMessageVisible ? `show` : ``}`}>
+    <button className="no-source-btn" onClick={handleButtonClick}>
+      <div className={`no-source-msg ${isMessageVisible ? `show` : ``}`}>
       {CONTENT.projects.button.talktome}
       </div>
-      <div className="override-btn-text">{CONTENT.projects.button.source}</div>
+      <div className="no-source-btn-text">{CONTENT.projects.button.source}</div>
       <Icons.Link size={20} />
     </button>
   );
 };
 
-export default OverrideButton;
+export default NoSourceBtn;

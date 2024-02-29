@@ -7,24 +7,18 @@
   align-items: center;
   border-radius: 0.25rem;
   padding: 0.25rem 0 0;
-  /* @include animateFadeIn(1.2s); */
+  transition: color 0.2s ease;
 
-  .logo-text {
+  &:hover {
+    cursor: pointer;
+    @include theme-color(color, accent);
+  }
+
+  .name {
     font-size: 1rem;
     transition: transform 0.2s ease;
-    @include theme-color(color, text);
 
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.05);
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  .logo {
-
-    .logo-text {
+    @media (min-width: 768px) {
       font-size: 1.1rem;
     }
   }

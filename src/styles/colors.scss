@@ -3,12 +3,18 @@ $dark-theme-text: #F7F7FC;
 $dark-theme-border: #8A8A8A;
 $dark-theme-accent: #67B896;
 $dark-theme-proj-border: #7C7C7C;
+$dark-theme-proj-button-bg: #1A1A1A;
+$dark-theme-proj-button-border: #F7F7FC;
+$dark-theme-proj-button-color: #F7F7FC;
 
 $light-theme-bg: #FAF9F6;
 $light-theme-text: #1A1A1A;
 $light-theme-border: #8A8A8A;
 $light-theme-accent: #38369A;
 $light-theme-proj-border: #FAF9F6;
+$light-theme-proj-button-bg: #38369A;
+$light-theme-proj-button-border: #38369A;
+$light-theme-proj-button-color: #F7F7FC;
 
 $themes: (
   dark: (
@@ -17,6 +23,9 @@ $themes: (
     border: $dark-theme-border,
     accent: $dark-theme-accent,
     proj-border: $dark-theme-proj-border,
+    proj-button-bg: $dark-theme-proj-button-bg,
+    proj-button-border: $dark-theme-proj-button-border,
+    proj-button-color: $dark-theme-proj-button-color,
   ),
   light: (
     bg: $light-theme-bg,
@@ -24,6 +33,9 @@ $themes: (
     border: $light-theme-border,
     accent: $light-theme-accent,
     proj-border: $light-theme-proj-border,
+    proj-button-bg: $light-theme-proj-button-bg,
+    proj-button-border: $light-theme-proj-button-border,
+    proj-button-color: $light-theme-proj-button-color,
   )
 );
 

@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
 
-import OverrideButton from "../OverrideButton/OverrideButton";
-import NoDemoButton from "../NoDemoButton/NoDemoButton";
+import NoSourceButton from "../NoSourceBtn/NoSourceBtn";
+import NoDemoButton from "../NoDemoBtn/NoDemoBtn";
 import { Icons } from "../../../../../lib/icons/Icons";
 import { CONTENT } from "../../../../../lib/content";
 import "./main-project.scss";
@@ -63,7 +63,7 @@ const MainProject = forwardRef<HTMLLIElement, MainProjectProps>(
               </a>
             )}
             {overrideSource ? (
-              <OverrideButton />
+              <NoSourceButton />
             ) : (
               <a
                 href={projectSourceUrl}
@@ -71,7 +71,7 @@ const MainProject = forwardRef<HTMLLIElement, MainProjectProps>(
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="main-project-link-text">{CONTENT.projects.button.demo}</span>
+                <span className="main-project-link-text">{CONTENT.projects.button.source}</span>
                 <Icons.Link size={20} />
               </a>
             )}

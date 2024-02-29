@@ -7,10 +7,10 @@
   justify-content: space-between;
   gap: 1.5rem;
   width: 100%;
-  border: 1px solid;
-  @include theme-color(border-color, border);
   border-radius: 5px;
   padding: 1.5rem;
+  border: 1px solid;
+  @include theme-color(border-color, proj-border);
 
   &:before {
     content: "";
@@ -64,17 +64,18 @@
       border: 1px solid;
       @include theme-color(border-color, border);
       border-radius: 4px;
-      transition: border-color 0.2s ease;
+      transition: all 0.2s ease;
       z-index: 2;
 
       &:hover {
         cursor: pointer;
-        @include theme-color(border-color, text);
+        @include theme-color(background-color, proj-button-bg);
+        @include theme-color(border-color, proj-button-border);
+        @include theme-color(color, proj-button-color);
       }
 
       .side-project-link-text {
         font-size: 1rem;
-        @include theme-color(color, text);
       }
 
       .project-link-icon {

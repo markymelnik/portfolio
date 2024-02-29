@@ -78,6 +78,15 @@
         border: none;
         margin: 0.75rem 0;
       }
+
+      .university-link {
+        transition: color 0.2s ease;
+
+        &:hover {
+          @include theme-color(color, accent);
+        }
+        
+      }
     }
   }
 }

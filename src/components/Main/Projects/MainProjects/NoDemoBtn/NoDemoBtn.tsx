@@ -4,7 +4,7 @@ import { Icons } from '../../../../../lib/icons/Icons';
 import { CONTENT } from '../../../../../lib/content';
 import './no-demo-btn.scss';
 
-const NoDemoButton = () => {
+const NoDemoBtn = () => {
   const [isMessageVisible, setIsMessageVisible] = useState<boolean>(false);
 
   const handleButtonClick = () => {
@@ -26,4 +26,4 @@ const NoDemoButton = () => {
   );
 };
 
-export default NoDemoButton;
+export default NoDemoBtn;

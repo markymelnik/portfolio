@@ -6,6 +6,10 @@
   align-items: center;
   padding: 0.32rem 1rem 0 0;
 
+  @media (min-width: 768px) {
+    padding: 0 0 0 0.75rem;
+  }
+
   svg {
     @include theme-color(color, border);
     transition: color 0.2s ease;
@@ -14,13 +18,5 @@
       cursor: pointer;
       @include theme-color(color, text);
     }
-
-  }
-  
-}
-
-@media (min-width: 768px) {
-  .light-dark-btn {
-    padding: 0 0 0 0.75rem;
   }
 }
