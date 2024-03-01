@@ -12,6 +12,18 @@
     right: 1.25rem;
     transform: rotate(3deg);
     @include theme-color(color, accent);
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      &:hover {
+        .new-project-label {
+          animation: fluctuateSize 0.8s infinite alternate ease-in-out;
+        }
+      }
+    }
   }
 }
 
@@ -38,6 +50,16 @@
   border: 1px solid;
   @include theme-color(border-color, proj-border);
   @include theme-color(background-color, bg);
+
+  @media (min-width: 768px) {
+      font-size: 2rem;
+      margin: 0 0 1rem;
+  }
+
+  @media (min-width: 1200px) {
+    flex-direction: row-reverse;
+    gap: 1.5rem;
+  }
 
   &:before {
     content: '';
@@ -67,6 +89,10 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @media (min-width: 768px) {
+      flex: 1;
+    }
+
     .main-project-info {
 
       .main-project-year {
@@ -91,7 +117,7 @@
 
     .main-project-links {
       display: inline-flex;
-      gap: 1rem;
+      gap: 1.5rem;
 
       .main-project-demo-link,
       .main-project-code-link {
@@ -130,6 +156,10 @@
     overflow: hidden;
     z-index: 2;
 
+    @media (min-width: 1200px) {
+      width: 28rem;
+    }
+
     img {
       width: 100%;
       height: 100%;
@@ -152,47 +182,4 @@
 
 .new-project {
   @include theme-color(border-color, accent);
-}
-
-@media (min-width: 768px) {
-
-  .project-1 {
-
-    .new-project-label {
-      font-size: 1.5rem;
-    }
-
-    &:hover {
-
-      .new-project-label {
-        animation: fluctuateSize 0.8s infinite alternate ease-in-out;
-      }
-    }
-  }
-
-  .main-project {
-
-    .main-project-stuff {
-      flex: 1;
-
-      .main-project-info {
-
-        .main-project-name {
-          font-size: 2rem;
-          margin: 0 0 1rem;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .main-project {
-    flex-direction: row-reverse;
-    gap: 1.5rem;
-
-    .main-project-image {
-      width: 28rem;
-    }
-  }
 }

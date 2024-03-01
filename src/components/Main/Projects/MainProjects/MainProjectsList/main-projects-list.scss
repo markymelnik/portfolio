@@ -3,7 +3,7 @@
 
 .main-projects-title {
   font-size: 1.5rem;
-  padding: 0 0 2.5rem;
+  padding: 0 0 2rem;
   @include theme-color(color, text);
   border-bottom: 1px solid;
   @include theme-color(border-color, border);
@@ -11,6 +11,10 @@
   span {
     margin: 0 0.5rem 0 0;
     @include theme-color(color, accent);
+  }
+
+  @media (min-width: 768px) {
+    font-size: 2rem;
   }
 }
 
@@ -22,15 +26,8 @@
   gap: 2rem;
   margin: 0 0 1rem;
   padding: 2rem 0 0;
-}
 
-@media (min-width: 768px) {
-  .main-projects-title {
-    font-size: 2rem;
-  }
-
-  .main-projects-list {
-    gap: 3rem;
+  @media (min-width: 768px) {
     padding: 3rem 0 0;
     margin: 0 0 1.5rem;
   }

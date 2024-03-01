@@ -34,7 +34,12 @@ body {
 		--spinner-color: #F7F7FC;
 		--input-autofill-bg: #1A1A1A;
 	}
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
+
 
 a {
 	text-decoration: none;

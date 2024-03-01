@@ -46,7 +46,7 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
         />
         <MainProject
           ref={projectRefs[2]}
-          projectId={CONTENT.projects.main.project[1].id}
+          projectId={CONTENT.projects.main.project[3].id}
           projectYear={CONTENT.projects.main.project[3].year}
           projectName={CONTENT.projects.main.project[3].name}
           projectDescription={CONTENT.projects.main.project[3].desc}
@@ -58,7 +58,7 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
         />
         <MainProject
           ref={projectRefs[3]}
-          projectId={CONTENT.projects.main.project[1].id}
+          projectId={CONTENT.projects.main.project[4].id}
           projectYear={CONTENT.projects.main.project[4].year}
           projectName={CONTENT.projects.main.project[4].name}
           projectDescription={CONTENT.projects.main.project[4].desc}

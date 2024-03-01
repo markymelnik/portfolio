@@ -35,7 +35,10 @@ export const CONTENT = {
 					id: `project-1`,
 					year: 2024,
 					name: `Ball Battle`,
-					desc: `A basketball prediction and social networking application. A basketball prediction and social networking application. A basketball prediction and social networking application`,
+					desc: `A social basketball prediction application. Predict the outcome of 
+					professional basketball games, track your statistics, and share with friends! 
+					Ball Battle is desgined for scalability, allowing easy integration of new features
+					 and straightforward authentication management.`,
 					demourl: `https://markmelnik.com`,
 					sourceurl: ``,
 					imagedesc: `Screenshot of ball battle project page`,
@@ -45,7 +48,10 @@ export const CONTENT = {
 					id: `project-2`,
 					year: 2023,
 					name: `Fit Finder`,
-					desc: `Looking for a new workout spot? Find it with FitFinder! This project was a tremendous learning experience from start to finish. The resulting solution is the product of many design choices and technical implementations on both the frontend and backend.`,
+					desc: `A location-based fitness application. Find a workout spot with Fit Finder! 
+					This project was a tremendous learning experience from start to finish. The resulting 
+					solution is the product of many design choices and technical implementations on both 
+					the frontend and backend.`,
 					demourl: `https://fitfinder.app`,
 					sourceurl: ``,
 					imagedesc: `Screenshot of fit finder project page`,
@@ -55,7 +61,10 @@ export const CONTENT = {
 					id: `project-3`,
 					year: 2023,
 					name: `Portfolio | markmelnik.com`,
-					desc: `Hey, you're on this site right now! I designed it to be simple yet elegant. I utilized the Intersection Observer API to create the dynamic navbar and scroll into view transitions. Let me know what you think!`,
+					desc: `Hey, you're on this site right now! I designed it to be simple yet elegant, 
+					incorporating Astro for performance optimization and fast page loads. I utilized the 
+					Intersection Observer API to create the scroll into view transitions. Let me know what 
+					you think!`,
 					demourl: `https://markmelnik.com`,
 					sourceurl: `https://github.com/markymelnik/personal-site`,
 					imagedesc: `Screenshot of portfolio project page`,
@@ -65,7 +74,9 @@ export const CONTENT = {
 					id: `project-4`,
 					year: 2023,
 					name: `Battleship`,
-					desc: `A game of Battleship played in the web browser. This solution is written in vanilla JavaScript, HTML, and CSS. I underwent a test-driven development process using the Jest testing library to see this project to completion.`,
+					desc: `A classic game of Battleship. This solution was written in vanilla JavaScript, HTML, 
+					and CSS. I wrote unit tests for functions ahead of implementation, emphasizing test-driven 
+					development. I utilized the Drag and Drop API for seamless ship placement control.`,
 					demourl: `https://battleship.markmelnik.com`,
 					sourceurl: `https://github.com/markymelnik/battleship`,
 					imagedesc: `Screenshot of battleship project page`,

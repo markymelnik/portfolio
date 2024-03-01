@@ -20,15 +20,17 @@
   }
 
   .no-source-btn-text {
-    font-size: 1;
+    font-size: 1rem;
   }
 
   .no-source-msg {
     position: absolute;
     top: -5.75rem;
-    right: -75%;
+    right: -5rem;
     padding: 1.25rem 1.5rem;
     border: 1px solid;
+    font-size: 1rem;
+    @include theme-color(color, text);
     @include theme-color(border-color, accent);
     @include theme-color(background-color, bg);
     border-radius: 5px;
@@ -36,6 +38,7 @@
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 2;
 
     &.show {
       visibility: visible;
@@ -67,19 +70,5 @@
   .project-link-icon {
     height: 1rem;
     width: 1rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .no-source-btn {
-
-    .no-source-msg {
-      right: -10%;
-
-      &::before,
-      &::after {
-        left: 75%;
-      }
-    }
   }
 }

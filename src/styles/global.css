@@ -30,6 +30,9 @@ body.dark {
   --spinner-color: #F7F7FC;
   --input-autofill-bg: #1A1A1A;
 }
+body.no-scroll {
+  overflow: hidden;
+}
 
 a {
   text-decoration: none;
