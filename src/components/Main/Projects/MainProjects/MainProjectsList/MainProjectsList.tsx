@@ -1,6 +1,6 @@
 import type { MutableRefObject } from "react";
 import MainProject from "../MainProject/MainProject";
-import BallBattleScreenshot from '../../../../../assets/images/project/ballbattle-screenshot.webp';
+import BallerBlitz from '../../../../../assets/images/project/ballerblitz-screenshot.webp';
 import FitFinderScreenshot from '../../../../../assets/images/project/fitfinder-screenshot.webp';
 import PersonalSiteScreenshot from '../../../../../assets/images/project/portfolio-screenshot.webp';
 import BattleshipScreenshot from '../../../../../assets/images/project/battleship-screenshot.webp';
@@ -27,8 +27,7 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           projectDemoUrl={CONTENT.projects.main.project[1].demourl}
           imageDescription={CONTENT.projects.main.project[1].imagedesc}
           linkDescription={CONTENT.projects.main.project[1].linkdesc}
-          projectImage={BallBattleScreenshot.src}
-          overrideDemo={true}
+          projectImage={BallerBlitz.src}
           overrideSource={true}
           newProject={true}
         />

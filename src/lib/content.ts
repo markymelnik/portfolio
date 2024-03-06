@@ -34,14 +34,14 @@ export const CONTENT = {
 				1: {
 					id: `project-1`,
 					year: 2024,
-					name: `Ball Battle`,
+					name: `Baller Blitz`,
 					desc: `A social basketball prediction application. Predict the outcome of 
 					professional basketball games, track your statistics, and share with friends! 
-					Ball Battle is desgined for scalability, allowing easy integration of new features
+					Baller Blitz is desgined for scalability, allowing easy integration of new features
 					 and straightforward authentication management.`,
-					demourl: `https://markmelnik.com`,
+					demourl: `https://ballerblitz.com/`,
 					sourceurl: ``,
-					imagedesc: `Screenshot of ball battle project page`,
+					imagedesc: `Screenshot of baller blitz project page`,
 					linkdesc: `Visit my ball battle site`,
 				},
 				2: {
@@ -62,7 +62,7 @@ export const CONTENT = {
 					year: 2023,
 					name: `Portfolio | markmelnik.com`,
 					desc: `Hey, you're on this site right now! I designed it to be simple yet elegant, 
-					incorporating Astro for performance optimization and fast page loads. I utilized the 
+					incorporating Astro for performance optimization and fast page loads. I also used the 
 					Intersection Observer API to create the scroll into view transitions. Let me know what 
 					you think!`,
 					demourl: `https://markmelnik.com`,
@@ -75,15 +75,15 @@ export const CONTENT = {
 					year: 2023,
 					name: `Battleship`,
 					desc: `A classic game of Battleship. This solution was written in vanilla JavaScript, HTML, 
-					and CSS. I wrote unit tests for functions ahead of implementation, emphasizing test-driven 
-					development. I utilized the Drag and Drop API for seamless ship placement control.`,
+					and CSS. I wrote unit tests for functionality ahead of implementation, emphasizing test-driven 
+					development. I used the Drag and Drop API to create user-friendly ship placement.`,
 					demourl: `https://battleship.markmelnik.com`,
 					sourceurl: `https://github.com/markymelnik/battleship`,
 					imagedesc: `Screenshot of battleship project page`,
 					linkdesc: `Visit my battleship site`,
 				},
 			},
-			label: 'Work In Progress!',
+			label: 'In Development!',
 		},
 		side: {
 			button: 'See More',
