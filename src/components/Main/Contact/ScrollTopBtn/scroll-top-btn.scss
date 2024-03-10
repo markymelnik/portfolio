@@ -1,0 +1,30 @@
+@import '../../../../styles/colors';
+
+.scroll-top-btn {
+  position: absolute;
+  right: 0;
+  bottom: 5rem;
+  z-index: 5;
+
+  @media (min-width: 768px) {
+    bottom: 4rem;
+  }
+  
+  svg {
+    height: 3rem;
+    width: 3rem;
+    @include theme-color(color, border);
+    transition: all 0.1s ease;
+
+    @media (min-width: 768px) {
+      height: 4rem;
+      width: 4rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+      @include theme-color(color, accent);
+    }
+  
+  }
+}

@@ -6,33 +6,30 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 85vh;
+  height: 80vh;
   width: 100%;
+
+  @media (min-width: 768px) {
+  /*   height: 85vh; */
+  }
 
   .home-intro {
     padding: 0 0 6rem;
 
+    @media (min-width: 768px) {
+      padding: 0 0 8rem;
+
+    }
+
     .home-title {
-      font-size: 3.5rem;
+      font-size: 3.75rem;
       font-weight: 550;
       @include animateFadeIn(0s);
       @include theme-color(color, accent);
-    }
-  }
-}
 
-@media (min-width: 768px) {
-  .home-container {
+      @media (min-width: 768px) {
+        font-size: 6.5rem;
 
-    .home-intro {
-      padding: 0 0 8rem;
-
-      .home-title {
-        font-size: 6rem;
-      }
-
-      .home-links {
-        flex-direction: row;
       }
     }
   }

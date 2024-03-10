@@ -6,6 +6,7 @@ import GithubLink from "../Home/HomeLinks/Links/GithubLink";
 import { Icons } from "../../../lib/icons/Icons";
 import { CONTENT } from "../../../lib/content";
 import "./contact.scss";
+import { ScrollTopBtn } from "./ScrollTopBtn/ScrollTopBtn";
 
 interface ContactProps extends HTMLProps<HTMLDivElement> {}
 
@@ -28,6 +29,7 @@ const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
 
   return (
     <section className="contact-container">
+      <ScrollTopBtn />
       <NodeVector />
       <h2 className="contact-title">
         <span>{CONTENT.contact.number}</span>{CONTENT.contact.header}

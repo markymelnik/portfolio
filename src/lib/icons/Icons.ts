@@ -1,4 +1,4 @@
-import { PiCaretDown, PiDownloadSimple, PiEnvelopeSimple, PiGithubLogo, PiLink, PiLinkedinLogo, PiList, PiMoon, PiReadCvLogo, PiSun, PiX } from "react-icons/pi";
+import { PiCaretCircleUpLight, PiCaretDown, PiDownloadSimple, PiEnvelopeSimple, PiGithubLogo, PiLink, PiLinkedinLogo, PiList, PiMoon, PiReadCvLogo, PiSun, PiX } from "react-icons/pi";
 import './icons.scss';
 
 export const Icons = {
@@ -13,4 +13,5 @@ export const Icons = {
 	CaretDown: PiCaretDown,
 	Download: PiDownloadSimple,
 	Resume: PiReadCvLogo,
+	ArrowUp: PiCaretCircleUpLight,
 }

@@ -83,7 +83,7 @@ export const CONTENT = {
 					linkdesc: `Visit my battleship site`,
 				},
 			},
-			label: 'In Development!',
+			label: 'New!',
 		},
 		side: {
 			button: 'See More',

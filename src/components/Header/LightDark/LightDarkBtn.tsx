@@ -30,7 +30,7 @@ const LightDarkBtn = () => {
         theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
       }
     >
-      {theme === "dark" ? <Icons.Sun size={20} /> : <Icons.Moon size={20} />}
+      {theme === "dark" ? <Icons.Sun size={21} /> : <Icons.Moon size={21} />}
     </button>
   );
 };

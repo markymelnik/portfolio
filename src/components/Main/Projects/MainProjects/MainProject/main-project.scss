@@ -12,17 +12,15 @@
     right: 1.25rem;
     transform: rotate(3deg);
     @include theme-color(color, accent);
-
+    
     @media (min-width: 768px) {
       font-size: 1.5rem;
     }
-
-    @media (min-width: 768px) {
-      &:hover {
-        .new-project-label {
-          animation: fluctuateSize 0.8s infinite alternate ease-in-out;
-        }
-      }
+  }
+    
+  &:hover {
+    .new-project-label {
+      animation: fluctuateSize 0.8s infinite alternate ease-in-out;
     }
   }
 }

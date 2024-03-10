@@ -10,8 +10,21 @@
   margin: 1rem 0 0;
   z-index: 1;
 
+  @media (min-width: 768px) {
+    right: 11rem;
+    bottom: 1.5rem;
+  }
+
+  @media (min-width: 1200px) {
+    right: 18rem;
+  }
+
+  @media (min-width: 1400px) {
+    right: 22rem;
+  }
+
   > :nth-child(1) {
-    @include animateFadeIn(0.1s);
+  @include animateFadeIn(0.15s);
   }
 
   > :nth-child(2) {
@@ -19,7 +32,7 @@
   }
 
   > :nth-child(3) {
-    @include animateFadeIn(0.3s);
+    @include animateFadeIn(0.25s);
   }
 
   svg {
@@ -33,21 +46,3 @@
   }
 }
 
-@media (min-width: 768px) {
-  .home-links {
-    right: 11rem;
-    bottom: 1.5rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .home-links {
-    right: 18rem;
-  }
-}
-
-@media (min-width: 1400px) {
-  .home-links {
-    right: 22rem;
-  }
-}

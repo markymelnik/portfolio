@@ -12,7 +12,7 @@ const Scroll = () => {
   return (
     <div className="scroll-container">
       <div className="scroll-down-arrow" ref={arrowRef}>
-        <span>{<Icons.CaretDown />}</span>
+      <Icons.CaretDown />
       </div>
     </div>
   );
