@@ -40,7 +40,6 @@ body {
   }
 }
 
-
 a {
 	text-decoration: none;
 	color: inherit;
@@ -80,22 +79,16 @@ ol {
   padding: 0 1.25rem;
   overflow: hidden;
   @include theme-color(background-color, bg);
-}
 
-@media (min-width: 468px) {
-  .app-container {
+  @media (min-width: 468px) {
     padding: 0 5rem;
   }
-}
-
-@media (min-width: 992px) {
-  .app-container {
+  
+  @media (min-width: 992px) {
     padding: 0 10rem;
   }
-}
-
-@media (min-width: 1200px) {
-  .app-container {
+  
+  @media (min-width: 1200px) {
     padding: 0 15rem;
   }
 }

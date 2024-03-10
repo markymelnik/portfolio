@@ -1,4 +1,4 @@
-import { ResumeBtn } from "../../Resume/ResumeBtn/ResumeBtn";
+import { ResumeBtn } from "./Links/Resume/ResumeBtn/ResumeBtn";
 import GithubLink from "./Links/GithubLink";
 import LinkedinLink from "./Links/LinkedinLink";
 import "./home-links.scss";

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { ResumeOverlay } from '../ResumeOverlay/ResumeOverlay';
-import { Icons } from '../../../../lib/icons/Icons';
+import { Icons } from '../../../../../../../lib/icons/Icons';
 import './resume-btn.scss';
 
 export const ResumeBtn = () => {

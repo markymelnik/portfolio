@@ -9,18 +9,17 @@
   gap: 1.5rem;
   margin: 1rem 0 0;
   z-index: 1;
-  /* @include animateFadeIn(0.15s); */
 
   > :nth-child(1) {
     @include animateFadeIn(0.1s);
   }
 
   > :nth-child(2) {
-    @include animateFadeIn(0.15s);
+    @include animateFadeIn(0.2s);
   }
 
   > :nth-child(3) {
-    @include animateFadeIn(0.2s);
+    @include animateFadeIn(0.3s);
   }
 
   svg {

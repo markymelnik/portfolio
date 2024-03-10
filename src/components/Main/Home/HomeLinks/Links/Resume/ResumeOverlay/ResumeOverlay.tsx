@@ -1,8 +1,8 @@
 import { createPortal } from 'react-dom';
-import { Icons } from '../../../../lib/icons/Icons';
-import Resume from '../../../../assets/files/mark-melnik-resume.webp';
+import { Icons } from '../../../../../../../lib/icons/Icons';
+import Resume from '../../../../../../../assets/files/mark-melnik-resume.webp';
 import { useRef } from 'react';
-import useOutsideClick from '../../../../hooks/useOutsideClick';
+import useOutsideClick from '../../../../../../../hooks/useOutsideClick';
 import { DownloadResumeBtn } from './DownloadResumeBtn/DownloadResumeBtn';
 import './resume-overlay.scss';
 

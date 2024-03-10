@@ -35,9 +35,9 @@ export const CONTENT = {
 					id: `project-1`,
 					year: 2024,
 					name: `Baller Blitz`,
-					desc: `A social basketball prediction application. Predict the outcome of 
-					professional basketball games, track your statistics, and share with friends! 
-					Baller Blitz is desgined for scalability, allowing easy integration of new features
+					desc: `A dynamic social basketball application. Predict the outcome of 
+					professional basketball games, track personal statistics, and share with friends! 
+					Baller Blitz is desgined to scale, allowing easy integration of new features
 					 and straightforward authentication management.`,
 					demourl: `https://ballerblitz.com/`,
 					sourceurl: ``,
@@ -62,7 +62,7 @@ export const CONTENT = {
 					year: 2023,
 					name: `Portfolio | markmelnik.com`,
 					desc: `Hey, you're on this site right now! I designed it to be simple yet elegant, 
-					incorporating Astro for performance optimization and fast page loads. I also used the 
+					incorporating Astro for performance optimization and fast page loads. I used the 
 					Intersection Observer API to create the scroll into view transitions. Let me know what 
 					you think!`,
 					demourl: `https://markmelnik.com`,
@@ -76,7 +76,7 @@ export const CONTENT = {
 					name: `Battleship`,
 					desc: `A classic game of Battleship. This solution was written in vanilla JavaScript, HTML, 
 					and CSS. I wrote unit tests for functionality ahead of implementation, emphasizing test-driven 
-					development. I used the Drag and Drop API to create user-friendly ship placement.`,
+					development. I used the Drag and Drop API to streamline ship placement.`,
 					demourl: `https://battleship.markmelnik.com`,
 					sourceurl: `https://github.com/markymelnik/battleship`,
 					imagedesc: `Screenshot of battleship project page`,

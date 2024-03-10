@@ -9,7 +9,7 @@ const LinkedinLink = () => {
       className="linkedin-link"
       aria-label="Visit my linkedin profile"
     >
-      <Icons.LinkedIn className="icon" />
+      <Icons.LinkedIn className="icon" size={30} />
     </a>
   );
 };

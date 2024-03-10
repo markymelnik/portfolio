@@ -1,4 +1,5 @@
-@import '../../../../styles/animations.scss';
+@import '../../../../../../../styles/animations.scss';
+@import '../../../../../../../styles/colors.scss';
 
 .overlay-wrapper {
 	position: fixed;
@@ -6,23 +7,24 @@
 	height: 100vh;
 	width: 100%;
 	z-index: 10;
-	background: rgba(0, 0, 0, 0.6); 
+	background: rgba(0, 0, 0, 0.7); 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	animation: fadeIn 0.3s ease-out forwards;
+	overflow-y: scroll;
 
 	&.closing {
     animation: fadeOut 0.3s ease-out forwards;
   }
 
 	.resume-overlay {
+		width: 82vw; 
+		height: calc(82vw * 1.2941);
 		position: relative;
-		width: 80vw;
-		height: calc(80vw * 1.2941);
 		display: flex;
 		justify-content: center;
-		background: white;
+		background: $light-theme-bg;
 		animation: appearFromLeft 0.3s ease-out forwards;
 
 		&.closing {
@@ -35,13 +37,13 @@
 		}
 
 		@media (min-width: 768px) {
-			width: 60vw;
-			height: calc(60vw * 1.2941);
+			width: 56vw;
+			height: calc(56vw * 1.2941);
 		}
 
 		@media (min-width: 992px) {
-			width: 50vw;
-			height: calc(50vw * 1.2941);
+			width: 52vw;
+			height: calc(52vw * 1.2941);
 		}
 
 		@media (min-width: 1160px) {
@@ -49,41 +51,37 @@
 			height: calc(45vw * 1.2941);
 		}
 
-		@media (min-width: 1360px) {
+		@media (min-width: 1280px) {
 			width: 36vw;
 			height: calc(36vw * 1.2941);
-		}
-
-		.ro-close-btn {
-			position: absolute;
-			top: 1rem;
-			left: -7vw;
-			color: white;
-			transition: transform 0.2s ease;
-
-			svg {
-				height: 1rem;
-				width: 1rem;
-
-				@media (min-width: 768px) {
-					height: 2rem;
-					width: 2rem;
-				}
-			}
-
-			&:hover {
-				transform: scale(1.1);
-			}
-
-			@media (min-width: 768px) {
-				left: -3.5rem;
-			}
 		}
 
 		.resume-container {
 			height: 100%;
 			width: 100%;
-			border: 1px solid black;
+			border: 1px solid $dark-theme-bg;
+		}
+	}
+}
+
+.ro-close-btn {
+	position: absolute;
+	left: 0;
+	top: -2rem;
+	color: $light-theme-bg;
+	transition: all 0.2s ease;
+
+	@media (min-width: 768px) {
+		top: -3rem;
+	}
+
+	svg {
+		height: 1.25rem;
+		width: 1.25rem;
+
+		@media (min-width: 768px) {
+			height: 2rem;
+			width: 2rem;
 		}
 	}
 }

@@ -9,7 +9,7 @@ const GithubLink = () => {
       className="github-link"
       aria-label="Visit my github profile"
     >
-      <Icons.Github className='icon' />
+      <Icons.Github className='icon'size={30} />
     </a>
   );
 };

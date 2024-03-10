@@ -1,0 +1,24 @@
+@import '../../../../../../../../styles/colors.scss';
+
+.download-resume-btn {
+	position: absolute;
+	top: -2rem;
+	right: 0;
+	color: $dark-theme-bg;
+	transition: all 0.2s ease;
+
+	@media (min-width: 768px) {
+		top: -3rem;
+	}
+
+	svg {
+		height: 1.25rem;
+		width: 1.25rem;
+		color: $light-theme-bg;
+
+		@media (min-width: 768px) {
+			height: 2rem;
+			width: 2rem;
+		}
+	}
+}
