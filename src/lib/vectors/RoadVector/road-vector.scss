@@ -3,15 +3,20 @@
 
 .road-vector {
   position: absolute;
-  bottom: -2rem;
-  right: -45%;
   height: 65vh;
+  bottom: -1.5rem;
+  right: -45%;
+  
   @include animateFadeIn(0.05s);
 
   @media (min-width: 768px) {
-    height: 65vh;
+    bottom: -5.5vh;
+    right: -10%;
+  }
+
+  @media (min-width: 992px) {
     bottom: -5vh;
-    right: 2%;
+    right: -15%;
   }
 
   @media (min-width: 1200px) {

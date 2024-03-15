@@ -11,11 +11,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	animation: fadeIn 0.3s ease-out forwards;
+	animation: fadeIn 0.2s ease forwards;
 	overflow-y: scroll;
 
 	&.closing {
-    animation: fadeOut 0.3s ease-out forwards;
+    animation: fadeOut 0.2s ease forwards;
   }
 
 	.resume-overlay {
@@ -25,10 +25,10 @@
 		display: flex;
 		justify-content: center;
 		background: $light-theme-bg;
-		animation: appearFromLeft 0.3s ease-out forwards;
+		animation: appearFromLeft 0.2s ease forwards;
 
 		&.closing {
-      animation: slideOutToLeft 0.3s ease-out forwards;
+      animation: slideOutToLeft 0.2s ease forwards;
     }
 
 		@media (min-width: 468px) {
@@ -71,18 +71,20 @@
 
 .ro-close-btn {
 	position: absolute;
+	top: -2.5rem;
 	left: 0;
-	top: -2rem;
 	color: $light-theme-bg;
 	transition: all 0.2s ease;
 
 	@media (min-width: 768px) {
-		top: -3rem;
+		left: auto;
+		top: 0.5rem;
+		right: -3rem;
 	}
 
 	svg {
-		height: 1.25rem;
-		width: 1.25rem;
+		height: 1.5rem;
+		width: 1.5rem;
 
 		@media (min-width: 768px) {
 			height: 2rem;

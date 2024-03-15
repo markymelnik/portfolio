@@ -20,15 +20,15 @@ body {
 }
 body.light {
   background-color: #F7F7FC;
-  color: #1A1A1A;
-  --spinner-color: #1A1A1A;
+  color: #161616;
+  --spinner-color: #161616;
   --input-autofill-bg: #F7F7FC;
 }
 body.dark {
-  background-color: #1A1A1A;
+  background-color: #161616;
   color: #F7F7FC;
   --spinner-color: #F7F7FC;
-  --input-autofill-bg: #1A1A1A;
+  --input-autofill-bg: #161616;
 }
 body.no-scroll {
   overflow: hidden;
@@ -55,6 +55,7 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font: inherit;
   font-weight: normal;
   margin: 0;
 }
@@ -73,12 +74,11 @@ ol {
   overflow: hidden;
 }
 .dark .app-container {
-  background-color: #1A1A1A;
+  background-color: #161616;
 }
 .light .app-container {
   background-color: #FAF9F6;
 }
-
 @media (min-width: 468px) {
   .app-container {
     padding: 0 5rem;

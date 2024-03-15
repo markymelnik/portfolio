@@ -23,16 +23,16 @@ body {
 
   &.light {
 		background-color: #F7F7FC;
-		color: #1A1A1A;
-		--spinner-color: #1A1A1A;
+		color: #161616;
+		--spinner-color: #161616;
 		--input-autofill-bg: #F7F7FC;
 	}
 
 	&.dark {
-		background-color: #1A1A1A;
+		background-color: #161616;
 		color: #F7F7FC;
 		--spinner-color: #F7F7FC;
-		--input-autofill-bg: #1A1A1A;
+		--input-autofill-bg: #161616;
 	}
 
   &.no-scroll {

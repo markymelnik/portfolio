@@ -60,7 +60,7 @@ export const CONTENT = {
 				3: {
 					id: `project-3`,
 					year: 2023,
-					name: `Portfolio | markmelnik.com`,
+					name: `Portfolio`,
 					desc: `Hey, you're on this site right now! I designed it to be simple yet elegant, 
 					incorporating Astro for performance optimization and fast page loads. I used the 
 					Intersection Observer API to create the scroll into view transitions. Let me know what 
@@ -75,8 +75,7 @@ export const CONTENT = {
 					year: 2023,
 					name: `Battleship`,
 					desc: `A classic game of Battleship. This solution was written in vanilla JavaScript, HTML, 
-					and CSS. I wrote unit tests for functionality ahead of implementation, emphasizing test-driven 
-					development. I used the Drag and Drop API to streamline ship placement.`,
+					and CSS. I underwent a test-driven development process, writing unit tests ahead of function implementation. I used the Drag and Drop API to streamline ship placement.`,
 					demourl: `https://battleship.markmelnik.com`,
 					sourceurl: `https://github.com/markymelnik/battleship`,
 					imagedesc: `Screenshot of battleship project page`,

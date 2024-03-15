@@ -25,7 +25,7 @@ export const ResumeBtn = () => {
     setClosing(true);
     setTimeout(() => {
       setIsResumeOverlayOpen(false);
-    }, 500);
+    }, 250);
   };
 
   return (
