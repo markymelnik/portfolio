@@ -8,17 +8,12 @@
   justify-content: center;
   height: 80vh;
   width: 100%;
-
-  @media (min-width: 768px) {
-  /*   height: 85vh; */
-  }
-
+  
   .home-intro {
     padding: 0 0 6rem;
 
     @media (min-width: 768px) {
       padding: 0 0 8rem;
-
     }
 
     .home-title {
@@ -29,7 +24,6 @@
 
       @media (min-width: 768px) {
         font-size: 6.5rem;
-
       }
     }
   }

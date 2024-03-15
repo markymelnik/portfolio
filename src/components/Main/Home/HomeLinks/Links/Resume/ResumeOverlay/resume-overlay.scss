@@ -56,6 +56,11 @@
 			height: calc(36vw * 1.2941);
 		}
 
+		@media (min-width: 1400px) {
+			width: 32vw;
+			height: calc(32vw * 1.2941);
+		}
+
 		.resume-container {
 			height: 100%;
 			width: 100%;

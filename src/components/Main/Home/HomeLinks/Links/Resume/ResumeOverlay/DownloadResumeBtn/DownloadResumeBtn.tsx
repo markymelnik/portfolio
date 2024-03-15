@@ -16,7 +16,7 @@ export const DownloadResumeBtn = ({ onClose }: DownloadResumeBtnProps) => {
   return (
     <a
       className='download-resume-btn'
-      href='/public/mark-melnik-resume.pdf'
+      href='/mark-melnik-resume.pdf'
       download='Mark Melnik Resume.pdf'
       onClick={handleResumeDownload}
     >
