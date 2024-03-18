@@ -40,8 +40,8 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           projectDemoUrl={CONTENT.projects.main.project[2].demourl}
           imageDescription={CONTENT.projects.main.project[2].imagedesc}
           linkDescription={CONTENT.projects.main.project[2].linkdesc}
+          projectSourceUrl={CONTENT.projects.main.project[2].sourceurl}
           projectImage={FitFinderScreenshot.src}
-          overrideSource={true}
         />
         <MainProject
           ref={projectRefs[2]}

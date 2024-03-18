@@ -34,26 +34,26 @@ export const CONTENT = {
 				1: {
 					id: `project-1`,
 					year: 2024,
-					name: `Baller Blitz`,
+					name: `BallerBlitz`,
 					desc: `A dynamic social basketball application. Predict the outcome of 
 					professional basketball games, track personal statistics, and share with friends! 
-					Baller Blitz is desgined to scale, allowing easy integration of new features
+					BallerBlitz is desgined to scale, allowing easy integration of new features
 					 and straightforward authentication management.`,
 					demourl: `https://ballerblitz.com/`,
 					sourceurl: ``,
 					imagedesc: `Screenshot of baller blitz project page`,
-					linkdesc: `Visit my ball battle site`,
+					linkdesc: `Visit my baller blitz site`,
 				},
 				2: {
 					id: `project-2`,
 					year: 2023,
-					name: `Fit Finder`,
-					desc: `A location-based fitness application. Find a workout spot with Fit Finder! 
+					name: `FitFinder`,
+					desc: `A location-based fitness application. Find a workout spot with FitFinder! 
 					This project was a tremendous learning experience from start to finish. The resulting 
 					solution is the product of many design choices and technical implementations on both 
 					the frontend and backend.`,
 					demourl: `https://fitfinder.app`,
-					sourceurl: ``,
+					sourceurl: `https://github.com/markymelnik/fit-finder`,
 					imagedesc: `Screenshot of fit finder project page`,
 					linkdesc: `Visit my fit finder site`,
 				},
@@ -66,7 +66,7 @@ export const CONTENT = {
 					Intersection Observer API to create the scroll into view transitions. Let me know what 
 					you think!`,
 					demourl: `https://markmelnik.com`,
-					sourceurl: `https://github.com/markymelnik/personal-site`,
+					sourceurl: `https://github.com/markymelnik/portfolio`,
 					imagedesc: `Screenshot of portfolio project page`,
 					linkdesc: `Visit my portfolio site`,
 				},
