@@ -12,7 +12,7 @@ export const CONTENT = {
 		number: '.01',
 		p1: `Hey there! I'm Mark, a software developer based in New York City. I
 		solve complex technical problems and build full-stack applications
-		for the web. I am currently seeking an entry-level software development role.`,
+		for the web. I am currently seeking a software development role.`,
 		p2: `Check out my projects below!`,
 	},
 	skills: {
@@ -143,7 +143,7 @@ export const CONTENT = {
 		title: 'Contact',
 		header: 'Contact Me',
 		number: '.03',
-		p1: `Feel free to reach out! `,
-		p2: `I am currently seeking an entry-level software development role.`,
+		p1: `Let's connect!`,
+		p2: `I am currently seeking a software development role.`,
 	},
 }

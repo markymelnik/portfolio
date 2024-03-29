@@ -14,7 +14,7 @@
   }
 
   .scroll-down-arrow {
-    @include animateFadeIn(1.1s);
+    @include animateFadeIn(1s);
     animation: fadeInSlideUp 0.5s forwards 1s, nudgeDown 3s infinite 3s;
 
     &.slide-down {
