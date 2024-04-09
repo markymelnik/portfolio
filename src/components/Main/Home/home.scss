@@ -22,7 +22,11 @@
       @include animateFadeIn(0s);
       @include theme-color(color, accent);
 
-      @media (min-width: 768px) {
+      @media (min-width: 602px) {
+        font-size: 5.25rem;
+      }
+
+      @media (min-width: 992px) {
         font-size: 6.5rem;
       }
     }

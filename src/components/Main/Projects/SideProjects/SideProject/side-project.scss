@@ -34,7 +34,7 @@
     .side-project-year {
       font-size: 1rem;
       font-weight: 400;
-      margin: 0 0 0.75rem;
+      margin: 0 0 0.5rem;
       @include theme-color(color, accent);
     }
 
@@ -58,7 +58,7 @@
 
   .side-project-links {
     display: inline-flex;
-    gap: 1rem;
+    gap: 1.5rem;
 
     .side-project-demo-link,
     .side-project-code-link {

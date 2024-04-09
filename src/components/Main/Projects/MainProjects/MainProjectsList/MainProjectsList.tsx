@@ -27,8 +27,8 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           projectDemoUrl={CONTENT.projects.main.project[1].demourl}
           imageDescription={CONTENT.projects.main.project[1].imagedesc}
           linkDescription={CONTENT.projects.main.project[1].linkdesc}
+          projectSourceUrl={CONTENT.projects.main.project[1].sourceurl}
           projectImage={BallerBlitz.src}
-          overrideSource={true}
           newProject={true}
         />
         <MainProject
