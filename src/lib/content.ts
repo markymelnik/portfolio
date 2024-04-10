@@ -10,10 +10,10 @@ export const CONTENT = {
     title: 'About',
     header: 'About Me',
     number: '.01',
-    p1: `Hey there! I'm Mark, a software engineer based in New York City. I am absolutely fascinated by the inner workings of software. 
-		I love transforming a vision on paper into a functioning application that people can interact with and benefit from. I have designed, 
+    p1: `Hey there! I'm Mark, a software engineer based in New York City. I am absolutely fascinated by the inner workings of software. `,
+    p2: `I love transforming a vision on paper into a functioning application that people can interact with and benefit from. I have designed, 
 		built, and deployed full-stack applications, solving many complex technical problems along the way.`,
-    p2: `Check out my projects below!`,
+    p3: `Check out my projects below!`
   },
   skills: {
     title: 'Skills',

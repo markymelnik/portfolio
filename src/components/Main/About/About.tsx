@@ -23,10 +23,12 @@ const About = forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
           <div className='about-photo-name'>{CONTENT.fullname}</div>
         </div>
         <div className='about-right'>
-          <p>
-            {CONTENT.about.p1}
-          </p>
-          {/* <hr />
+          <p>{CONTENT.about.p1}</p>
+          <hr />
+          <p>{CONTENT.about.p2}</p>
+          <hr />
+          <p>{CONTENT.about.p3}</p>
+            {/* <hr />
           <p>
           A little more about me: I graduated from{" "}
             <a
@@ -40,8 +42,6 @@ const About = forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
             with a bachelor's degree in Integrative Neuroscience and a minor in Russian
             Studies. I am fascinated by everything to do with computers and the brain! I can read, write, and speak in Russian and Ukrainian (also English). I love hiking, skiing, ice skating, working out, and just staying active.
           </p> */}
-          <hr />
-          <p>{CONTENT.about.p2}</p>
           <SkillList />
         </div>
       </div>
