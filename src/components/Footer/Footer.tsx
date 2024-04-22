@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className={`footer-container ${isHidden ? `hidden` : ``}`}>
       <p className='footer-tech-stack'>
-        Built with love using{' '}
+        Developed with{' '}
         <a
           href='https://astro.build/'
           target='_blank'
