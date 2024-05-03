@@ -34,6 +34,16 @@ export const CONTENT = {
         1: {
           id: `project-1`,
           year: 2024,
+          name: `Inglespanol`,
+          desc: `A bilingual translation app. Create and save personalized English to Spanish translation cards. More information soon.`,
+          demourl: `https://inglespanol.com/`,
+          sourceurl: `https://github.com/markymelnik/inglespanol`,
+          imagedesc: `Screenshot of inglespanol project page`,
+          linkdesc: `Visit my inglespanol site`,
+        },
+        2: {
+          id: `project-2`,
+          year: 2024,
           name: `BallerBlitz`,
           desc: `A dynamic social basketball application. Predict the outcome of 
 					professional basketball games, track personal statistics, and share with friends! 
@@ -44,8 +54,8 @@ export const CONTENT = {
           imagedesc: `Screenshot of baller blitz project page`,
           linkdesc: `Visit my baller blitz site`,
         },
-        2: {
-          id: `project-2`,
+        3: {
+          id: `project-3`,
           year: 2023,
           name: `FitFinder`,
           desc: `A location-based fitness application. Find a workout spot with FitFinder! 
@@ -57,8 +67,8 @@ export const CONTENT = {
           imagedesc: `Screenshot of fit finder project page`,
           linkdesc: `Visit my fit finder site`,
         },
-        3: {
-          id: `project-3`,
+        4: {
+          id: `project-4`,
           year: 2023,
           name: `Portfolio`,
           desc: `Hey, you're on this site right now! I designed it to be simple yet elegant, 
@@ -70,19 +80,8 @@ export const CONTENT = {
           imagedesc: `Screenshot of portfolio project page`,
           linkdesc: `Visit my portfolio site`,
         },
-        4: {
-          id: `project-4`,
-          year: 2023,
-          name: `Battleship`,
-          desc: `A classic game of Battleship. This solution was written in vanilla JavaScript, HTML, 
-					and CSS. I underwent a test-driven development process, writing unit tests ahead of function implementation. I used the Drag and Drop API to streamline ship placement.`,
-          demourl: `https://battleship.markmelnik.com`,
-          sourceurl: `https://github.com/markymelnik/battleship`,
-          imagedesc: `Screenshot of battleship project page`,
-          linkdesc: `Visit my battleship site`,
-        },
       },
-      label: 'New!',
+      label: 'In development!',
     },
     side: {
       button: 'See More',
@@ -91,50 +90,50 @@ export const CONTENT = {
         5: {
           id: `project-5`,
           year: 2023,
+          name: `Battleship`,
+          desc: `A classic game of Battleship. Focus on test-driven development.`,
+          demourl: `https://battleship.markmelnik.com`,
+          sourceurl: `https://github.com/markymelnik/battleship`,
+        },
+        6: {
+          id: `project-6`,
+          year: 2023,
           name: `Shopping Cart`,
           desc: `A mock shopping site with dynamic cart functionality. Great practice with React.`,
           demourl: `https://shopping-cart.markmelnik.com`,
           sourceurl: `https://github.com/markymelnik/shopping-cart`,
         },
-        6: {
-          id: `project-6`,
+        7: {
+          id: `project-7`,
           year: 2023,
           name: `Memory Cards`,
           desc: `Test your memory with this memory game. Don't click the same cat twice 🐱.`,
           demourl: `https://memory-cards.markmelnik.com`,
           sourceurl: `https://github.com/markymelnik/memory-cards`,
         },
-        7: {
-          id: `project-7`,
+        8: {
+          id: `project-8`,
           year: 2023,
           name: `Tic-Tac-Toe`,
           desc: `A classic game of tic-tac-toe. Have a friend with you or you'll be playing against yourself!`,
           demourl: `https://tic-tac-toe.markmelnik.com`,
           sourceurl: `https://github.com/markymelnik/tic-tac-toe`,
         },
-        8: {
-          id: `project-8`,
+        9: {
+          id: `project-9`,
           year: 2022,
           name: `Etch-A-Sketch`,
           desc: `A drawing tool with grid size and color sliders. Great practice with event handlers.`,
           demourl: `https://etch-a-sketch.markmelnik.com`,
           sourceurl: `https://github.com/markymelnik/etch-a-sketch`,
         },
-        9: {
-          id: `project-9`,
+        10: {
+          id: `project-10`,
           year: 2022,
           name: `Calculator`,
           desc: `Your standard 4 function calculator. This was one of my initial projects while learning basics.`,
           demourl: `https://calculator.markmelnik.com`,
           sourceurl: `https://calculator.markmelnik.com`,
-        },
-        10: {
-          id: `project-10`,
-          year: 2022,
-          name: `Café Page`,
-          desc: `A simple café site. Great practice with built-in page navigation and UI.`,
-          demourl: `https://cafe-page.markmelnik.com`,
-          sourceurl: `https://github.com/markymelnik/cafe-page`,
         },
       },
     },

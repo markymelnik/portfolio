@@ -1,9 +1,9 @@
 import type { MutableRefObject } from "react";
 import MainProject from "../MainProject/MainProject";
-import BallerBlitz from '../../../../../assets/images/project/ballerblitz-screenshot.webp';
+import InDevelopmentScreenshot from '../../../../../assets/images/project/in-dev-screenshot.webp';
+import BallerBlitzScreenshot from '../../../../../assets/images/project/ballerblitz-screenshot.webp';
 import FitFinderScreenshot from '../../../../../assets/images/project/fitfinder-screenshot.webp';
 import PersonalSiteScreenshot from '../../../../../assets/images/project/portfolio-screenshot.webp';
-import BattleshipScreenshot from '../../../../../assets/images/project/battleship-screenshot.webp';
 import { CONTENT } from "../../../../../lib/content";
 import "./main-projects-list.scss";
 
@@ -28,8 +28,10 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           imageDescription={CONTENT.projects.main.project[1].imagedesc}
           linkDescription={CONTENT.projects.main.project[1].linkdesc}
           projectSourceUrl={CONTENT.projects.main.project[1].sourceurl}
-          projectImage={BallerBlitz.src}
+          projectImage={InDevelopmentScreenshot.src}
           newProject={true}
+          overrideDemo={true}
+          overrideSource={true}
         />
         <MainProject
           ref={projectRefs[1]}
@@ -41,7 +43,7 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           imageDescription={CONTENT.projects.main.project[2].imagedesc}
           linkDescription={CONTENT.projects.main.project[2].linkdesc}
           projectSourceUrl={CONTENT.projects.main.project[2].sourceurl}
-          projectImage={FitFinderScreenshot.src}
+          projectImage={BallerBlitzScreenshot.src}
         />
         <MainProject
           ref={projectRefs[2]}
@@ -53,7 +55,7 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           imageDescription={CONTENT.projects.main.project[3].imagedesc}
           linkDescription={CONTENT.projects.main.project[3].linkdesc}
           projectSourceUrl={CONTENT.projects.main.project[3].sourceurl}
-          projectImage={PersonalSiteScreenshot.src}
+          projectImage={FitFinderScreenshot.src}
         />
         <MainProject
           ref={projectRefs[3]}
@@ -65,7 +67,7 @@ const MainProjectsList = ({ projectRefs }: MainProjectsList) => {
           imageDescription={CONTENT.projects.main.project[4].imagedesc}
           linkDescription={CONTENT.projects.main.project[4].linkdesc}
           projectSourceUrl={CONTENT.projects.main.project[4].sourceurl}
-          projectImage={BattleshipScreenshot.src}
+          projectImage={PersonalSiteScreenshot.src}
         />
       </ul>
     </>

@@ -13,7 +13,7 @@ import GitIcon from "../../../../lib/skill-icons/GitIcon";
 import SassIcon from "../../../../lib/skill-icons/SassIcon";
 import DockerIcon from "../../../../lib/skill-icons/DockerIcon";
 import JestIcon from "../../../../lib/skill-icons/JestIcon";
-import FigmaIcon from "../../../../lib/skill-icons/FigmaIcon";
+import AWSIcon from "../../../../lib/skill-icons/AWSIcon";
 import Skill from "./Skill/Skill";
 import { CONTENT } from "../../../../lib/content";
 import "./skill-list.scss";
@@ -25,7 +25,7 @@ const SkillList = () => {
     { svg: <TypeScriptIcon />, skillName: "TypeScript" },
     { svg: <SpringIcon />, skillName: "Spring" },
     { svg: <HTMLIcon />, skillName: "HTML" },
-    { svg: <NodeIcon />, skillName: "Node" },
+    { svg: <NodeIcon />, skillName: "Node.js" },
     { svg: <CssIcon />, skillName: "CSS" },
     { svg: <ExpressIcon />, skillName: "Express" },
     { svg: <ReactIcon />, skillName: "React" },
@@ -35,7 +35,7 @@ const SkillList = () => {
     { svg: <SassIcon />, skillName: "Sass" },
     { svg: <DockerIcon />, skillName: "Docker" },
     { svg: <JestIcon />, skillName: "Jest" },
-    { svg: <FigmaIcon />, skillName: "Figma" },
+    { svg: <AWSIcon />, skillName: "AWS" },
   ];
 
   return (

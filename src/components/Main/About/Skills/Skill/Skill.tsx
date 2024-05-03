@@ -7,8 +7,11 @@ type SkillProps = {
 };
 
 const Skill = ({ skillName, svg }: SkillProps) => {
+
+  const cleanSkillName = skillName.replace(/[^a-zA-Z]/g, '').toLowerCase();
+  
   return (
-    <li className={`skill ${skillName.toLowerCase()}`}>
+    <li className={`skill ${cleanSkillName}`}>
       <span>{svg}</span>
       {skillName}
     </li>
