@@ -34,12 +34,12 @@ export const CONTENT = {
         1: {
           id: `project-1`,
           year: 2024,
-          name: `Inglespanol`,
-          desc: `A bilingual translation app. Create and save personalized English to Spanish translation cards. More information soon.`,
-          demourl: `https://inglespanol.com/`,
-          sourceurl: `https://github.com/markymelnik/inglespanol`,
-          imagedesc: `Screenshot of inglespanol project page`,
-          linkdesc: `Visit my inglespanol site`,
+          name: `Project C`,
+          desc: `An unbelievably mind-blowing, world-altering project that will revolutionize everything as we know it. Maybe. More information soon.`,
+          demourl: `https://markmelnik.com/`,
+          sourceurl: `https://github.com/markymelnik/`,
+          imagedesc: `Screenshot of Project C`,
+          linkdesc: `This project is under development`,
         },
         2: {
           id: `project-2`,
