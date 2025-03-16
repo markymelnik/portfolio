@@ -1,6 +1,6 @@
 # Portfolio
 
-My personal portfolio [website](https://markmelnik.com) as of April 2024.
+My personal portfolio [website](https://markmelnik.com) as of March 2025.
 
 ### Technologies
 * [Astro](https://astro.build/)
