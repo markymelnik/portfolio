@@ -1,4 +1,4 @@
-@import '../../../../../styles/colors';
+@use '@styles/colors';
 
 .side-project {
   position: relative;
@@ -10,7 +10,7 @@
   border-radius: 5px;
   padding: 1.5rem;
   border: 1px solid;
-  @include theme-color(border-color, proj-border);
+  @include colors.theme-color(border-color, proj-border);
 
   &:before {
     content: "";
@@ -35,13 +35,13 @@
       font-size: 1rem;
       font-weight: 400;
       margin: 0 0 0.5rem;
-      @include theme-color(color, accent);
+      @include colors.theme-color(color, accent);
     }
 
     .side-project-name {
       font-size: 1.5rem;
       margin: 0 0 1rem;
-      @include theme-color(color, text);
+      @include colors.theme-color(color, text);
 
       @media (min-width: 768px) {
         font-size: 1.75rem;
@@ -51,7 +51,7 @@
     .side-project-description {
       font-size: 1.1rem;
       line-height: 1.3;
-      @include theme-color(color, text);
+      @include colors.theme-color(color, text);
       padding: 0 0 1.5rem;
     }
   }
@@ -67,16 +67,16 @@
       gap: 0.25rem;
       padding: 0.75rem 1rem;
       border: 1px solid;
-      @include theme-color(border-color, border);
+      @include colors.theme-color(border-color, border);
       border-radius: 4px;
       transition: all 0.2s ease;
       z-index: 2;
 
       &:hover {
         cursor: pointer;
-        @include theme-color(background-color, proj-button-bg);
-        @include theme-color(border-color, proj-button-border);
-        @include theme-color(color, proj-button-color);
+        @include colors.theme-color(background-color, proj-button-bg);
+        @include colors.theme-color(border-color, proj-button-border);
+        @include colors.theme-color(color, proj-button-color);
       }
 
       .side-project-link-text {

@@ -1,5 +1,5 @@
-@import '../../../styles/animations';
-@import '../../../styles/colors';
+@use '@styles/animations';
+@use '@styles/colors';
 
 .about-container {
   min-height: 80vh;
@@ -16,13 +16,13 @@
   .about-title {
     font-size: 1.5rem;
     padding: 0 0 2rem;
-    @include theme-color(color, text);
+    @include colors.theme-color(color, text);
     border-bottom: 1px solid;
-    @include theme-color(border-color, border);
+    @include colors.theme-color(border-color, border);
 
     span {
       margin: 0 0.5rem 0 0;
-      @include theme-color(color, accent);
+      @include colors.theme-color(color, accent);
     }
   }
 
@@ -50,7 +50,7 @@
         max-width: 12rem;
 
         &.fade-in {
-          @include animateFadeIn(1s);
+          @include animations.animateFadeIn(1s);
         }
 
         img {
@@ -65,7 +65,7 @@
       .about-photo-name {
         font-size: 1.25rem;
         margin: 1.5rem 0 0;
-        @include theme-color(color, text);
+        @include colors.theme-color(color, text);
       }
     }
 
@@ -79,7 +79,7 @@
       p {
         line-height: 1.5;
         font-size: 1rem;
-        @include theme-color(color, text);
+        @include colors.theme-color(color, text);
       }
 
       hr {
@@ -91,7 +91,7 @@
         transition: color 0.2s ease;
 
         &:hover {
-          @include theme-color(color, accent);
+          @include colors.theme-color(color, accent);
         }
         
       }

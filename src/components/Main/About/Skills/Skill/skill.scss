@@ -1,11 +1,11 @@
-@import '../../../../../styles/colors.scss';
+@use '@styles/colors.scss';
 
 .skill {
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 0.5rem 0;
-  @include theme-color(color, text);
+  @include colors.theme-color(color, text);
   transition: transform 0.15s ease;
   cursor: default;
 

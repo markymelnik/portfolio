@@ -1,16 +1,16 @@
-@import '../../../../../styles/animations';
-@import '../../../../../styles/colors';
+@use '@styles/animations';
+@use '@styles/colors';
 
 .main-projects-title {
   font-size: 1.5rem;
   padding: 0 0 2rem;
-  @include theme-color(color, text);
+  @include colors.theme-color(color, text);
   border-bottom: 1px solid;
-  @include theme-color(border-color, border);
+  @include colors.theme-color(border-color, border);
 
   span {
     margin: 0 0.5rem 0 0;
-    @include theme-color(color, accent);
+    @include colors.theme-color(color, accent);
   }
 
   @media (min-width: 768px) {

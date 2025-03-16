@@ -1,4 +1,4 @@
-@import '../../styles/colors.scss';
+@use '@styles/colors.scss';
 
 .footer-container {
   display: flex;
@@ -17,20 +17,20 @@
   }
 
   .footer-tech-stack {
-    @include theme-color(color, border);
+    @include colors.theme-color(color, border);
     
     a {
-      @include theme-color(color, text);
+      @include colors.theme-color(color, text);
       transition: color 0.2s ease;
 
       &:hover {
-        @include theme-color(color, accent);
+        @include colors.theme-color(color, accent);
       }
     }
   }
 
   .footer-copyright {
-    @include theme-color(color, border);
+    @include colors.theme-color(color, border);
   }
 
   &.hidden {

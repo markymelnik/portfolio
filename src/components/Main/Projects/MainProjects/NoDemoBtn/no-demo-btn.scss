@@ -1,4 +1,4 @@
-@import '../../../../../styles/colors.scss';
+@use '@styles/colors.scss';
 
 .no-demo-btn {
   position: relative;
@@ -10,13 +10,13 @@
   transition: all 0.2s ease;
   z-index: 2;
   border: 1px solid;
-  @include theme-color(border-color, border);
+  @include colors.theme-color(border-color, border);
 
   &:hover {
     cursor: pointer;
-    @include theme-color(background-color, proj-button-bg);
-    @include theme-color(border-color, proj-button-border);
-    @include theme-color(color, proj-button-color);
+    @include colors.theme-color(background-color, proj-button-bg);
+    @include colors.theme-color(border-color, proj-button-border);
+    @include colors.theme-color(color, proj-button-color);
   }
 
   .no-demo-btn-text {
@@ -30,9 +30,9 @@
     padding: 1.25rem 1.5rem;
     border: 1px solid;
     font-size: 1rem;
-    @include theme-color(color, text);
-    @include theme-color(border-color, accent);
-    @include theme-color(background-color, bg);
+    @include colors.theme-color(color, text);
+    @include colors.theme-color(border-color, accent);
+    @include colors.theme-color(background-color, bg);
     border-radius: 5px;
     opacity: 0;
     white-space: nowrap;
@@ -63,8 +63,8 @@
       bottom: -1.9rem;
     }
 
-    @include theme-border-top(before, accent);
-    @include theme-border-top(after, bg);
+    @include colors.theme-border-top(before, accent);
+    @include colors.theme-border-top(after, bg);
   }
 
   .project-link-icon {

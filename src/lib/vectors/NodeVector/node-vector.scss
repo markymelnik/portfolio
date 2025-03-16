@@ -1,4 +1,4 @@
-@import '../../../styles/colors.scss';
+@use '@styles/colors.scss';
 
 .node-vector {
   position: absolute;
@@ -8,8 +8,8 @@
   width: 22rem;
 
   g {
-    @include theme-color(fill, border);
-    @include theme-color(stroke, border);
+    @include colors.theme-color(fill, border);
+    @include colors.theme-color(stroke, border);
     opacity: 0.17;
   }
 }

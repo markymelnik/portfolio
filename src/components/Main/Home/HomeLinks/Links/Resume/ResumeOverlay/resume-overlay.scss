@@ -1,5 +1,5 @@
-@import '../../../../../../../styles/animations.scss';
-@import '../../../../../../../styles/colors.scss';
+@use '@styles/animations.scss';
+@use '@styles/colors.scss';
 
 .overlay-wrapper {
 	position: fixed;
@@ -24,7 +24,7 @@
 		position: relative;
 		display: flex;
 		justify-content: center;
-		background: $light-theme-bg;
+		background: colors.$light-theme-bg;
 		animation: appearFromLeft 0.2s ease forwards;
 
 		&.closing {
@@ -64,7 +64,7 @@
 		.resume-container {
 			height: 100%;
 			width: 100%;
-			border: 1px solid $dark-theme-bg;
+			border: 1px solid colors.$dark-theme-bg;
 		}
 	}
 }
@@ -73,7 +73,7 @@
 	position: absolute;
 	top: -2.5rem;
 	left: 0;
-	color: $light-theme-bg;
+	color: colors.$light-theme-bg;
 	transition: all 0.2s ease;
 
 	@media (min-width: 768px) {

@@ -1,5 +1,5 @@
-@import '../../../styles/animations';
-@import '../../../styles/colors';
+@use '@styles/animations';
+@use '@styles/colors';
 
 .home-container {
   position: relative;
@@ -19,8 +19,8 @@
     .home-title {
       font-size: 3.75rem;
       font-weight: 550;
-      @include animateFadeIn(0s);
-      @include theme-color(color, accent);
+      @include animations.animateFadeIn(0s);
+      @include colors.theme-color(color, accent);
 
       @media (min-width: 602px) {
         font-size: 5.25rem;

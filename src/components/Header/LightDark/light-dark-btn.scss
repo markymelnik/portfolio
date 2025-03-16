@@ -1,5 +1,5 @@
-@import '../../../styles/colors';
-@import '../../../styles/animations';
+@use '@styles/colors';
+@use '@styles/animations';
 
 .light-dark-btn {
   display: flex;
@@ -11,12 +11,12 @@
   }
 
   svg {
-    @include theme-color(color, border);
+    @include colors.theme-color(color, border);
     transition: color 0.2s ease;
     
     &:hover {
       cursor: pointer;
-      @include theme-color(color, text);
+      @include colors.theme-color(color, text);
     }
   }
 }

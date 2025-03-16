@@ -1,5 +1,5 @@
-@import '../../../styles/animations';
-@import '../../../styles/colors';
+@use '@styles/animations';
+@use '@styles/colors';
 
 .road-vector {
   position: absolute;
@@ -7,7 +7,7 @@
   bottom: -1.5rem;
   right: -45%;
   
-  @include animateFadeIn(0.05s);
+  @include animations.animateFadeIn(0.05s);
 
   @media (min-width: 768px) {
     bottom: -5.5vh;
@@ -24,7 +24,7 @@
   }
 
   path {
-    @include theme-color(fill, border);
+    @include colors.theme-color(fill, border);
     opacity: 0.15;
   }
 }

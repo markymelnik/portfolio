@@ -1,5 +1,5 @@
-@import '../../../../styles/animations';
-@import '../../../../styles/colors';
+@use '@styles/animations';
+@use '@styles/colors';
 
 .dynamic-subtitle {
   position: relative;
@@ -16,7 +16,7 @@
     width: 100%;
     transform: translateY(-100%);
     opacity: 0;
-    @include theme-color(color, text);
+    @include colors.theme-color(color, text);
 
     &:nth-child(1) {
       animation: slideInText 12s ease-in-out infinite 0s;

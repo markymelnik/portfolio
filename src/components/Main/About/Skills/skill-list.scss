@@ -1,4 +1,4 @@
-@import '../../../../styles/colors.scss';
+@use '@styles/colors.scss';
 
 .skills-container {
   width: 100%;
@@ -7,12 +7,12 @@
   margin: 2rem 0 0;
   padding: 2rem 0 0;
   border-top: 1px solid;
-  @include theme-color(border-color, border);
+  @include colors.theme-color(border-color, border);
 
   .skills-title {
     font-size: 1rem;
     margin: 0 0 2rem;
-    @include theme-color(color, text);
+    @include colors.theme-color(color, text);
   }
 
   .skills-list {

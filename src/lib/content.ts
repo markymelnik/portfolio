@@ -44,7 +44,7 @@ export const CONTENT = {
         2: {
           id: `project-2`,
           year: 2024,
-          name: `BallerBlitz`,
+          name: `Baller Blitz`,
           desc: `A dynamic social basketball application. Predict the outcome of 
 					professional basketball games, track personal statistics, and share with friends! 
 					BallerBlitz is desgined to scale, allowing easy integration of new features
@@ -57,7 +57,7 @@ export const CONTENT = {
         3: {
           id: `project-3`,
           year: 2023,
-          name: `FitFinder`,
+          name: `NYC Fitness Finder`,
           desc: `A location-based fitness application. Find a workout spot with FitFinder! 
 					This project was a tremendous learning experience from start to finish. The resulting 
 					solution is the product of many design choices and technical implementations on both 

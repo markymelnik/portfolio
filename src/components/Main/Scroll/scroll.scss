@@ -1,4 +1,4 @@
-@import '../../../styles/animations';
+@use '@styles/animations';
 
 .scroll-container {
   width: 100%;
@@ -14,7 +14,7 @@
   }
 
   .scroll-down-arrow {
-    @include animateFadeIn(1s);
+    @include animations.animateFadeIn(1s);
     animation: fadeInSlideUp 0.5s forwards 1s, nudgeDown 3s infinite 3s;
 
     &.slide-down {

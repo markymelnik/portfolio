@@ -1,5 +1,5 @@
-@import '../../../../../styles/animations';
-@import '../../../../../styles/colors';
+@use '@styles/animations';
+@use '@styles/colors';
 
 .project-1 {
   position: relative;
@@ -11,7 +11,7 @@
     top: 1.5rem;
     right: 1.25rem;
     transform: rotate(3deg);
-    @include theme-color(color, accent);
+    @include colors.theme-color(color, accent);
     
     @media (min-width: 768px) {
       font-size: 1.5rem;
@@ -46,8 +46,8 @@
   opacity: 0;
   transition: transform 0.6s ease-in-out, opacity, 1s ease-in-out;
   border: 1px solid;
-  @include theme-color(border-color, proj-border);
-  @include theme-color(background-color, bg);
+  @include colors.theme-color(border-color, proj-border);
+  @include colors.theme-color(background-color, bg);
 
   @media (min-width: 768px) {
     font-size: 2rem;
@@ -97,13 +97,13 @@
         font-size: 1rem;
         font-weight: 400;
         padding: 0 0 0.5rem;
-        @include theme-color(color, accent);
+        @include colors.theme-color(color, accent);
       }
 
       .main-project-name {
         font-size: 1.5rem;
         padding: 0 0 1rem;
-        @include theme-color(color, text);
+        @include colors.theme-color(color, text);
 
         @media (min-width: 768px) {
           font-size: 1.75rem;
@@ -114,7 +114,7 @@
         font-size: 1.1rem;
         line-height: 1.3;
         padding: 0 0 1.5rem;
-        @include theme-color(color, text);
+        @include colors.theme-color(color, text);
       }
     }
 
@@ -131,14 +131,14 @@
         border-radius: 4px;
         z-index: 2;
         border: 1px solid;
-        @include theme-color(border-color, border);
+        @include colors.theme-color(border-color, border);
         transition: all 0.2s ease;
 
         &:hover {
           cursor: pointer;
-          @include theme-color(background-color, proj-button-bg);
-          @include theme-color(border-color, proj-button-border);
-          @include theme-color(color, proj-button-color);
+          @include colors.theme-color(background-color, proj-button-bg);
+          @include colors.theme-color(border-color, proj-button-border);
+          @include colors.theme-color(color, proj-button-color);
         }
 
         .main-project-link-text {
@@ -167,7 +167,7 @@
       width: 100%;
       height: 100%;
       border: 1px solid;
-      @include theme-color(border-color, border);
+      @include colors.theme-color(border-color, border);
       border-radius: 6.5px;
       object-fit: cover;
       aspect-ratio: 16/9;
@@ -177,12 +177,12 @@
       &:hover {
         cursor: pointer;
         opacity: 1;
-        @include theme-color(border-color, text);
+        @include colors.theme-color(border-color, text);
       }
     }
   }
 }
 
 .new-project {
-  @include theme-color(border-color, accent);
+  @include colors.theme-color(border-color, accent);
 }

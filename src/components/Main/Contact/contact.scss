@@ -1,5 +1,5 @@
-@import '../../../styles/animations';
-@import '../../../styles/colors';
+@use '@styles/animations';
+@use '@styles/colors';
 
 .contact-container {
   position: relative;
@@ -10,9 +10,9 @@
   .contact-title {
     font-size: 1.5rem;
     padding: 0 0 2rem;
-    @include theme-color(color, text);
+    @include colors.theme-color(color, text);
     border-bottom: 1px solid;
-    @include theme-color(border-color, border);
+    @include colors.theme-color(border-color, border);
 
     @media (min-width: 768px) {
       font-size: 2rem;
@@ -20,7 +20,7 @@
 
     span {
       margin: 0 0.5rem 0 0;
-      @include theme-color(color, accent);
+      @include colors.theme-color(color, accent);
     }
   }
 
@@ -46,7 +46,7 @@
       font-size: 1.1rem;
       line-height: 1.4;
       padding: 0 0 3rem;
-      @include theme-color(color, text);
+      @include colors.theme-color(color, text);
 
       @media (min-width: 768px) {
         text-align: left;
@@ -83,7 +83,7 @@
           border-radius: 5px;
           transition: color 0.2s ease;
           text-decoration: none;
-          @include theme-color(color, text);
+          @include colors.theme-color(color, text);
           
           @media (min-width: 768px) {
             position: relative;
@@ -94,7 +94,7 @@
               .email-tip {
                 visibility: visible;
                 opacity: 1;
-                @include theme-color(color, accent);
+                @include colors.theme-color(color, accent);
               }
             }
           }
@@ -118,7 +118,7 @@
 
             &:hover {
               cursor: pointer;
-              @include theme-color(color, accent);
+              @include colors.theme-color(color, accent);
             }
           }
         }

@@ -1,4 +1,4 @@
-@import './colors.scss';
+@use 'colors.scss';
 
 @font-face {
   font-family: 'Jost';
@@ -79,7 +79,7 @@ ol {
   flex-direction: column;
   padding: 0 1.25rem;
   overflow: hidden;
-  @include theme-color(background-color, bg);
+  @include colors.theme-color(background-color, bg);
 
   @media (min-width: 468px) {
     padding: 0 5rem;

@@ -1,10 +1,10 @@
-@import '../../../../../../../../styles/colors.scss';
+@use '@styles/colors.scss';
 
 .download-resume-btn {
 	position: absolute;
 	right: 0;
 	top: -2.5rem;
-	color: $dark-theme-bg;
+	color: colors.$dark-theme-bg;
 	transition: all 0.2s ease;
 
 	@media (min-width: 768px) {
@@ -15,7 +15,7 @@
 	svg {
 		height: 1.5rem;
 		width: 1.5rem;
-		color: $light-theme-bg;
+		color: colors.$light-theme-bg;
 
 		@media (min-width: 768px) {
 			height: 2rem;

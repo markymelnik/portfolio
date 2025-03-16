@@ -1,5 +1,5 @@
-@import '../../../../../styles/animations';
-@import '../../../../../styles/colors';
+@use '@styles/animations';
+@use '@styles/colors';
 
 .side-projects-top {
   display: flex;
@@ -17,7 +17,7 @@
     transform: translateY(-1rem);
     opacity: 0;
     transition: transform 2s ease, opacity 2s ease;
-    @include theme-color(color, text);
+    @include colors.theme-color(color, text);
 
     svg {
       display: flex;
@@ -52,7 +52,7 @@
   padding: 1rem 0 2rem;
   opacity: 0;
   transition: opacity 0.3s ease, max-height 0.6s ease;
-  @include theme-color(color, text);
+  @include colors.theme-color(color, text);
 
   &.show {
     display: block;

@@ -1,4 +1,4 @@
-@import '../../../styles/colors.scss';
+@use '@styles/colors.scss';
 
 .project-vector {
   position: absolute;
@@ -7,7 +7,7 @@
   height: 20rem;
   width: 20rem;
   opacity: 0.15;
-  @include theme-color(fill, border);
+  @include colors.theme-color(fill, border);
 }
 
 @media (min-width: 768px) {

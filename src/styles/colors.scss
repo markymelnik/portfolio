@@ -1,3 +1,4 @@
+@use "sass:map";
 $dark-theme-bg: #161616;
 $dark-theme-text: #F7F7FC;
 $dark-theme-border: #8A8A8A;
@@ -42,7 +43,7 @@ $themes: (
 @mixin theme-color($property, $color-key) {
   @each $theme, $colors in $themes {
     .#{$theme} & {
-      #{$property}: map-get(map-get($themes, $theme), $color-key);
+      #{$property}: map.get(map.get($themes, $theme), $color-key);
     }
   }
 }
@@ -50,7 +51,7 @@ $themes: (
 @mixin theme-border-top($pseudo-element, $color-key) {
   @each $theme, $colors in $themes {
     .#{$theme} &::#{$pseudo-element} {
-      border-top: 1rem solid map-get(map-get($themes, $theme), $color-key);
+      border-top: 1rem solid map.get(map.get($themes, $theme), $color-key);
     }
   }
 }
